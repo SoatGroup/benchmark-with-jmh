@@ -31,14 +31,23 @@
 
 package fr.soat;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Measurement;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
 
-public class MyBenchmark {
+/*
+ * illustration of @Measurement use 
+ */
+@OutputTimeUnit(TimeUnit.MILLISECONDS)
+public class MeasurementSampleBenchmark {
 
-    @Benchmark
-    public void testMethod() {
-        // This is a demo/sample template for building your JMH benchmarks. Edit as needed.
-        // Put your benchmark code here.
-    }
+	@Benchmark
+	@Measurement(iterations = 20, time = 2000, timeUnit = TimeUnit.MILLISECONDS)
+	// 20 iterations of 2000ms each
+	public void benchmarkSomething() {
+		UnderBenchmark.doSomething();
+	}
 
 }
