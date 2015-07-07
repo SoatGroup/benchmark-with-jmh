@@ -15,7 +15,6 @@ public final class ForkSampleBenchmarkLauncher {
                             .include("fr.soat.ForkSampleBenchmark")
                             .forks(0)
                             .build();
-
-        new Runner(opt).run();
+        new Runner(opt).run(); 
     }
 }
