@@ -45,7 +45,7 @@ public class ForkSampleBenchmark {
 
     @Benchmark
     @Fork(value = 10, jvmArgs = {"-server", "-Xmx1g", "-XX:+TieredCompilation"} )
-    // this will start JVMs like this :
+    // this will start 10 JVMs like this :
     // $ java -server -Xmx1g -XX:+TieredCompilation
     public void benchmarkSomething() {
     	UnderBenchmark.doSomething();
