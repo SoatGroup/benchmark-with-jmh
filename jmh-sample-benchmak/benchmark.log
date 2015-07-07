@@ -1,0 +1,1831 @@
+# JMH 1.5.2 (released 151 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.soat.MyBenchmark.benchmark_logarithm_apache_common
+
+# Run progress: 0,00% complete, ETA 00:26:40
+# Fork: 1 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,785 ops/us
+# Warmup Iteration   2: 39,210 ops/us
+# Warmup Iteration   3: 39,910 ops/us
+# Warmup Iteration   4: 40,616 ops/us
+# Warmup Iteration   5: 40,595 ops/us
+# Warmup Iteration   6: 40,698 ops/us
+# Warmup Iteration   7: 40,430 ops/us
+# Warmup Iteration   8: 40,310 ops/us
+# Warmup Iteration   9: 39,933 ops/us
+# Warmup Iteration  10: 40,139 ops/us
+# Warmup Iteration  11: 40,222 ops/us
+# Warmup Iteration  12: 39,323 ops/us
+# Warmup Iteration  13: 39,886 ops/us
+# Warmup Iteration  14: 39,609 ops/us
+# Warmup Iteration  15: 39,661 ops/us
+# Warmup Iteration  16: 39,940 ops/us
+# Warmup Iteration  17: 40,453 ops/us
+# Warmup Iteration  18: 40,408 ops/us
+# Warmup Iteration  19: 40,291 ops/us
+# Warmup Iteration  20: 40,387 ops/us
+Iteration   1: 40,160 ops/us
+Iteration   2: 39,660 ops/us
+Iteration   3: 36,542 ops/us
+Iteration   4: 40,155 ops/us
+Iteration   5: 40,248 ops/us
+Iteration   6: 39,852 ops/us
+Iteration   7: 40,320 ops/us
+Iteration   8: 40,307 ops/us
+Iteration   9: 40,383 ops/us
+Iteration  10: 40,293 ops/us
+Iteration  11: 39,551 ops/us
+Iteration  12: 39,942 ops/us
+Iteration  13: 39,445 ops/us
+Iteration  14: 38,791 ops/us
+Iteration  15: 38,307 ops/us
+Iteration  16: 39,657 ops/us
+Iteration  17: 40,101 ops/us
+Iteration  18: 40,097 ops/us
+Iteration  19: 39,600 ops/us
+Iteration  20: 40,251 ops/us
+
+# Run progress: 2,50% complete, ETA 00:26:11
+# Fork: 2 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,606 ops/us
+# Warmup Iteration   2: 38,893 ops/us
+# Warmup Iteration   3: 40,356 ops/us
+# Warmup Iteration   4: 40,278 ops/us
+# Warmup Iteration   5: 40,211 ops/us
+# Warmup Iteration   6: 40,212 ops/us
+# Warmup Iteration   7: 39,714 ops/us
+# Warmup Iteration   8: 40,305 ops/us
+# Warmup Iteration   9: 40,491 ops/us
+# Warmup Iteration  10: 40,159 ops/us
+# Warmup Iteration  11: 40,440 ops/us
+# Warmup Iteration  12: 40,190 ops/us
+# Warmup Iteration  13: 40,391 ops/us
+# Warmup Iteration  14: 40,398 ops/us
+# Warmup Iteration  15: 40,402 ops/us
+# Warmup Iteration  16: 40,503 ops/us
+# Warmup Iteration  17: 40,375 ops/us
+# Warmup Iteration  18: 40,430 ops/us
+# Warmup Iteration  19: 40,597 ops/us
+# Warmup Iteration  20: 40,448 ops/us
+Iteration   1: 39,844 ops/us
+Iteration   2: 40,571 ops/us
+Iteration   3: 39,664 ops/us
+Iteration   4: 39,452 ops/us
+Iteration   5: 39,679 ops/us
+Iteration   6: 40,164 ops/us
+Iteration   7: 40,330 ops/us
+Iteration   8: 40,432 ops/us
+Iteration   9: 39,968 ops/us
+Iteration  10: 39,523 ops/us
+Iteration  11: 39,980 ops/us
+Iteration  12: 40,323 ops/us
+Iteration  13: 40,327 ops/us
+Iteration  14: 39,766 ops/us
+Iteration  15: 40,510 ops/us
+Iteration  16: 40,221 ops/us
+Iteration  17: 40,343 ops/us
+Iteration  18: 40,271 ops/us
+Iteration  19: 40,209 ops/us
+Iteration  20: 40,325 ops/us
+
+# Run progress: 5,00% complete, ETA 00:25:29
+# Fork: 3 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,059 ops/us
+# Warmup Iteration   2: 39,166 ops/us
+# Warmup Iteration   3: 40,494 ops/us
+# Warmup Iteration   4: 40,245 ops/us
+# Warmup Iteration   5: 40,373 ops/us
+# Warmup Iteration   6: 40,374 ops/us
+# Warmup Iteration   7: 40,089 ops/us
+# Warmup Iteration   8: 40,220 ops/us
+# Warmup Iteration   9: 40,279 ops/us
+# Warmup Iteration  10: 40,325 ops/us
+# Warmup Iteration  11: 40,074 ops/us
+# Warmup Iteration  12: 40,523 ops/us
+# Warmup Iteration  13: 40,457 ops/us
+# Warmup Iteration  14: 40,414 ops/us
+# Warmup Iteration  15: 39,441 ops/us
+# Warmup Iteration  16: 40,329 ops/us
+# Warmup Iteration  17: 40,545 ops/us
+# Warmup Iteration  18: 40,432 ops/us
+# Warmup Iteration  19: 40,507 ops/us
+# Warmup Iteration  20: 40,291 ops/us
+Iteration   1: 40,241 ops/us
+Iteration   2: 40,292 ops/us
+Iteration   3: 40,270 ops/us
+Iteration   4: 40,398 ops/us
+Iteration   5: 40,529 ops/us
+Iteration   6: 39,798 ops/us
+Iteration   7: 40,429 ops/us
+Iteration   8: 40,382 ops/us
+Iteration   9: 39,596 ops/us
+Iteration  10: 40,349 ops/us
+Iteration  11: 40,160 ops/us
+Iteration  12: 40,323 ops/us
+Iteration  13: 40,492 ops/us
+Iteration  14: 40,520 ops/us
+Iteration  15: 40,495 ops/us
+Iteration  16: 40,487 ops/us
+Iteration  17: 40,068 ops/us
+Iteration  18: 40,358 ops/us
+Iteration  19: 39,586 ops/us
+Iteration  20: 40,247 ops/us
+
+# Run progress: 7,50% complete, ETA 00:24:49
+# Fork: 4 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,247 ops/us
+# Warmup Iteration   2: 38,753 ops/us
+# Warmup Iteration   3: 40,281 ops/us
+# Warmup Iteration   4: 39,593 ops/us
+# Warmup Iteration   5: 39,662 ops/us
+# Warmup Iteration   6: 40,294 ops/us
+# Warmup Iteration   7: 40,317 ops/us
+# Warmup Iteration   8: 39,794 ops/us
+# Warmup Iteration   9: 40,277 ops/us
+# Warmup Iteration  10: 39,451 ops/us
+# Warmup Iteration  11: 39,657 ops/us
+# Warmup Iteration  12: 40,076 ops/us
+# Warmup Iteration  13: 40,087 ops/us
+# Warmup Iteration  14: 40,083 ops/us
+# Warmup Iteration  15: 40,155 ops/us
+# Warmup Iteration  16: 40,311 ops/us
+# Warmup Iteration  17: 40,314 ops/us
+# Warmup Iteration  18: 40,125 ops/us
+# Warmup Iteration  19: 40,313 ops/us
+# Warmup Iteration  20: 40,355 ops/us
+Iteration   1: 40,066 ops/us
+Iteration   2: 40,140 ops/us
+Iteration   3: 40,121 ops/us
+Iteration   4: 39,051 ops/us
+Iteration   5: 40,200 ops/us
+Iteration   6: 40,154 ops/us
+Iteration   7: 40,126 ops/us
+Iteration   8: 40,318 ops/us
+Iteration   9: 40,462 ops/us
+Iteration  10: 40,355 ops/us
+Iteration  11: 40,362 ops/us
+Iteration  12: 39,332 ops/us
+Iteration  13: 40,106 ops/us
+Iteration  14: 40,239 ops/us
+Iteration  15: 40,277 ops/us
+Iteration  16: 39,874 ops/us
+Iteration  17: 39,106 ops/us
+Iteration  18: 40,407 ops/us
+Iteration  19: 40,285 ops/us
+Iteration  20: 40,227 ops/us
+
+# Run progress: 10,00% complete, ETA 00:24:08
+# Fork: 5 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,693 ops/us
+# Warmup Iteration   2: 39,127 ops/us
+# Warmup Iteration   3: 40,335 ops/us
+# Warmup Iteration   4: 40,296 ops/us
+# Warmup Iteration   5: 40,340 ops/us
+# Warmup Iteration   6: 40,327 ops/us
+# Warmup Iteration   7: 40,015 ops/us
+# Warmup Iteration   8: 40,333 ops/us
+# Warmup Iteration   9: 39,265 ops/us
+# Warmup Iteration  10: 39,435 ops/us
+# Warmup Iteration  11: 39,448 ops/us
+# Warmup Iteration  12: 40,460 ops/us
+# Warmup Iteration  13: 40,300 ops/us
+# Warmup Iteration  14: 40,367 ops/us
+# Warmup Iteration  15: 40,283 ops/us
+# Warmup Iteration  16: 40,360 ops/us
+# Warmup Iteration  17: 40,411 ops/us
+# Warmup Iteration  18: 40,356 ops/us
+# Warmup Iteration  19: 40,296 ops/us
+# Warmup Iteration  20: 40,328 ops/us
+Iteration   1: 40,259 ops/us
+Iteration   2: 39,425 ops/us
+Iteration   3: 39,600 ops/us
+Iteration   4: 39,615 ops/us
+Iteration   5: 39,297 ops/us
+Iteration   6: 40,015 ops/us
+Iteration   7: 39,370 ops/us
+Iteration   8: 40,165 ops/us
+Iteration   9: 40,585 ops/us
+Iteration  10: 40,583 ops/us
+Iteration  11: 40,455 ops/us
+Iteration  12: 40,180 ops/us
+Iteration  13: 40,262 ops/us
+Iteration  14: 40,529 ops/us
+Iteration  15: 40,383 ops/us
+Iteration  16: 39,403 ops/us
+Iteration  17: 40,372 ops/us
+Iteration  18: 40,529 ops/us
+Iteration  19: 40,546 ops/us
+Iteration  20: 39,740 ops/us
+
+# Run progress: 12,50% complete, ETA 00:23:28
+# Fork: 6 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,353 ops/us
+# Warmup Iteration   2: 38,561 ops/us
+# Warmup Iteration   3: 39,603 ops/us
+# Warmup Iteration   4: 40,208 ops/us
+# Warmup Iteration   5: 40,365 ops/us
+# Warmup Iteration   6: 39,810 ops/us
+# Warmup Iteration   7: 39,257 ops/us
+# Warmup Iteration   8: 40,402 ops/us
+# Warmup Iteration   9: 39,744 ops/us
+# Warmup Iteration  10: 40,188 ops/us
+# Warmup Iteration  11: 40,462 ops/us
+# Warmup Iteration  12: 40,352 ops/us
+# Warmup Iteration  13: 40,305 ops/us
+# Warmup Iteration  14: 40,224 ops/us
+# Warmup Iteration  15: 40,491 ops/us
+# Warmup Iteration  16: 40,355 ops/us
+# Warmup Iteration  17: 40,305 ops/us
+# Warmup Iteration  18: 40,358 ops/us
+# Warmup Iteration  19: 40,537 ops/us
+# Warmup Iteration  20: 40,625 ops/us
+Iteration   1: 39,798 ops/us
+Iteration   2: 40,470 ops/us
+Iteration   3: 39,889 ops/us
+Iteration   4: 39,752 ops/us
+Iteration   5: 39,357 ops/us
+Iteration   6: 40,310 ops/us
+Iteration   7: 40,454 ops/us
+Iteration   8: 40,521 ops/us
+Iteration   9: 39,760 ops/us
+Iteration  10: 40,203 ops/us
+Iteration  11: 40,601 ops/us
+Iteration  12: 40,600 ops/us
+Iteration  13: 40,168 ops/us
+Iteration  14: 40,386 ops/us
+Iteration  15: 40,572 ops/us
+Iteration  16: 40,306 ops/us
+Iteration  17: 40,427 ops/us
+Iteration  18: 40,343 ops/us
+Iteration  19: 40,439 ops/us
+Iteration  20: 40,634 ops/us
+
+# Run progress: 15,00% complete, ETA 00:22:48
+# Fork: 7 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,158 ops/us
+# Warmup Iteration   2: 37,852 ops/us
+# Warmup Iteration   3: 40,297 ops/us
+# Warmup Iteration   4: 40,450 ops/us
+# Warmup Iteration   5: 40,038 ops/us
+# Warmup Iteration   6: 39,920 ops/us
+# Warmup Iteration   7: 40,303 ops/us
+# Warmup Iteration   8: 38,948 ops/us
+# Warmup Iteration   9: 40,123 ops/us
+# Warmup Iteration  10: 39,551 ops/us
+# Warmup Iteration  11: 39,700 ops/us
+# Warmup Iteration  12: 40,509 ops/us
+# Warmup Iteration  13: 40,647 ops/us
+# Warmup Iteration  14: 40,250 ops/us
+# Warmup Iteration  15: 40,461 ops/us
+# Warmup Iteration  16: 40,627 ops/us
+# Warmup Iteration  17: 40,521 ops/us
+# Warmup Iteration  18: 40,467 ops/us
+# Warmup Iteration  19: 40,314 ops/us
+# Warmup Iteration  20: 39,274 ops/us
+Iteration   1: 40,483 ops/us
+Iteration   2: 40,042 ops/us
+Iteration   3: 39,708 ops/us
+Iteration   4: 40,206 ops/us
+Iteration   5: 40,234 ops/us
+Iteration   6: 40,188 ops/us
+Iteration   7: 40,418 ops/us
+Iteration   8: 40,189 ops/us
+Iteration   9: 40,515 ops/us
+Iteration  10: 39,524 ops/us
+Iteration  11: 40,308 ops/us
+Iteration  12: 40,291 ops/us
+Iteration  13: 40,553 ops/us
+Iteration  14: 40,543 ops/us
+Iteration  15: 40,564 ops/us
+Iteration  16: 40,587 ops/us
+Iteration  17: 40,389 ops/us
+Iteration  18: 40,352 ops/us
+Iteration  19: 40,243 ops/us
+Iteration  20: 40,362 ops/us
+
+# Run progress: 17,50% complete, ETA 00:22:07
+# Fork: 8 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,451 ops/us
+# Warmup Iteration   2: 38,436 ops/us
+# Warmup Iteration   3: 40,253 ops/us
+# Warmup Iteration   4: 40,564 ops/us
+# Warmup Iteration   5: 40,544 ops/us
+# Warmup Iteration   6: 40,510 ops/us
+# Warmup Iteration   7: 40,544 ops/us
+# Warmup Iteration   8: 39,633 ops/us
+# Warmup Iteration   9: 38,736 ops/us
+# Warmup Iteration  10: 40,142 ops/us
+# Warmup Iteration  11: 40,487 ops/us
+# Warmup Iteration  12: 40,545 ops/us
+# Warmup Iteration  13: 40,378 ops/us
+# Warmup Iteration  14: 40,357 ops/us
+# Warmup Iteration  15: 40,436 ops/us
+# Warmup Iteration  16: 40,567 ops/us
+# Warmup Iteration  17: 40,383 ops/us
+# Warmup Iteration  18: 40,283 ops/us
+# Warmup Iteration  19: 40,285 ops/us
+# Warmup Iteration  20: 40,394 ops/us
+Iteration   1: 40,423 ops/us
+Iteration   2: 40,422 ops/us
+Iteration   3: 40,430 ops/us
+Iteration   4: 40,329 ops/us
+Iteration   5: 40,400 ops/us
+Iteration   6: 39,664 ops/us
+Iteration   7: 40,264 ops/us
+Iteration   8: 40,511 ops/us
+Iteration   9: 40,395 ops/us
+Iteration  10: 40,318 ops/us
+Iteration  11: 39,474 ops/us
+Iteration  12: 40,448 ops/us
+Iteration  13: 40,311 ops/us
+Iteration  14: 39,506 ops/us
+Iteration  15: 40,280 ops/us
+Iteration  16: 40,495 ops/us
+Iteration  17: 40,524 ops/us
+Iteration  18: 39,198 ops/us
+Iteration  19: 40,416 ops/us
+Iteration  20: 40,515 ops/us
+
+# Run progress: 20,00% complete, ETA 00:21:27
+# Fork: 9 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,705 ops/us
+# Warmup Iteration   2: 38,841 ops/us
+# Warmup Iteration   3: 39,757 ops/us
+# Warmup Iteration   4: 40,374 ops/us
+# Warmup Iteration   5: 40,422 ops/us
+# Warmup Iteration   6: 40,095 ops/us
+# Warmup Iteration   7: 40,276 ops/us
+# Warmup Iteration   8: 40,267 ops/us
+# Warmup Iteration   9: 39,397 ops/us
+# Warmup Iteration  10: 40,404 ops/us
+# Warmup Iteration  11: 40,510 ops/us
+# Warmup Iteration  12: 40,404 ops/us
+# Warmup Iteration  13: 40,351 ops/us
+# Warmup Iteration  14: 40,432 ops/us
+# Warmup Iteration  15: 40,267 ops/us
+# Warmup Iteration  16: 40,241 ops/us
+# Warmup Iteration  17: 40,518 ops/us
+# Warmup Iteration  18: 40,562 ops/us
+# Warmup Iteration  19: 39,385 ops/us
+# Warmup Iteration  20: 39,658 ops/us
+Iteration   1: 40,187 ops/us
+Iteration   2: 40,159 ops/us
+Iteration   3: 39,667 ops/us
+Iteration   4: 40,405 ops/us
+Iteration   5: 40,289 ops/us
+Iteration   6: 40,230 ops/us
+Iteration   7: 40,387 ops/us
+Iteration   8: 40,258 ops/us
+Iteration   9: 39,277 ops/us
+Iteration  10: 39,218 ops/us
+Iteration  11: 40,178 ops/us
+Iteration  12: 39,961 ops/us
+Iteration  13: 40,324 ops/us
+Iteration  14: 40,109 ops/us
+Iteration  15: 40,317 ops/us
+Iteration  16: 40,356 ops/us
+Iteration  17: 39,488 ops/us
+Iteration  18: 40,352 ops/us
+Iteration  19: 40,466 ops/us
+Iteration  20: 40,324 ops/us
+
+# Run progress: 22,50% complete, ETA 00:20:47
+# Fork: 10 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38,273 ops/us
+# Warmup Iteration   2: 39,024 ops/us
+# Warmup Iteration   3: 40,373 ops/us
+# Warmup Iteration   4: 40,363 ops/us
+# Warmup Iteration   5: 40,351 ops/us
+# Warmup Iteration   6: 40,326 ops/us
+# Warmup Iteration   7: 40,127 ops/us
+# Warmup Iteration   8: 40,387 ops/us
+# Warmup Iteration   9: 39,387 ops/us
+# Warmup Iteration  10: 40,286 ops/us
+# Warmup Iteration  11: 40,418 ops/us
+# Warmup Iteration  12: 39,664 ops/us
+# Warmup Iteration  13: 40,413 ops/us
+# Warmup Iteration  14: 40,310 ops/us
+# Warmup Iteration  15: 40,280 ops/us
+# Warmup Iteration  16: 40,230 ops/us
+# Warmup Iteration  17: 40,323 ops/us
+# Warmup Iteration  18: 40,337 ops/us
+# Warmup Iteration  19: 40,494 ops/us
+# Warmup Iteration  20: 40,331 ops/us
+Iteration   1: 40,403 ops/us
+Iteration   2: 40,438 ops/us
+Iteration   3: 40,575 ops/us
+Iteration   4: 39,466 ops/us
+Iteration   5: 40,359 ops/us
+Iteration   6: 39,517 ops/us
+Iteration   7: 39,283 ops/us
+Iteration   8: 40,325 ops/us
+Iteration   9: 40,296 ops/us
+Iteration  10: 40,293 ops/us
+Iteration  11: 39,676 ops/us
+Iteration  12: 39,659 ops/us
+Iteration  13: 39,431 ops/us
+Iteration  14: 40,406 ops/us
+Iteration  15: 40,161 ops/us
+Iteration  16: 40,416 ops/us
+Iteration  17: 40,444 ops/us
+Iteration  18: 40,410 ops/us
+Iteration  19: 40,384 ops/us
+Iteration  20: 40,353 ops/us
+
+
+Result: 40,112 ±(99.9%) 0,113 ops/us [Average]
+  Statistics: (min, avg, max) = (36,542, 40,112, 40,634), stdev = 0,477
+  Confidence interval (99.9%): [39,999, 40,224]
+
+
+# JMH 1.5.2 (released 151 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.soat.MyBenchmark.benchmark_logarithm_jafama
+
+# Run progress: 25,00% complete, ETA 00:20:07
+# Fork: 1 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 21,593 ops/us
+# Warmup Iteration   2: 85,044 ops/us
+# Warmup Iteration   3: 96,649 ops/us
+# Warmup Iteration   4: 96,153 ops/us
+# Warmup Iteration   5: 96,757 ops/us
+# Warmup Iteration   6: 96,371 ops/us
+# Warmup Iteration   7: 92,653 ops/us
+# Warmup Iteration   8: 96,438 ops/us
+# Warmup Iteration   9: 95,083 ops/us
+# Warmup Iteration  10: 96,402 ops/us
+# Warmup Iteration  11: 95,916 ops/us
+# Warmup Iteration  12: 95,665 ops/us
+# Warmup Iteration  13: 95,604 ops/us
+# Warmup Iteration  14: 95,734 ops/us
+# Warmup Iteration  15: 95,760 ops/us
+# Warmup Iteration  16: 95,959 ops/us
+# Warmup Iteration  17: 95,296 ops/us
+# Warmup Iteration  18: 95,785 ops/us
+# Warmup Iteration  19: 96,477 ops/us
+# Warmup Iteration  20: 95,607 ops/us
+Iteration   1: 94,548 ops/us
+Iteration   2: 95,910 ops/us
+Iteration   3: 96,750 ops/us
+Iteration   4: 96,563 ops/us
+Iteration   5: 96,316 ops/us
+Iteration   6: 95,977 ops/us
+Iteration   7: 96,257 ops/us
+Iteration   8: 96,309 ops/us
+Iteration   9: 96,133 ops/us
+Iteration  10: 95,890 ops/us
+Iteration  11: 96,867 ops/us
+Iteration  12: 97,003 ops/us
+Iteration  13: 96,365 ops/us
+Iteration  14: 96,041 ops/us
+Iteration  15: 96,254 ops/us
+Iteration  16: 93,314 ops/us
+Iteration  17: 96,507 ops/us
+Iteration  18: 94,177 ops/us
+Iteration  19: 96,425 ops/us
+Iteration  20: 96,304 ops/us
+
+# Run progress: 27,50% complete, ETA 00:19:26
+# Fork: 2 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 44,459 ops/us
+# Warmup Iteration   2: 85,767 ops/us
+# Warmup Iteration   3: 96,304 ops/us
+# Warmup Iteration   4: 94,917 ops/us
+# Warmup Iteration   5: 96,369 ops/us
+# Warmup Iteration   6: 95,341 ops/us
+# Warmup Iteration   7: 96,403 ops/us
+# Warmup Iteration   8: 95,948 ops/us
+# Warmup Iteration   9: 95,544 ops/us
+# Warmup Iteration  10: 96,428 ops/us
+# Warmup Iteration  11: 95,538 ops/us
+# Warmup Iteration  12: 96,442 ops/us
+# Warmup Iteration  13: 94,016 ops/us
+# Warmup Iteration  14: 94,290 ops/us
+# Warmup Iteration  15: 94,488 ops/us
+# Warmup Iteration  16: 94,598 ops/us
+# Warmup Iteration  17: 96,003 ops/us
+# Warmup Iteration  18: 95,978 ops/us
+# Warmup Iteration  19: 95,595 ops/us
+# Warmup Iteration  20: 95,874 ops/us
+Iteration   1: 93,624 ops/us
+Iteration   2: 96,364 ops/us
+Iteration   3: 96,099 ops/us
+Iteration   4: 96,207 ops/us
+Iteration   5: 96,140 ops/us
+Iteration   6: 95,981 ops/us
+Iteration   7: 93,717 ops/us
+Iteration   8: 94,125 ops/us
+Iteration   9: 93,320 ops/us
+Iteration  10: 96,045 ops/us
+Iteration  11: 93,574 ops/us
+Iteration  12: 93,433 ops/us
+Iteration  13: 92,986 ops/us
+Iteration  14: 96,010 ops/us
+Iteration  15: 93,732 ops/us
+Iteration  16: 96,261 ops/us
+Iteration  17: 96,448 ops/us
+Iteration  18: 96,042 ops/us
+Iteration  19: 94,642 ops/us
+Iteration  20: 95,850 ops/us
+
+# Run progress: 30,00% complete, ETA 00:18:46
+# Fork: 3 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 48,123 ops/us
+# Warmup Iteration   2: 87,133 ops/us
+# Warmup Iteration   3: 93,656 ops/us
+# Warmup Iteration   4: 94,843 ops/us
+# Warmup Iteration   5: 96,837 ops/us
+# Warmup Iteration   6: 93,627 ops/us
+# Warmup Iteration   7: 96,642 ops/us
+# Warmup Iteration   8: 94,890 ops/us
+# Warmup Iteration   9: 96,239 ops/us
+# Warmup Iteration  10: 95,524 ops/us
+# Warmup Iteration  11: 96,564 ops/us
+# Warmup Iteration  12: 96,191 ops/us
+# Warmup Iteration  13: 94,694 ops/us
+# Warmup Iteration  14: 95,053 ops/us
+# Warmup Iteration  15: 93,964 ops/us
+# Warmup Iteration  16: 95,232 ops/us
+# Warmup Iteration  17: 94,520 ops/us
+# Warmup Iteration  18: 95,315 ops/us
+# Warmup Iteration  19: 93,287 ops/us
+# Warmup Iteration  20: 95,999 ops/us
+Iteration   1: 95,637 ops/us
+Iteration   2: 94,566 ops/us
+Iteration   3: 96,002 ops/us
+Iteration   4: 95,285 ops/us
+Iteration   5: 96,213 ops/us
+Iteration   6: 95,871 ops/us
+Iteration   7: 96,596 ops/us
+Iteration   8: 95,922 ops/us
+Iteration   9: 96,391 ops/us
+Iteration  10: 96,736 ops/us
+Iteration  11: 96,349 ops/us
+Iteration  12: 96,834 ops/us
+Iteration  13: 96,244 ops/us
+Iteration  14: 95,998 ops/us
+Iteration  15: 95,566 ops/us
+Iteration  16: 96,165 ops/us
+Iteration  17: 95,619 ops/us
+Iteration  18: 96,030 ops/us
+Iteration  19: 95,718 ops/us
+Iteration  20: 96,711 ops/us
+
+# Run progress: 32,50% complete, ETA 00:18:06
+# Fork: 4 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 45,025 ops/us
+# Warmup Iteration   2: 86,762 ops/us
+# Warmup Iteration   3: 96,311 ops/us
+# Warmup Iteration   4: 93,978 ops/us
+# Warmup Iteration   5: 96,282 ops/us
+# Warmup Iteration   6: 95,965 ops/us
+# Warmup Iteration   7: 96,209 ops/us
+# Warmup Iteration   8: 96,179 ops/us
+# Warmup Iteration   9: 95,664 ops/us
+# Warmup Iteration  10: 96,043 ops/us
+# Warmup Iteration  11: 96,255 ops/us
+# Warmup Iteration  12: 96,372 ops/us
+# Warmup Iteration  13: 96,086 ops/us
+# Warmup Iteration  14: 96,185 ops/us
+# Warmup Iteration  15: 94,125 ops/us
+# Warmup Iteration  16: 96,256 ops/us
+# Warmup Iteration  17: 95,883 ops/us
+# Warmup Iteration  18: 96,068 ops/us
+# Warmup Iteration  19: 96,249 ops/us
+# Warmup Iteration  20: 93,741 ops/us
+Iteration   1: 93,123 ops/us
+Iteration   2: 95,661 ops/us
+Iteration   3: 96,097 ops/us
+Iteration   4: 95,270 ops/us
+Iteration   5: 96,177 ops/us
+Iteration   6: 94,821 ops/us
+Iteration   7: 95,557 ops/us
+Iteration   8: 92,636 ops/us
+Iteration   9: 93,685 ops/us
+Iteration  10: 96,159 ops/us
+Iteration  11: 95,708 ops/us
+Iteration  12: 96,410 ops/us
+Iteration  13: 95,848 ops/us
+Iteration  14: 93,821 ops/us
+Iteration  15: 95,627 ops/us
+Iteration  16: 96,061 ops/us
+Iteration  17: 95,647 ops/us
+Iteration  18: 95,811 ops/us
+Iteration  19: 95,658 ops/us
+Iteration  20: 96,345 ops/us
+
+# Run progress: 35,00% complete, ETA 00:17:26
+# Fork: 5 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 47,730 ops/us
+# Warmup Iteration   2: 86,985 ops/us
+# Warmup Iteration   3: 96,108 ops/us
+# Warmup Iteration   4: 94,139 ops/us
+# Warmup Iteration   5: 95,754 ops/us
+# Warmup Iteration   6: 94,148 ops/us
+# Warmup Iteration   7: 96,140 ops/us
+# Warmup Iteration   8: 96,006 ops/us
+# Warmup Iteration   9: 96,767 ops/us
+# Warmup Iteration  10: 96,413 ops/us
+# Warmup Iteration  11: 96,461 ops/us
+# Warmup Iteration  12: 96,045 ops/us
+# Warmup Iteration  13: 95,938 ops/us
+# Warmup Iteration  14: 96,625 ops/us
+# Warmup Iteration  15: 96,039 ops/us
+# Warmup Iteration  16: 93,947 ops/us
+# Warmup Iteration  17: 93,217 ops/us
+# Warmup Iteration  18: 95,866 ops/us
+# Warmup Iteration  19: 95,949 ops/us
+# Warmup Iteration  20: 95,087 ops/us
+Iteration   1: 95,770 ops/us
+Iteration   2: 95,092 ops/us
+Iteration   3: 96,820 ops/us
+Iteration   4: 96,897 ops/us
+Iteration   5: 96,504 ops/us
+Iteration   6: 96,858 ops/us
+Iteration   7: 96,470 ops/us
+Iteration   8: 96,267 ops/us
+Iteration   9: 96,216 ops/us
+Iteration  10: 93,810 ops/us
+Iteration  11: 96,508 ops/us
+Iteration  12: 96,565 ops/us
+Iteration  13: 96,995 ops/us
+Iteration  14: 96,169 ops/us
+Iteration  15: 96,434 ops/us
+Iteration  16: 96,651 ops/us
+Iteration  17: 96,145 ops/us
+Iteration  18: 93,930 ops/us
+Iteration  19: 96,310 ops/us
+Iteration  20: 93,835 ops/us
+
+# Run progress: 37,50% complete, ETA 00:16:45
+# Fork: 6 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 47,967 ops/us
+# Warmup Iteration   2: 86,441 ops/us
+# Warmup Iteration   3: 96,056 ops/us
+# Warmup Iteration   4: 95,926 ops/us
+# Warmup Iteration   5: 93,907 ops/us
+# Warmup Iteration   6: 94,294 ops/us
+# Warmup Iteration   7: 96,597 ops/us
+# Warmup Iteration   8: 96,527 ops/us
+# Warmup Iteration   9: 96,446 ops/us
+# Warmup Iteration  10: 95,483 ops/us
+# Warmup Iteration  11: 96,148 ops/us
+# Warmup Iteration  12: 95,632 ops/us
+# Warmup Iteration  13: 96,750 ops/us
+# Warmup Iteration  14: 96,475 ops/us
+# Warmup Iteration  15: 96,400 ops/us
+# Warmup Iteration  16: 96,231 ops/us
+# Warmup Iteration  17: 96,420 ops/us
+# Warmup Iteration  18: 95,885 ops/us
+# Warmup Iteration  19: 95,694 ops/us
+# Warmup Iteration  20: 96,166 ops/us
+Iteration   1: 95,679 ops/us
+Iteration   2: 95,350 ops/us
+Iteration   3: 94,227 ops/us
+Iteration   4: 96,253 ops/us
+Iteration   5: 95,654 ops/us
+Iteration   6: 94,017 ops/us
+Iteration   7: 95,617 ops/us
+Iteration   8: 95,754 ops/us
+Iteration   9: 95,352 ops/us
+Iteration  10: 95,285 ops/us
+Iteration  11: 93,969 ops/us
+Iteration  12: 94,339 ops/us
+Iteration  13: 93,899 ops/us
+Iteration  14: 96,170 ops/us
+Iteration  15: 96,963 ops/us
+Iteration  16: 96,365 ops/us
+Iteration  17: 94,558 ops/us
+Iteration  18: 95,499 ops/us
+Iteration  19: 96,421 ops/us
+Iteration  20: 95,231 ops/us
+
+# Run progress: 40,00% complete, ETA 00:16:05
+# Fork: 7 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 48,036 ops/us
+# Warmup Iteration   2: 86,833 ops/us
+# Warmup Iteration   3: 96,418 ops/us
+# Warmup Iteration   4: 93,841 ops/us
+# Warmup Iteration   5: 94,414 ops/us
+# Warmup Iteration   6: 93,421 ops/us
+# Warmup Iteration   7: 95,667 ops/us
+# Warmup Iteration   8: 96,285 ops/us
+# Warmup Iteration   9: 93,564 ops/us
+# Warmup Iteration  10: 95,473 ops/us
+# Warmup Iteration  11: 95,371 ops/us
+# Warmup Iteration  12: 95,323 ops/us
+# Warmup Iteration  13: 95,572 ops/us
+# Warmup Iteration  14: 93,431 ops/us
+# Warmup Iteration  15: 92,534 ops/us
+# Warmup Iteration  16: 93,191 ops/us
+# Warmup Iteration  17: 94,465 ops/us
+# Warmup Iteration  18: 95,643 ops/us
+# Warmup Iteration  19: 95,853 ops/us
+# Warmup Iteration  20: 96,294 ops/us
+Iteration   1: 96,254 ops/us
+Iteration   2: 95,909 ops/us
+Iteration   3: 96,204 ops/us
+Iteration   4: 96,001 ops/us
+Iteration   5: 95,831 ops/us
+Iteration   6: 92,579 ops/us
+Iteration   7: 93,625 ops/us
+Iteration   8: 95,413 ops/us
+Iteration   9: 95,861 ops/us
+Iteration  10: 93,956 ops/us
+Iteration  11: 95,947 ops/us
+Iteration  12: 96,120 ops/us
+Iteration  13: 94,666 ops/us
+Iteration  14: 92,894 ops/us
+Iteration  15: 95,539 ops/us
+Iteration  16: 96,433 ops/us
+Iteration  17: 95,888 ops/us
+Iteration  18: 96,640 ops/us
+Iteration  19: 95,855 ops/us
+Iteration  20: 95,999 ops/us
+
+# Run progress: 42,50% complete, ETA 00:15:25
+# Fork: 8 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 47,213 ops/us
+# Warmup Iteration   2: 85,876 ops/us
+# Warmup Iteration   3: 93,729 ops/us
+# Warmup Iteration   4: 95,569 ops/us
+# Warmup Iteration   5: 95,872 ops/us
+# Warmup Iteration   6: 96,018 ops/us
+# Warmup Iteration   7: 96,203 ops/us
+# Warmup Iteration   8: 94,877 ops/us
+# Warmup Iteration   9: 95,813 ops/us
+# Warmup Iteration  10: 95,183 ops/us
+# Warmup Iteration  11: 96,264 ops/us
+# Warmup Iteration  12: 93,908 ops/us
+# Warmup Iteration  13: 95,966 ops/us
+# Warmup Iteration  14: 94,990 ops/us
+# Warmup Iteration  15: 95,971 ops/us
+# Warmup Iteration  16: 96,853 ops/us
+# Warmup Iteration  17: 96,630 ops/us
+# Warmup Iteration  18: 96,768 ops/us
+# Warmup Iteration  19: 95,796 ops/us
+# Warmup Iteration  20: 96,299 ops/us
+Iteration   1: 96,335 ops/us
+Iteration   2: 95,621 ops/us
+Iteration   3: 95,648 ops/us
+Iteration   4: 95,313 ops/us
+Iteration   5: 96,125 ops/us
+Iteration   6: 94,693 ops/us
+Iteration   7: 95,764 ops/us
+Iteration   8: 96,066 ops/us
+Iteration   9: 93,474 ops/us
+Iteration  10: 96,143 ops/us
+Iteration  11: 96,079 ops/us
+Iteration  12: 96,569 ops/us
+Iteration  13: 96,013 ops/us
+Iteration  14: 96,593 ops/us
+Iteration  15: 95,922 ops/us
+Iteration  16: 95,374 ops/us
+Iteration  17: 95,562 ops/us
+Iteration  18: 97,208 ops/us
+Iteration  19: 95,694 ops/us
+Iteration  20: 94,562 ops/us
+
+# Run progress: 45,00% complete, ETA 00:14:45
+# Fork: 9 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 47,300 ops/us
+# Warmup Iteration   2: 85,472 ops/us
+# Warmup Iteration   3: 96,759 ops/us
+# Warmup Iteration   4: 96,292 ops/us
+# Warmup Iteration   5: 93,910 ops/us
+# Warmup Iteration   6: 96,455 ops/us
+# Warmup Iteration   7: 95,776 ops/us
+# Warmup Iteration   8: 94,274 ops/us
+# Warmup Iteration   9: 96,545 ops/us
+# Warmup Iteration  10: 96,551 ops/us
+# Warmup Iteration  11: 96,953 ops/us
+# Warmup Iteration  12: 95,251 ops/us
+# Warmup Iteration  13: 96,480 ops/us
+# Warmup Iteration  14: 96,054 ops/us
+# Warmup Iteration  15: 96,374 ops/us
+# Warmup Iteration  16: 94,119 ops/us
+# Warmup Iteration  17: 96,426 ops/us
+# Warmup Iteration  18: 95,375 ops/us
+# Warmup Iteration  19: 95,737 ops/us
+# Warmup Iteration  20: 95,985 ops/us
+Iteration   1: 94,375 ops/us
+Iteration   2: 96,425 ops/us
+Iteration   3: 96,656 ops/us
+Iteration   4: 95,112 ops/us
+Iteration   5: 92,568 ops/us
+Iteration   6: 92,674 ops/us
+Iteration   7: 93,402 ops/us
+Iteration   8: 92,642 ops/us
+Iteration   9: 93,754 ops/us
+Iteration  10: 95,239 ops/us
+Iteration  11: 95,131 ops/us
+Iteration  12: 96,134 ops/us
+Iteration  13: 95,102 ops/us
+Iteration  14: 95,998 ops/us
+Iteration  15: 95,730 ops/us
+Iteration  16: 95,994 ops/us
+Iteration  17: 93,377 ops/us
+Iteration  18: 94,524 ops/us
+Iteration  19: 95,638 ops/us
+Iteration  20: 96,217 ops/us
+
+# Run progress: 47,50% complete, ETA 00:14:04
+# Fork: 10 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 47,478 ops/us
+# Warmup Iteration   2: 85,329 ops/us
+# Warmup Iteration   3: 96,173 ops/us
+# Warmup Iteration   4: 94,236 ops/us
+# Warmup Iteration   5: 93,431 ops/us
+# Warmup Iteration   6: 96,683 ops/us
+# Warmup Iteration   7: 94,638 ops/us
+# Warmup Iteration   8: 95,660 ops/us
+# Warmup Iteration   9: 97,129 ops/us
+# Warmup Iteration  10: 97,046 ops/us
+# Warmup Iteration  11: 96,720 ops/us
+# Warmup Iteration  12: 96,819 ops/us
+# Warmup Iteration  13: 96,917 ops/us
+# Warmup Iteration  14: 96,705 ops/us
+# Warmup Iteration  15: 96,142 ops/us
+# Warmup Iteration  16: 96,280 ops/us
+# Warmup Iteration  17: 94,288 ops/us
+# Warmup Iteration  18: 96,657 ops/us
+# Warmup Iteration  19: 96,211 ops/us
+# Warmup Iteration  20: 94,068 ops/us
+Iteration   1: 95,620 ops/us
+Iteration   2: 95,174 ops/us
+Iteration   3: 93,794 ops/us
+Iteration   4: 95,301 ops/us
+Iteration   5: 96,136 ops/us
+Iteration   6: 94,720 ops/us
+Iteration   7: 96,205 ops/us
+Iteration   8: 95,224 ops/us
+Iteration   9: 95,980 ops/us
+Iteration  10: 95,911 ops/us
+Iteration  11: 95,573 ops/us
+Iteration  12: 96,476 ops/us
+Iteration  13: 94,254 ops/us
+Iteration  14: 96,374 ops/us
+Iteration  15: 95,121 ops/us
+Iteration  16: 95,174 ops/us
+Iteration  17: 93,469 ops/us
+Iteration  18: 96,341 ops/us
+Iteration  19: 94,436 ops/us
+Iteration  20: 96,209 ops/us
+
+
+Result: 95,502 ±(99.9%) 0,255 ops/us [Average]
+  Statistics: (min, avg, max) = (92,568, 95,502, 97,208), stdev = 1,080
+  Confidence interval (99.9%): [95,247, 95,758]
+
+
+# JMH 1.5.2 (released 151 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.soat.MyBenchmark.benchmark_logarithm_jafama_logQuick
+
+# Run progress: 50,00% complete, ETA 00:13:24
+# Fork: 1 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 69,959 ops/us
+# Warmup Iteration   2: 129,398 ops/us
+# Warmup Iteration   3: 143,899 ops/us
+# Warmup Iteration   4: 143,768 ops/us
+# Warmup Iteration   5: 144,486 ops/us
+# Warmup Iteration   6: 144,395 ops/us
+# Warmup Iteration   7: 144,413 ops/us
+# Warmup Iteration   8: 141,777 ops/us
+# Warmup Iteration   9: 139,857 ops/us
+# Warmup Iteration  10: 142,704 ops/us
+# Warmup Iteration  11: 142,260 ops/us
+# Warmup Iteration  12: 142,422 ops/us
+# Warmup Iteration  13: 143,797 ops/us
+# Warmup Iteration  14: 141,524 ops/us
+# Warmup Iteration  15: 142,612 ops/us
+# Warmup Iteration  16: 144,148 ops/us
+# Warmup Iteration  17: 142,968 ops/us
+# Warmup Iteration  18: 141,609 ops/us
+# Warmup Iteration  19: 141,777 ops/us
+# Warmup Iteration  20: 143,386 ops/us
+Iteration   1: 144,906 ops/us
+Iteration   2: 139,553 ops/us
+Iteration   3: 141,184 ops/us
+Iteration   4: 143,191 ops/us
+Iteration   5: 143,758 ops/us
+Iteration   6: 144,912 ops/us
+Iteration   7: 144,138 ops/us
+Iteration   8: 141,664 ops/us
+Iteration   9: 143,987 ops/us
+Iteration  10: 141,844 ops/us
+Iteration  11: 144,016 ops/us
+Iteration  12: 142,846 ops/us
+Iteration  13: 143,795 ops/us
+Iteration  14: 142,586 ops/us
+Iteration  15: 143,679 ops/us
+Iteration  16: 141,928 ops/us
+Iteration  17: 142,178 ops/us
+Iteration  18: 139,527 ops/us
+Iteration  19: 143,746 ops/us
+Iteration  20: 140,534 ops/us
+
+# Run progress: 52,50% complete, ETA 00:12:44
+# Fork: 2 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 68,262 ops/us
+# Warmup Iteration   2: 130,223 ops/us
+# Warmup Iteration   3: 143,845 ops/us
+# Warmup Iteration   4: 140,825 ops/us
+# Warmup Iteration   5: 144,676 ops/us
+# Warmup Iteration   6: 143,768 ops/us
+# Warmup Iteration   7: 144,148 ops/us
+# Warmup Iteration   8: 140,466 ops/us
+# Warmup Iteration   9: 142,510 ops/us
+# Warmup Iteration  10: 143,835 ops/us
+# Warmup Iteration  11: 143,857 ops/us
+# Warmup Iteration  12: 143,251 ops/us
+# Warmup Iteration  13: 140,630 ops/us
+# Warmup Iteration  14: 142,200 ops/us
+# Warmup Iteration  15: 143,148 ops/us
+# Warmup Iteration  16: 144,779 ops/us
+# Warmup Iteration  17: 144,825 ops/us
+# Warmup Iteration  18: 144,926 ops/us
+# Warmup Iteration  19: 143,526 ops/us
+# Warmup Iteration  20: 143,948 ops/us
+Iteration   1: 142,857 ops/us
+Iteration   2: 144,337 ops/us
+Iteration   3: 142,386 ops/us
+Iteration   4: 144,262 ops/us
+Iteration   5: 144,757 ops/us
+Iteration   6: 141,783 ops/us
+Iteration   7: 142,962 ops/us
+Iteration   8: 141,039 ops/us
+Iteration   9: 141,250 ops/us
+Iteration  10: 142,190 ops/us
+Iteration  11: 141,779 ops/us
+Iteration  12: 142,133 ops/us
+Iteration  13: 142,955 ops/us
+Iteration  14: 143,463 ops/us
+Iteration  15: 139,874 ops/us
+Iteration  16: 141,414 ops/us
+Iteration  17: 143,064 ops/us
+Iteration  18: 144,239 ops/us
+Iteration  19: 142,739 ops/us
+Iteration  20: 142,682 ops/us
+
+# Run progress: 55,00% complete, ETA 00:12:04
+# Fork: 3 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 67,852 ops/us
+# Warmup Iteration   2: 125,260 ops/us
+# Warmup Iteration   3: 142,614 ops/us
+# Warmup Iteration   4: 141,425 ops/us
+# Warmup Iteration   5: 141,144 ops/us
+# Warmup Iteration   6: 142,781 ops/us
+# Warmup Iteration   7: 142,320 ops/us
+# Warmup Iteration   8: 142,400 ops/us
+# Warmup Iteration   9: 141,686 ops/us
+# Warmup Iteration  10: 143,526 ops/us
+# Warmup Iteration  11: 143,192 ops/us
+# Warmup Iteration  12: 140,608 ops/us
+# Warmup Iteration  13: 142,187 ops/us
+# Warmup Iteration  14: 142,161 ops/us
+# Warmup Iteration  15: 142,926 ops/us
+# Warmup Iteration  16: 143,582 ops/us
+# Warmup Iteration  17: 142,701 ops/us
+# Warmup Iteration  18: 143,489 ops/us
+# Warmup Iteration  19: 143,636 ops/us
+# Warmup Iteration  20: 141,706 ops/us
+Iteration   1: 142,543 ops/us
+Iteration   2: 144,437 ops/us
+Iteration   3: 141,851 ops/us
+Iteration   4: 144,850 ops/us
+Iteration   5: 144,745 ops/us
+Iteration   6: 144,703 ops/us
+Iteration   7: 144,600 ops/us
+Iteration   8: 142,685 ops/us
+Iteration   9: 145,027 ops/us
+Iteration  10: 144,935 ops/us
+Iteration  11: 143,334 ops/us
+Iteration  12: 144,434 ops/us
+Iteration  13: 144,298 ops/us
+Iteration  14: 144,454 ops/us
+Iteration  15: 142,262 ops/us
+Iteration  16: 143,943 ops/us
+Iteration  17: 141,143 ops/us
+Iteration  18: 141,366 ops/us
+Iteration  19: 144,153 ops/us
+Iteration  20: 141,674 ops/us
+
+# Run progress: 57,50% complete, ETA 00:11:23
+# Fork: 4 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 71,898 ops/us
+# Warmup Iteration   2: 128,097 ops/us
+# Warmup Iteration   3: 141,281 ops/us
+# Warmup Iteration   4: 144,024 ops/us
+# Warmup Iteration   5: 144,218 ops/us
+# Warmup Iteration   6: 144,246 ops/us
+# Warmup Iteration   7: 140,226 ops/us
+# Warmup Iteration   8: 144,502 ops/us
+# Warmup Iteration   9: 144,058 ops/us
+# Warmup Iteration  10: 144,047 ops/us
+# Warmup Iteration  11: 144,299 ops/us
+# Warmup Iteration  12: 142,751 ops/us
+# Warmup Iteration  13: 144,538 ops/us
+# Warmup Iteration  14: 143,964 ops/us
+# Warmup Iteration  15: 144,492 ops/us
+# Warmup Iteration  16: 143,111 ops/us
+# Warmup Iteration  17: 139,048 ops/us
+# Warmup Iteration  18: 141,016 ops/us
+# Warmup Iteration  19: 142,931 ops/us
+# Warmup Iteration  20: 144,951 ops/us
+Iteration   1: 144,666 ops/us
+Iteration   2: 145,266 ops/us
+Iteration   3: 143,245 ops/us
+Iteration   4: 145,139 ops/us
+Iteration   5: 145,040 ops/us
+Iteration   6: 145,393 ops/us
+Iteration   7: 144,968 ops/us
+Iteration   8: 144,835 ops/us
+Iteration   9: 145,216 ops/us
+Iteration  10: 144,764 ops/us
+Iteration  11: 143,995 ops/us
+Iteration  12: 139,460 ops/us
+Iteration  13: 140,458 ops/us
+Iteration  14: 140,385 ops/us
+Iteration  15: 134,652 ops/us
+Iteration  16: 134,658 ops/us
+Iteration  17: 135,241 ops/us
+Iteration  18: 137,904 ops/us
+Iteration  19: 143,547 ops/us
+Iteration  20: 143,191 ops/us
+
+# Run progress: 60,00% complete, ETA 00:10:43
+# Fork: 5 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 69,975 ops/us
+# Warmup Iteration   2: 128,651 ops/us
+# Warmup Iteration   3: 141,865 ops/us
+# Warmup Iteration   4: 144,777 ops/us
+# Warmup Iteration   5: 141,284 ops/us
+# Warmup Iteration   6: 143,464 ops/us
+# Warmup Iteration   7: 136,346 ops/us
+# Warmup Iteration   8: 141,300 ops/us
+# Warmup Iteration   9: 142,398 ops/us
+# Warmup Iteration  10: 141,556 ops/us
+# Warmup Iteration  11: 143,271 ops/us
+# Warmup Iteration  12: 143,257 ops/us
+# Warmup Iteration  13: 142,132 ops/us
+# Warmup Iteration  14: 142,696 ops/us
+# Warmup Iteration  15: 142,166 ops/us
+# Warmup Iteration  16: 144,102 ops/us
+# Warmup Iteration  17: 144,681 ops/us
+# Warmup Iteration  18: 145,313 ops/us
+# Warmup Iteration  19: 145,110 ops/us
+# Warmup Iteration  20: 145,106 ops/us
+Iteration   1: 145,414 ops/us
+Iteration   2: 143,402 ops/us
+Iteration   3: 144,788 ops/us
+Iteration   4: 144,718 ops/us
+Iteration   5: 144,259 ops/us
+Iteration   6: 144,343 ops/us
+Iteration   7: 143,325 ops/us
+Iteration   8: 143,186 ops/us
+Iteration   9: 143,205 ops/us
+Iteration  10: 145,625 ops/us
+Iteration  11: 144,584 ops/us
+Iteration  12: 143,952 ops/us
+Iteration  13: 144,532 ops/us
+Iteration  14: 144,391 ops/us
+Iteration  15: 138,414 ops/us
+Iteration  16: 134,531 ops/us
+Iteration  17: 138,476 ops/us
+Iteration  18: 134,462 ops/us
+Iteration  19: 141,061 ops/us
+Iteration  20: 140,106 ops/us
+
+# Run progress: 62,50% complete, ETA 00:10:03
+# Fork: 6 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 56,699 ops/us
+# Warmup Iteration   2: 115,100 ops/us
+# Warmup Iteration   3: 122,120 ops/us
+# Warmup Iteration   4: 128,579 ops/us
+# Warmup Iteration   5: 136,248 ops/us
+# Warmup Iteration   6: 142,010 ops/us
+# Warmup Iteration   7: 142,428 ops/us
+# Warmup Iteration   8: 132,086 ops/us
+# Warmup Iteration   9: 142,217 ops/us
+# Warmup Iteration  10: 142,088 ops/us
+# Warmup Iteration  11: 142,576 ops/us
+# Warmup Iteration  12: 141,748 ops/us
+# Warmup Iteration  13: 139,621 ops/us
+# Warmup Iteration  14: 140,481 ops/us
+# Warmup Iteration  15: 142,331 ops/us
+# Warmup Iteration  16: 138,374 ops/us
+# Warmup Iteration  17: 143,493 ops/us
+# Warmup Iteration  18: 143,109 ops/us
+# Warmup Iteration  19: 138,762 ops/us
+# Warmup Iteration  20: 132,592 ops/us
+Iteration   1: 144,500 ops/us
+Iteration   2: 145,291 ops/us
+Iteration   3: 142,669 ops/us
+Iteration   4: 141,027 ops/us
+Iteration   5: 142,162 ops/us
+Iteration   6: 144,707 ops/us
+Iteration   7: 136,426 ops/us
+Iteration   8: 137,680 ops/us
+Iteration   9: 144,147 ops/us
+Iteration  10: 145,048 ops/us
+Iteration  11: 136,230 ops/us
+Iteration  12: 139,489 ops/us
+Iteration  13: 140,841 ops/us
+Iteration  14: 143,391 ops/us
+Iteration  15: 142,581 ops/us
+Iteration  16: 144,543 ops/us
+Iteration  17: 143,699 ops/us
+Iteration  18: 144,471 ops/us
+Iteration  19: 144,719 ops/us
+Iteration  20: 144,427 ops/us
+
+# Run progress: 65,00% complete, ETA 00:09:23
+# Fork: 7 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 69,119 ops/us
+# Warmup Iteration   2: 126,664 ops/us
+# Warmup Iteration   3: 141,677 ops/us
+# Warmup Iteration   4: 144,623 ops/us
+# Warmup Iteration   5: 140,876 ops/us
+# Warmup Iteration   6: 139,085 ops/us
+# Warmup Iteration   7: 144,115 ops/us
+# Warmup Iteration   8: 144,298 ops/us
+# Warmup Iteration   9: 143,894 ops/us
+# Warmup Iteration  10: 144,494 ops/us
+# Warmup Iteration  11: 144,061 ops/us
+# Warmup Iteration  12: 144,561 ops/us
+# Warmup Iteration  13: 141,279 ops/us
+# Warmup Iteration  14: 144,904 ops/us
+# Warmup Iteration  15: 144,002 ops/us
+# Warmup Iteration  16: 144,339 ops/us
+# Warmup Iteration  17: 142,693 ops/us
+# Warmup Iteration  18: 142,650 ops/us
+# Warmup Iteration  19: 142,411 ops/us
+# Warmup Iteration  20: 142,672 ops/us
+Iteration   1: 140,600 ops/us
+Iteration   2: 137,772 ops/us
+Iteration   3: 144,689 ops/us
+Iteration   4: 141,943 ops/us
+Iteration   5: 139,964 ops/us
+Iteration   6: 141,671 ops/us
+Iteration   7: 127,433 ops/us
+Iteration   8: 143,057 ops/us
+Iteration   9: 143,346 ops/us
+Iteration  10: 142,720 ops/us
+Iteration  11: 142,704 ops/us
+Iteration  12: 143,471 ops/us
+Iteration  13: 143,327 ops/us
+Iteration  14: 143,439 ops/us
+Iteration  15: 144,226 ops/us
+Iteration  16: 144,268 ops/us
+Iteration  17: 143,854 ops/us
+Iteration  18: 142,352 ops/us
+Iteration  19: 143,801 ops/us
+Iteration  20: 144,813 ops/us
+
+# Run progress: 67,50% complete, ETA 00:08:43
+# Fork: 8 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 71,692 ops/us
+# Warmup Iteration   2: 129,935 ops/us
+# Warmup Iteration   3: 141,144 ops/us
+# Warmup Iteration   4: 141,477 ops/us
+# Warmup Iteration   5: 142,811 ops/us
+# Warmup Iteration   6: 144,470 ops/us
+# Warmup Iteration   7: 144,933 ops/us
+# Warmup Iteration   8: 142,279 ops/us
+# Warmup Iteration   9: 144,298 ops/us
+# Warmup Iteration  10: 144,638 ops/us
+# Warmup Iteration  11: 144,265 ops/us
+# Warmup Iteration  12: 143,512 ops/us
+# Warmup Iteration  13: 144,350 ops/us
+# Warmup Iteration  14: 144,722 ops/us
+# Warmup Iteration  15: 143,376 ops/us
+# Warmup Iteration  16: 141,634 ops/us
+# Warmup Iteration  17: 142,243 ops/us
+# Warmup Iteration  18: 144,142 ops/us
+# Warmup Iteration  19: 145,149 ops/us
+# Warmup Iteration  20: 145,135 ops/us
+Iteration   1: 145,371 ops/us
+Iteration   2: 145,305 ops/us
+Iteration   3: 144,886 ops/us
+Iteration   4: 141,063 ops/us
+Iteration   5: 145,240 ops/us
+Iteration   6: 145,091 ops/us
+Iteration   7: 143,161 ops/us
+Iteration   8: 142,451 ops/us
+Iteration   9: 144,702 ops/us
+Iteration  10: 144,244 ops/us
+Iteration  11: 141,909 ops/us
+Iteration  12: 143,323 ops/us
+Iteration  13: 144,320 ops/us
+Iteration  14: 142,830 ops/us
+Iteration  15: 143,428 ops/us
+Iteration  16: 143,387 ops/us
+Iteration  17: 142,144 ops/us
+Iteration  18: 142,501 ops/us
+Iteration  19: 144,836 ops/us
+Iteration  20: 145,117 ops/us
+
+# Run progress: 70,00% complete, ETA 00:08:02
+# Fork: 9 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 65,564 ops/us
+# Warmup Iteration   2: 127,558 ops/us
+# Warmup Iteration   3: 142,488 ops/us
+# Warmup Iteration   4: 144,162 ops/us
+# Warmup Iteration   5: 144,348 ops/us
+# Warmup Iteration   6: 143,085 ops/us
+# Warmup Iteration   7: 144,424 ops/us
+# Warmup Iteration   8: 141,555 ops/us
+# Warmup Iteration   9: 144,410 ops/us
+# Warmup Iteration  10: 144,110 ops/us
+# Warmup Iteration  11: 144,348 ops/us
+# Warmup Iteration  12: 144,367 ops/us
+# Warmup Iteration  13: 145,040 ops/us
+# Warmup Iteration  14: 143,999 ops/us
+# Warmup Iteration  15: 140,131 ops/us
+# Warmup Iteration  16: 142,465 ops/us
+# Warmup Iteration  17: 144,513 ops/us
+# Warmup Iteration  18: 143,875 ops/us
+# Warmup Iteration  19: 143,757 ops/us
+# Warmup Iteration  20: 144,469 ops/us
+Iteration   1: 142,715 ops/us
+Iteration   2: 141,608 ops/us
+Iteration   3: 137,996 ops/us
+Iteration   4: 139,499 ops/us
+Iteration   5: 139,728 ops/us
+Iteration   6: 143,762 ops/us
+Iteration   7: 143,700 ops/us
+Iteration   8: 143,886 ops/us
+Iteration   9: 141,406 ops/us
+Iteration  10: 139,217 ops/us
+Iteration  11: 139,179 ops/us
+Iteration  12: 144,223 ops/us
+Iteration  13: 139,363 ops/us
+Iteration  14: 143,038 ops/us
+Iteration  15: 144,715 ops/us
+Iteration  16: 143,890 ops/us
+Iteration  17: 141,871 ops/us
+Iteration  18: 141,955 ops/us
+Iteration  19: 141,794 ops/us
+Iteration  20: 144,649 ops/us
+
+# Run progress: 72,50% complete, ETA 00:07:22
+# Fork: 10 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 63,828 ops/us
+# Warmup Iteration   2: 128,428 ops/us
+# Warmup Iteration   3: 142,338 ops/us
+# Warmup Iteration   4: 136,076 ops/us
+# Warmup Iteration   5: 142,654 ops/us
+# Warmup Iteration   6: 136,825 ops/us
+# Warmup Iteration   7: 142,932 ops/us
+# Warmup Iteration   8: 142,369 ops/us
+# Warmup Iteration   9: 142,082 ops/us
+# Warmup Iteration  10: 141,715 ops/us
+# Warmup Iteration  11: 141,876 ops/us
+# Warmup Iteration  12: 141,054 ops/us
+# Warmup Iteration  13: 141,511 ops/us
+# Warmup Iteration  14: 141,626 ops/us
+# Warmup Iteration  15: 142,120 ops/us
+# Warmup Iteration  16: 141,714 ops/us
+# Warmup Iteration  17: 137,771 ops/us
+# Warmup Iteration  18: 138,354 ops/us
+# Warmup Iteration  19: 138,246 ops/us
+# Warmup Iteration  20: 134,546 ops/us
+Iteration   1: 137,655 ops/us
+Iteration   2: 142,101 ops/us
+Iteration   3: 140,377 ops/us
+Iteration   4: 142,751 ops/us
+Iteration   5: 142,253 ops/us
+Iteration   6: 142,961 ops/us
+Iteration   7: 143,354 ops/us
+Iteration   8: 143,295 ops/us
+Iteration   9: 142,196 ops/us
+Iteration  10: 140,041 ops/us
+Iteration  11: 141,887 ops/us
+Iteration  12: 141,948 ops/us
+Iteration  13: 142,008 ops/us
+Iteration  14: 139,727 ops/us
+Iteration  15: 141,462 ops/us
+Iteration  16: 137,853 ops/us
+Iteration  17: 141,841 ops/us
+Iteration  18: 142,216 ops/us
+Iteration  19: 141,740 ops/us
+Iteration  20: 142,116 ops/us
+
+
+Result: 142,486 ±(99.9%) 0,604 ops/us [Average]
+  Statistics: (min, avg, max) = (127,433, 142,486, 145,625), stdev = 2,557
+  Confidence interval (99.9%): [141,882, 143,090]
+
+
+# JMH 1.5.2 (released 151 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: fr.soat.MyBenchmark.benchmark_logarithm_jdk
+
+# Run progress: 75,00% complete, ETA 00:06:42
+# Fork: 1 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 263,560 ops/us
+# Warmup Iteration   2: 256,737 ops/us
+# Warmup Iteration   3: 339,631 ops/us
+# Warmup Iteration   4: 338,593 ops/us
+# Warmup Iteration   5: 330,854 ops/us
+# Warmup Iteration   6: 341,228 ops/us
+# Warmup Iteration   7: 338,187 ops/us
+# Warmup Iteration   8: 338,530 ops/us
+# Warmup Iteration   9: 341,125 ops/us
+# Warmup Iteration  10: 340,422 ops/us
+# Warmup Iteration  11: 338,397 ops/us
+# Warmup Iteration  12: 335,693 ops/us
+# Warmup Iteration  13: 340,096 ops/us
+# Warmup Iteration  14: 340,454 ops/us
+# Warmup Iteration  15: 340,676 ops/us
+# Warmup Iteration  16: 342,152 ops/us
+# Warmup Iteration  17: 340,946 ops/us
+# Warmup Iteration  18: 341,614 ops/us
+# Warmup Iteration  19: 338,014 ops/us
+# Warmup Iteration  20: 337,662 ops/us
+Iteration   1: 340,771 ops/us
+Iteration   2: 339,900 ops/us
+Iteration   3: 331,648 ops/us
+Iteration   4: 342,292 ops/us
+Iteration   5: 340,924 ops/us
+Iteration   6: 342,482 ops/us
+Iteration   7: 342,433 ops/us
+Iteration   8: 341,619 ops/us
+Iteration   9: 329,903 ops/us
+Iteration  10: 340,347 ops/us
+Iteration  11: 342,670 ops/us
+Iteration  12: 331,214 ops/us
+Iteration  13: 332,077 ops/us
+Iteration  14: 339,379 ops/us
+Iteration  15: 337,691 ops/us
+Iteration  16: 339,891 ops/us
+Iteration  17: 343,029 ops/us
+Iteration  18: 340,430 ops/us
+Iteration  19: 335,804 ops/us
+Iteration  20: 340,439 ops/us
+
+# Run progress: 77,50% complete, ETA 00:06:02
+# Fork: 2 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 263,548 ops/us
+# Warmup Iteration   2: 263,496 ops/us
+# Warmup Iteration   3: 340,506 ops/us
+# Warmup Iteration   4: 341,349 ops/us
+# Warmup Iteration   5: 342,176 ops/us
+# Warmup Iteration   6: 341,176 ops/us
+# Warmup Iteration   7: 338,237 ops/us
+# Warmup Iteration   8: 340,368 ops/us
+# Warmup Iteration   9: 341,693 ops/us
+# Warmup Iteration  10: 340,991 ops/us
+# Warmup Iteration  11: 342,759 ops/us
+# Warmup Iteration  12: 339,066 ops/us
+# Warmup Iteration  13: 341,276 ops/us
+# Warmup Iteration  14: 340,954 ops/us
+# Warmup Iteration  15: 342,506 ops/us
+# Warmup Iteration  16: 339,091 ops/us
+# Warmup Iteration  17: 340,547 ops/us
+# Warmup Iteration  18: 340,143 ops/us
+# Warmup Iteration  19: 340,062 ops/us
+# Warmup Iteration  20: 341,812 ops/us
+Iteration   1: 329,893 ops/us
+Iteration   2: 337,215 ops/us
+Iteration   3: 340,509 ops/us
+Iteration   4: 310,243 ops/us
+Iteration   5: 259,391 ops/us
+Iteration   6: 184,451 ops/us
+Iteration   7: 325,566 ops/us
+Iteration   8: 347,082 ops/us
+Iteration   9: 339,562 ops/us
+Iteration  10: 334,073 ops/us
+Iteration  11: 326,747 ops/us
+Iteration  12: 344,569 ops/us
+Iteration  13: 341,627 ops/us
+Iteration  14: 344,046 ops/us
+Iteration  15: 341,589 ops/us
+Iteration  16: 346,940 ops/us
+Iteration  17: 343,685 ops/us
+Iteration  18: 343,609 ops/us
+Iteration  19: 342,793 ops/us
+Iteration  20: 343,678 ops/us
+
+# Run progress: 80,00% complete, ETA 00:05:21
+# Fork: 3 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 266,430 ops/us
+# Warmup Iteration   2: 268,919 ops/us
+# Warmup Iteration   3: 346,258 ops/us
+# Warmup Iteration   4: 340,801 ops/us
+# Warmup Iteration   5: 343,214 ops/us
+# Warmup Iteration   6: 348,265 ops/us
+# Warmup Iteration   7: 347,645 ops/us
+# Warmup Iteration   8: 338,275 ops/us
+# Warmup Iteration   9: 339,880 ops/us
+# Warmup Iteration  10: 344,131 ops/us
+# Warmup Iteration  11: 344,100 ops/us
+# Warmup Iteration  12: 346,359 ops/us
+# Warmup Iteration  13: 345,911 ops/us
+# Warmup Iteration  14: 346,595 ops/us
+# Warmup Iteration  15: 341,166 ops/us
+# Warmup Iteration  16: 345,496 ops/us
+# Warmup Iteration  17: 339,012 ops/us
+# Warmup Iteration  18: 340,956 ops/us
+# Warmup Iteration  19: 341,465 ops/us
+# Warmup Iteration  20: 341,079 ops/us
+Iteration   1: 342,955 ops/us
+Iteration   2: 344,800 ops/us
+Iteration   3: 346,237 ops/us
+Iteration   4: 346,461 ops/us
+Iteration   5: 344,668 ops/us
+Iteration   6: 338,929 ops/us
+Iteration   7: 340,162 ops/us
+Iteration   8: 345,696 ops/us
+Iteration   9: 343,094 ops/us
+Iteration  10: 340,916 ops/us
+Iteration  11: 339,684 ops/us
+Iteration  12: 346,039 ops/us
+Iteration  13: 340,339 ops/us
+Iteration  14: 345,575 ops/us
+Iteration  15: 336,757 ops/us
+Iteration  16: 345,013 ops/us
+Iteration  17: 345,052 ops/us
+Iteration  18: 345,563 ops/us
+Iteration  19: 345,253 ops/us
+Iteration  20: 344,853 ops/us
+
+# Run progress: 82,50% complete, ETA 00:04:41
+# Fork: 4 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 268,643 ops/us
+# Warmup Iteration   2: 268,984 ops/us
+# Warmup Iteration   3: 347,263 ops/us
+# Warmup Iteration   4: 346,824 ops/us
+# Warmup Iteration   5: 346,560 ops/us
+# Warmup Iteration   6: 339,810 ops/us
+# Warmup Iteration   7: 346,502 ops/us
+# Warmup Iteration   8: 347,585 ops/us
+# Warmup Iteration   9: 340,706 ops/us
+# Warmup Iteration  10: 339,909 ops/us
+# Warmup Iteration  11: 346,002 ops/us
+# Warmup Iteration  12: 346,475 ops/us
+# Warmup Iteration  13: 345,609 ops/us
+# Warmup Iteration  14: 341,257 ops/us
+# Warmup Iteration  15: 345,625 ops/us
+# Warmup Iteration  16: 347,034 ops/us
+# Warmup Iteration  17: 345,869 ops/us
+# Warmup Iteration  18: 345,298 ops/us
+# Warmup Iteration  19: 343,917 ops/us
+# Warmup Iteration  20: 341,859 ops/us
+Iteration   1: 338,201 ops/us
+Iteration   2: 343,563 ops/us
+Iteration   3: 346,468 ops/us
+Iteration   4: 346,004 ops/us
+Iteration   5: 345,785 ops/us
+Iteration   6: 338,881 ops/us
+Iteration   7: 342,772 ops/us
+Iteration   8: 345,767 ops/us
+Iteration   9: 344,580 ops/us
+Iteration  10: 346,326 ops/us
+Iteration  11: 335,816 ops/us
+Iteration  12: 343,775 ops/us
+Iteration  13: 346,236 ops/us
+Iteration  14: 337,542 ops/us
+Iteration  15: 342,771 ops/us
+Iteration  16: 345,420 ops/us
+Iteration  17: 332,964 ops/us
+Iteration  18: 342,858 ops/us
+Iteration  19: 344,542 ops/us
+Iteration  20: 338,207 ops/us
+
+# Run progress: 85,00% complete, ETA 00:04:01
+# Fork: 5 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 265,691 ops/us
+# Warmup Iteration   2: 263,125 ops/us
+# Warmup Iteration   3: 340,925 ops/us
+# Warmup Iteration   4: 344,624 ops/us
+# Warmup Iteration   5: 338,979 ops/us
+# Warmup Iteration   6: 336,413 ops/us
+# Warmup Iteration   7: 341,126 ops/us
+# Warmup Iteration   8: 344,939 ops/us
+# Warmup Iteration   9: 343,964 ops/us
+# Warmup Iteration  10: 340,404 ops/us
+# Warmup Iteration  11: 342,914 ops/us
+# Warmup Iteration  12: 343,274 ops/us
+# Warmup Iteration  13: 337,672 ops/us
+# Warmup Iteration  14: 341,618 ops/us
+# Warmup Iteration  15: 346,186 ops/us
+# Warmup Iteration  16: 341,989 ops/us
+# Warmup Iteration  17: 345,301 ops/us
+# Warmup Iteration  18: 343,773 ops/us
+# Warmup Iteration  19: 342,281 ops/us
+# Warmup Iteration  20: 338,558 ops/us
+Iteration   1: 345,780 ops/us
+Iteration   2: 336,341 ops/us
+Iteration   3: 345,962 ops/us
+Iteration   4: 346,423 ops/us
+Iteration   5: 347,017 ops/us
+Iteration   6: 344,374 ops/us
+Iteration   7: 346,916 ops/us
+Iteration   8: 347,302 ops/us
+Iteration   9: 346,089 ops/us
+Iteration  10: 345,024 ops/us
+Iteration  11: 341,946 ops/us
+Iteration  12: 342,507 ops/us
+Iteration  13: 339,916 ops/us
+Iteration  14: 340,093 ops/us
+Iteration  15: 339,689 ops/us
+Iteration  16: 337,260 ops/us
+Iteration  17: 344,797 ops/us
+Iteration  18: 347,322 ops/us
+Iteration  19: 347,880 ops/us
+Iteration  20: 342,771 ops/us
+
+# Run progress: 87,50% complete, ETA 00:03:21
+# Fork: 6 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 263,769 ops/us
+# Warmup Iteration   2: 266,570 ops/us
+# Warmup Iteration   3: 341,786 ops/us
+# Warmup Iteration   4: 345,152 ops/us
+# Warmup Iteration   5: 339,630 ops/us
+# Warmup Iteration   6: 338,784 ops/us
+# Warmup Iteration   7: 344,238 ops/us
+# Warmup Iteration   8: 338,289 ops/us
+# Warmup Iteration   9: 344,739 ops/us
+# Warmup Iteration  10: 348,100 ops/us
+# Warmup Iteration  11: 346,523 ops/us
+# Warmup Iteration  12: 347,414 ops/us
+# Warmup Iteration  13: 345,666 ops/us
+# Warmup Iteration  14: 347,056 ops/us
+# Warmup Iteration  15: 339,764 ops/us
+# Warmup Iteration  16: 337,818 ops/us
+# Warmup Iteration  17: 341,472 ops/us
+# Warmup Iteration  18: 343,460 ops/us
+# Warmup Iteration  19: 347,072 ops/us
+# Warmup Iteration  20: 346,572 ops/us
+Iteration   1: 339,043 ops/us
+Iteration   2: 344,190 ops/us
+Iteration   3: 345,835 ops/us
+Iteration   4: 345,976 ops/us
+Iteration   5: 345,611 ops/us
+Iteration   6: 337,985 ops/us
+Iteration   7: 341,413 ops/us
+Iteration   8: 340,321 ops/us
+Iteration   9: 347,785 ops/us
+Iteration  10: 346,293 ops/us
+Iteration  11: 341,743 ops/us
+Iteration  12: 341,539 ops/us
+Iteration  13: 345,158 ops/us
+Iteration  14: 346,298 ops/us
+Iteration  15: 340,597 ops/us
+Iteration  16: 343,448 ops/us
+Iteration  17: 345,260 ops/us
+Iteration  18: 347,662 ops/us
+Iteration  19: 347,696 ops/us
+Iteration  20: 346,952 ops/us
+
+# Run progress: 90,00% complete, ETA 00:02:40
+# Fork: 7 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 267,221 ops/us
+# Warmup Iteration   2: 268,513 ops/us
+# Warmup Iteration   3: 344,072 ops/us
+# Warmup Iteration   4: 345,773 ops/us
+# Warmup Iteration   5: 342,657 ops/us
+# Warmup Iteration   6: 343,228 ops/us
+# Warmup Iteration   7: 346,093 ops/us
+# Warmup Iteration   8: 346,847 ops/us
+# Warmup Iteration   9: 340,156 ops/us
+# Warmup Iteration  10: 344,341 ops/us
+# Warmup Iteration  11: 344,025 ops/us
+# Warmup Iteration  12: 344,547 ops/us
+# Warmup Iteration  13: 347,649 ops/us
+# Warmup Iteration  14: 345,466 ops/us
+# Warmup Iteration  15: 347,533 ops/us
+# Warmup Iteration  16: 338,592 ops/us
+# Warmup Iteration  17: 347,498 ops/us
+# Warmup Iteration  18: 347,572 ops/us
+# Warmup Iteration  19: 341,443 ops/us
+# Warmup Iteration  20: 344,694 ops/us
+Iteration   1: 346,990 ops/us
+Iteration   2: 340,157 ops/us
+Iteration   3: 346,189 ops/us
+Iteration   4: 347,847 ops/us
+Iteration   5: 345,860 ops/us
+Iteration   6: 343,393 ops/us
+Iteration   7: 345,067 ops/us
+Iteration   8: 343,995 ops/us
+Iteration   9: 340,329 ops/us
+Iteration  10: 346,312 ops/us
+Iteration  11: 347,399 ops/us
+Iteration  12: 347,927 ops/us
+Iteration  13: 346,870 ops/us
+Iteration  14: 337,853 ops/us
+Iteration  15: 338,711 ops/us
+Iteration  16: 346,334 ops/us
+Iteration  17: 343,237 ops/us
+Iteration  18: 345,970 ops/us
+Iteration  19: 333,641 ops/us
+Iteration  20: 343,799 ops/us
+
+# Run progress: 92,50% complete, ETA 00:02:00
+# Fork: 8 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 262,547 ops/us
+# Warmup Iteration   2: 267,623 ops/us
+# Warmup Iteration   3: 347,513 ops/us
+# Warmup Iteration   4: 347,420 ops/us
+# Warmup Iteration   5: 343,908 ops/us
+# Warmup Iteration   6: 345,931 ops/us
+# Warmup Iteration   7: 339,684 ops/us
+# Warmup Iteration   8: 344,977 ops/us
+# Warmup Iteration   9: 346,253 ops/us
+# Warmup Iteration  10: 345,191 ops/us
+# Warmup Iteration  11: 345,422 ops/us
+# Warmup Iteration  12: 343,941 ops/us
+# Warmup Iteration  13: 337,623 ops/us
+# Warmup Iteration  14: 344,520 ops/us
+# Warmup Iteration  15: 345,274 ops/us
+# Warmup Iteration  16: 344,064 ops/us
+# Warmup Iteration  17: 346,515 ops/us
+# Warmup Iteration  18: 344,886 ops/us
+# Warmup Iteration  19: 347,207 ops/us
+# Warmup Iteration  20: 346,886 ops/us
+Iteration   1: 345,751 ops/us
+Iteration   2: 337,451 ops/us
+Iteration   3: 344,736 ops/us
+Iteration   4: 345,846 ops/us
+Iteration   5: 347,109 ops/us
+Iteration   6: 344,730 ops/us
+Iteration   7: 345,894 ops/us
+Iteration   8: 343,569 ops/us
+Iteration   9: 335,717 ops/us
+Iteration  10: 341,406 ops/us
+Iteration  11: 345,642 ops/us
+Iteration  12: 344,431 ops/us
+Iteration  13: 347,485 ops/us
+Iteration  14: 345,922 ops/us
+Iteration  15: 337,939 ops/us
+Iteration  16: 338,935 ops/us
+Iteration  17: 341,081 ops/us
+Iteration  18: 341,202 ops/us
+Iteration  19: 338,163 ops/us
+Iteration  20: 342,840 ops/us
+
+# Run progress: 95,00% complete, ETA 00:01:20
+# Fork: 9 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 267,844 ops/us
+# Warmup Iteration   2: 262,894 ops/us
+# Warmup Iteration   3: 345,549 ops/us
+# Warmup Iteration   4: 340,959 ops/us
+# Warmup Iteration   5: 344,924 ops/us
+# Warmup Iteration   6: 345,672 ops/us
+# Warmup Iteration   7: 347,574 ops/us
+# Warmup Iteration   8: 347,542 ops/us
+# Warmup Iteration   9: 337,700 ops/us
+# Warmup Iteration  10: 344,135 ops/us
+# Warmup Iteration  11: 346,901 ops/us
+# Warmup Iteration  12: 347,263 ops/us
+# Warmup Iteration  13: 342,364 ops/us
+# Warmup Iteration  14: 345,633 ops/us
+# Warmup Iteration  15: 345,191 ops/us
+# Warmup Iteration  16: 346,343 ops/us
+# Warmup Iteration  17: 344,868 ops/us
+# Warmup Iteration  18: 346,805 ops/us
+# Warmup Iteration  19: 344,115 ops/us
+# Warmup Iteration  20: 344,101 ops/us
+Iteration   1: 346,447 ops/us
+Iteration   2: 344,011 ops/us
+Iteration   3: 344,485 ops/us
+Iteration   4: 347,503 ops/us
+Iteration   5: 341,343 ops/us
+Iteration   6: 341,230 ops/us
+Iteration   7: 347,744 ops/us
+Iteration   8: 346,766 ops/us
+Iteration   9: 348,403 ops/us
+Iteration  10: 347,858 ops/us
+Iteration  11: 346,111 ops/us
+Iteration  12: 348,222 ops/us
+Iteration  13: 348,657 ops/us
+Iteration  14: 348,138 ops/us
+Iteration  15: 347,945 ops/us
+Iteration  16: 347,830 ops/us
+Iteration  17: 347,940 ops/us
+Iteration  18: 347,817 ops/us
+Iteration  19: 342,091 ops/us
+Iteration  20: 347,884 ops/us
+
+# Run progress: 97,50% complete, ETA 00:00:40
+# Fork: 10 of 10
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 264,811 ops/us
+# Warmup Iteration   2: 265,637 ops/us
+# Warmup Iteration   3: 348,370 ops/us
+# Warmup Iteration   4: 347,881 ops/us
+# Warmup Iteration   5: 347,549 ops/us
+# Warmup Iteration   6: 347,997 ops/us
+# Warmup Iteration   7: 347,868 ops/us
+# Warmup Iteration   8: 338,034 ops/us
+# Warmup Iteration   9: 342,485 ops/us
+# Warmup Iteration  10: 348,126 ops/us
+# Warmup Iteration  11: 343,028 ops/us
+# Warmup Iteration  12: 348,278 ops/us
+# Warmup Iteration  13: 342,957 ops/us
+# Warmup Iteration  14: 348,631 ops/us
+# Warmup Iteration  15: 347,822 ops/us
+# Warmup Iteration  16: 348,134 ops/us
+# Warmup Iteration  17: 342,270 ops/us
+# Warmup Iteration  18: 343,116 ops/us
+# Warmup Iteration  19: 341,589 ops/us
+# Warmup Iteration  20: 342,622 ops/us
+Iteration   1: 342,428 ops/us
+Iteration   2: 347,085 ops/us
+Iteration   3: 338,767 ops/us
+Iteration   4: 338,561 ops/us
+Iteration   5: 336,653 ops/us
+Iteration   6: 345,164 ops/us
+Iteration   7: 346,507 ops/us
+Iteration   8: 347,675 ops/us
+Iteration   9: 342,548 ops/us
+Iteration  10: 346,826 ops/us
+Iteration  11: 341,038 ops/us
+Iteration  12: 339,003 ops/us
+Iteration  13: 338,721 ops/us
+Iteration  14: 340,686 ops/us
+Iteration  15: 341,837 ops/us
+Iteration  16: 340,119 ops/us
+Iteration  17: 345,881 ops/us
+Iteration  18: 347,403 ops/us
+Iteration  19: 347,295 ops/us
+Iteration  20: 347,511 ops/us
+
+
+Result: 341,494 ±(99.9%) 3,196 ops/us [Average]
+  Statistics: (min, avg, max) = (184,451, 341,494, 348,657), stdev = 13,533
+  Confidence interval (99.9%): [338,298, 344,690]
+
+
+# Run complete. Total time: 00:26:49
+
+Benchmark                                         Mode  Cnt    Score   Error   Units
+MyBenchmark.benchmark_logarithm_apache_common    thrpt  200   40,112 ± 0,113  ops/us
+MyBenchmark.benchmark_logarithm_jafama           thrpt  200   95,502 ± 0,255  ops/us
+MyBenchmark.benchmark_logarithm_jafama_logQuick  thrpt  200  142,486 ± 0,604  ops/us
+MyBenchmark.benchmark_logarithm_jdk              thrpt  200  341,494 ± 3,196  ops/us
