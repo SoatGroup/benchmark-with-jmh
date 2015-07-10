@@ -15,27 +15,27 @@ import org.openjdk.jmh.annotations.Warmup;
  * illustration of benchmarking with concurrency issues  
  */
 @BenchmarkMode(Mode.AverageTime)
-@Warmup(iterations=10, time=100, timeUnit=TimeUnit.MILLISECONDS)
-@Measurement(iterations=10, time=100, timeUnit=TimeUnit.MILLISECONDS)
+@Warmup(iterations = 10, time = 100, timeUnit = TimeUnit.MILLISECONDS)
+@Measurement(iterations = 10, time = 100, timeUnit = TimeUnit.MILLISECONDS)
 @Fork(1)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 public class MultiThreadBenchmark {
-	
+
 	// lock monitor shared between threads
 	static Object lock = new Object();
-	
+
 	private static int doSomething() {
 		int count = 0;
 		for (int i = 0; i < 100000; i++) {
-			synchronized(lock) {
+			synchronized (lock) {
 				count++;
 			}
-		}				
-		return count;		
+		}
+		return count;
 	}
-	
+
 	@Benchmark
-	@Threads(1	)
+	@Threads(1)
 	public int benchmark_on_1_thread() {
 		return doSomething();
 	}
@@ -57,6 +57,5 @@ public class MultiThreadBenchmark {
 	public int benchmark_on_8_threads() {
 		return doSomething();
 	}
-	
 
 }
