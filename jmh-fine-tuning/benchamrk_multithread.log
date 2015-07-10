@@ -1,0 +1,167 @@
+# JMH 1.5.2 (released 154 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 100 ms each
+# Measurement: 10 iterations, 100 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.MultiThreadBenchmark.benchmark_on_1_thread
+
+# Run progress: 0,00% complete, ETA 00:00:08
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 2,374 ms/op
+# Warmup Iteration   2: 2,873 ms/op
+# Warmup Iteration   3: 3,402 ms/op
+# Warmup Iteration   4: 3,069 ms/op
+# Warmup Iteration   5: 2,434 ms/op
+# Warmup Iteration   6: 3,142 ms/op
+# Warmup Iteration   7: 2,391 ms/op
+# Warmup Iteration   8: 3,457 ms/op
+# Warmup Iteration   9: 3,359 ms/op
+# Warmup Iteration  10: 2,490 ms/op
+Iteration   1: 2,350 ms/op
+Iteration   2: 2,557 ms/op
+Iteration   3: 2,342 ms/op
+Iteration   4: 2,378 ms/op
+Iteration   5: 2,340 ms/op
+Iteration   6: 2,384 ms/op
+Iteration   7: 2,350 ms/op
+Iteration   8: 2,343 ms/op
+Iteration   9: 3,863 ms/op
+Iteration  10: 2,792 ms/op
+
+
+Result: 2,570 ±(99.9%) 0,721 ms/op [Average]
+  Statistics: (min, avg, max) = (2,340, 2,570, 3,863), stdev = 0,477
+  Confidence interval (99.9%): [1,849, 3,291]
+
+
+# JMH 1.5.2 (released 154 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 100 ms each
+# Measurement: 10 iterations, 100 ms each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.MultiThreadBenchmark.benchmark_on_2_threads
+
+# Run progress: 25,00% complete, ETA 00:00:06
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 16,023 ms/op
+# Warmup Iteration   2: 12,266 ms/op
+# Warmup Iteration   3: 10,568 ms/op
+# Warmup Iteration   4: 10,442 ms/op
+# Warmup Iteration   5: 11,759 ms/op
+# Warmup Iteration   6: 15,208 ms/op
+# Warmup Iteration   7: 10,870 ms/op
+# Warmup Iteration   8: 12,104 ms/op
+# Warmup Iteration   9: 10,596 ms/op
+# Warmup Iteration  10: 10,839 ms/op
+Iteration   1: 11,639 ms/op
+Iteration   2: 11,023 ms/op
+Iteration   3: 10,824 ms/op
+Iteration   4: 14,148 ms/op
+Iteration   5: 14,519 ms/op
+Iteration   6: 11,789 ms/op
+Iteration   7: 10,980 ms/op
+Iteration   8: 11,658 ms/op
+Iteration   9: 11,888 ms/op
+Iteration  10: 11,109 ms/op
+
+
+Result: 11,958 ±(99.9%) 1,979 ms/op [Average]
+  Statistics: (min, avg, max) = (10,824, 11,958, 14,519), stdev = 1,309
+  Confidence interval (99.9%): [9,979, 13,937]
+
+
+# JMH 1.5.2 (released 154 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 100 ms each
+# Measurement: 10 iterations, 100 ms each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.MultiThreadBenchmark.benchmark_on_4_threads
+
+# Run progress: 50,00% complete, ETA 00:00:04
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 21,507 ±(99.9%) 60,136 ms/op
+# Warmup Iteration   2: 16,742 ±(99.9%) 42,750 ms/op
+# Warmup Iteration   3: 16,049 ±(99.9%) 26,409 ms/op
+# Warmup Iteration   4: 16,782 ±(99.9%) 24,916 ms/op
+# Warmup Iteration   5: 12,638 ±(99.9%) 49,732 ms/op
+# Warmup Iteration   6: 11,974 ±(99.9%) 43,256 ms/op
+# Warmup Iteration   7: 15,778 ±(99.9%) 30,131 ms/op
+# Warmup Iteration   8: 16,204 ±(99.9%) 33,445 ms/op
+# Warmup Iteration   9: 18,484 ±(99.9%) 37,349 ms/op
+# Warmup Iteration  10: 17,291 ±(99.9%) 43,272 ms/op
+Iteration   1: 17,697 ±(99.9%) 26,060 ms/op
+Iteration   2: 18,245 ±(99.9%) 24,490 ms/op
+Iteration   3: 17,164 ±(99.9%) 27,600 ms/op
+Iteration   4: 16,200 ±(99.9%) 32,381 ms/op
+Iteration   5: 18,313 ±(99.9%) 24,430 ms/op
+Iteration   6: 17,468 ±(99.9%) 23,294 ms/op
+Iteration   7: 10,639 ±(99.9%) 29,592 ms/op
+Iteration   8: 11,525 ±(99.9%) 47,324 ms/op
+Iteration   9: 15,615 ±(99.9%) 60,661 ms/op
+Iteration  10: 16,401 ±(99.9%) 28,273 ms/op
+
+
+Result: 15,927 ±(99.9%) 4,089 ms/op [Average]
+  Statistics: (min, avg, max) = (10,639, 15,927, 18,313), stdev = 2,705
+  Confidence interval (99.9%): [11,838, 20,016]
+
+
+# JMH 1.5.2 (released 154 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 100 ms each
+# Measurement: 10 iterations, 100 ms each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.MultiThreadBenchmark.benchmark_on_8_threads
+
+# Run progress: 75,00% complete, ETA 00:00:02
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 32,189 ±(99.9%) 28,323 ms/op
+# Warmup Iteration   2: 34,323 ±(99.9%) 31,887 ms/op
+# Warmup Iteration   3: 34,207 ±(99.9%) 24,688 ms/op
+# Warmup Iteration   4: 38,617 ±(99.9%) 22,972 ms/op
+# Warmup Iteration   5: 32,507 ±(99.9%) 33,681 ms/op
+# Warmup Iteration   6: 37,207 ±(99.9%) 32,560 ms/op
+# Warmup Iteration   7: 34,008 ±(99.9%) 41,194 ms/op
+# Warmup Iteration   8: 39,590 ±(99.9%) 20,223 ms/op
+# Warmup Iteration   9: 38,221 ±(99.9%) 42,756 ms/op
+# Warmup Iteration  10: 34,746 ±(99.9%) 18,634 ms/op
+Iteration   1: 31,523 ±(99.9%) 34,297 ms/op
+Iteration   2: 34,553 ±(99.9%) 36,918 ms/op
+Iteration   3: 38,358 ±(99.9%) 20,960 ms/op
+Iteration   4: 37,766 ±(99.9%) 20,854 ms/op
+Iteration   5: 37,669 ±(99.9%) 16,101 ms/op
+Iteration   6: 40,231 ±(99.9%) 17,692 ms/op
+Iteration   7: 36,070 ±(99.9%) 16,407 ms/op
+Iteration   8: 37,034 ±(99.9%) 25,126 ms/op
+Iteration   9: 34,791 ±(99.9%) 31,619 ms/op
+Iteration  10: 33,515 ±(99.9%) 38,043 ms/op
+
+
+Result: 36,151 ±(99.9%) 3,903 ms/op [Average]
+  Statistics: (min, avg, max) = (31,523, 36,151, 40,231), stdev = 2,582
+  Confidence interval (99.9%): [32,248, 40,054]
+
+
+# Run complete. Total time: 00:00:11
+
+Benchmark                                    Mode  Cnt   Score   Error  Units
+MultiThreadBenchmark.benchmark_on_1_thread   avgt   10   2,570 ± 0,721  ms/op
+MultiThreadBenchmark.benchmark_on_2_threads  avgt   10  11,958 ± 1,979  ms/op
+MultiThreadBenchmark.benchmark_on_4_threads  avgt   10  15,927 ± 4,089  ms/op
+MultiThreadBenchmark.benchmark_on_8_threads  avgt   10  36,151 ± 3,903  ms/op
