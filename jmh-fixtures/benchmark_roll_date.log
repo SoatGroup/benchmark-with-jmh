@@ -1,0 +1,85 @@
+# JMH 1.5.2 (released 158 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 100 ms each
+# Measurement: 10 iterations, 100 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.RollDateBenchmark.benchmark_roll_date_in_argument
+
+# Run progress: 0,00% complete, ETA 00:00:04
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 266,988 ns/op
+# Warmup Iteration   2: 169,830 ns/op
+# Warmup Iteration   3: 200,903 ns/op
+# Warmup Iteration   4: 100,763 ns/op
+# Warmup Iteration   5: 238,343 ns/op
+# Warmup Iteration   6: 359,992 ns/op
+# Warmup Iteration   7: 91,530 ns/op
+# Warmup Iteration   8: 87,438 ns/op
+# Warmup Iteration   9: 332,154 ns/op
+# Warmup Iteration  10: 94,149 ns/op
+Iteration   1: 86,544 ns/op
+Iteration   2: 88,761 ns/op
+Iteration   3: 86,020 ns/op
+Iteration   4: 86,841 ns/op
+Iteration   5: 86,620 ns/op
+Iteration   6: 85,292 ns/op
+Iteration   7: 86,483 ns/op
+Iteration   8: 107,922 ns/op
+Iteration   9: 86,299 ns/op
+Iteration  10: 86,495 ns/op
+
+
+Result: 88,728 ±(99.9%) 10,282 ns/op [Average]
+  Statistics: (min, avg, max) = (85,292, 88,728, 107,922), stdev = 6,801
+  Confidence interval (99.9%): [78,446, 99,009]
+
+
+# JMH 1.5.2 (released 158 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 100 ms each
+# Measurement: 10 iterations, 100 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.RollDateBenchmark.benchmark_roll_new_Date
+
+# Run progress: 50,00% complete, ETA 00:00:02
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 2427,218 ns/op
+# Warmup Iteration   2: 309,131 ns/op
+# Warmup Iteration   3: 352,819 ns/op
+# Warmup Iteration   4: 237,883 ns/op
+# Warmup Iteration   5: 589,064 ns/op
+# Warmup Iteration   6: 256,228 ns/op
+# Warmup Iteration   7: 219,085 ns/op
+# Warmup Iteration   8: 366,124 ns/op
+# Warmup Iteration   9: 529,807 ns/op
+# Warmup Iteration  10: 414,675 ns/op
+Iteration   1: 217,430 ns/op
+Iteration   2: 247,559 ns/op
+Iteration   3: 224,414 ns/op
+Iteration   4: 217,005 ns/op
+Iteration   5: 433,913 ns/op
+Iteration   6: 319,715 ns/op
+Iteration   7: 215,674 ns/op
+Iteration   8: 216,231 ns/op
+Iteration   9: 220,270 ns/op
+Iteration  10: 217,200 ns/op
+
+
+Result: 252,941 ±(99.9%) 107,716 ns/op [Average]
+  Statistics: (min, avg, max) = (215,674, 252,941, 433,913), stdev = 71,248
+  Confidence interval (99.9%): [145,225, 360,657]
+
+
+# Run complete. Total time: 00:00:04
+
+Benchmark                                          Mode  Cnt    Score     Error  Units
+RollDateBenchmark.benchmark_roll_date_in_argument  avgt   10   88,728 ±  10,282  ns/op
+RollDateBenchmark.benchmark_roll_new_Date          avgt   10  252,941 ± 107,716  ns/op
