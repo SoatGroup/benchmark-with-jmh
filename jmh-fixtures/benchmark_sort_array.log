@@ -1,0 +1,85 @@
+# JMH 1.5.2 (released 159 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1000 ms each
+# Measurement: 10 iterations, 1000 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.SortArrayBenchmark.baseline
+
+# Run progress: 0,00% complete, ETA 00:00:40
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 0,003 ms/op
+# Warmup Iteration   2: 0,003 ms/op
+# Warmup Iteration   3: 0,002 ms/op
+# Warmup Iteration   4: 0,002 ms/op
+# Warmup Iteration   5: 0,001 ms/op
+# Warmup Iteration   6: 0,001 ms/op
+# Warmup Iteration   7: 0,001 ms/op
+# Warmup Iteration   8: 0,001 ms/op
+# Warmup Iteration   9: 0,001 ms/op
+# Warmup Iteration  10: 0,001 ms/op
+Iteration   1: 0,001 ms/op
+Iteration   2: 0,001 ms/op
+Iteration   3: 0,001 ms/op
+Iteration   4: 0,001 ms/op
+Iteration   5: 0,001 ms/op
+Iteration   6: 0,001 ms/op
+Iteration   7: 0,001 ms/op
+Iteration   8: 0,002 ms/op
+Iteration   9: 0,001 ms/op
+Iteration  10: 0,001 ms/op
+
+
+Result: 0,001 ±(99.9%) 0,000 ms/op [Average]
+  Statistics: (min, avg, max) = (0,001, 0,001, 0,002), stdev = 0,000
+  Confidence interval (99.9%): [0,001, 0,002]
+
+
+# JMH 1.5.2 (released 159 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1000 ms each
+# Measurement: 10 iterations, 1000 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.SortArrayBenchmark.benchmark_array_sort
+
+# Run progress: 50,00% complete, ETA 00:00:20
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 11,762 ms/op
+# Warmup Iteration   2: 10,229 ms/op
+# Warmup Iteration   3: 10,252 ms/op
+# Warmup Iteration   4: 10,258 ms/op
+# Warmup Iteration   5: 10,297 ms/op
+# Warmup Iteration   6: 10,252 ms/op
+# Warmup Iteration   7: 10,223 ms/op
+# Warmup Iteration   8: 10,345 ms/op
+# Warmup Iteration   9: 10,268 ms/op
+# Warmup Iteration  10: 10,242 ms/op
+Iteration   1: 10,323 ms/op
+Iteration   2: 10,224 ms/op
+Iteration   3: 10,231 ms/op
+Iteration   4: 10,178 ms/op
+Iteration   5: 10,228 ms/op
+Iteration   6: 10,207 ms/op
+Iteration   7: 10,233 ms/op
+Iteration   8: 10,232 ms/op
+Iteration   9: 10,167 ms/op
+Iteration  10: 10,195 ms/op
+
+
+Result: 10,222 ±(99.9%) 0,065 ms/op [Average]
+  Statistics: (min, avg, max) = (10,167, 10,222, 10,323), stdev = 0,043
+  Confidence interval (99.9%): [10,157, 10,286]
+
+
+# Run complete. Total time: 00:00:41
+
+Benchmark                                Mode  Cnt   Score   Error  Units
+SortArrayBenchmark.baseline              avgt   10   0,001 ± 0,000  ms/op
+SortArrayBenchmark.benchmark_array_sort  avgt   10  10,222 ± 0,065  ms/op
