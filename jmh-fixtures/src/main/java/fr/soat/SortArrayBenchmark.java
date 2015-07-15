@@ -17,7 +17,7 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
 
 /*
- * illustration of benchmark on Date rolling using fixtures
+ * illustration of fixture usage on array sort benchmark 
  */
 @BenchmarkMode(Mode.AverageTime)
 @Warmup(iterations = 10, time=1000, timeUnit=TimeUnit.MILLISECONDS)

@@ -3,6 +3,8 @@ package fr.soat;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Fork;
@@ -56,5 +58,11 @@ public class RollDateBenchmark {
 		c.roll(Calendar.DAY_OF_YEAR, 1);
 		return c;
 	}
+
+	@Benchmark
+	public Calendar benchmark_sysdate() {
+		return Calendar.getInstance();
+	}
+
 
 }
