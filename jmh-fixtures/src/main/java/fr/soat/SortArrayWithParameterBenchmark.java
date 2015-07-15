@@ -30,8 +30,8 @@ public class SortArrayWithParameterBenchmark {
 	@State(Scope.Benchmark)
 	public static class ArrayContainer {
 
-		@Param({ "10000", "100000", "1000000", "10000000", "100000000"})
-        int arraySize;
+		@Param({ "10000", "100000", "1000000", "10000000", "100000000" })
+		int arraySize;
 
 		// initial unsorted array
 		int [] suffledArray;
