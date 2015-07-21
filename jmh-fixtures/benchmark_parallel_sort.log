@@ -6,7 +6,7 @@
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 10)
 
 # Run progress: 0,00% complete, ETA 00:05:40
@@ -47,7 +47,7 @@ Result: 0,152 ±(99.9%) 0,003 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 15)
 
 # Run progress: 2,94% complete, ETA 00:05:39
@@ -88,7 +88,7 @@ Result: 0,198 ±(99.9%) 0,004 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 20)
 
 # Run progress: 5,88% complete, ETA 00:05:28
@@ -129,7 +129,7 @@ Result: 0,295 ±(99.9%) 0,004 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 25)
 
 # Run progress: 8,82% complete, ETA 00:05:17
@@ -170,7 +170,7 @@ Result: 0,458 ±(99.9%) 0,011 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 30)
 
 # Run progress: 11,76% complete, ETA 00:05:07
@@ -211,7 +211,7 @@ Result: 0,492 ±(99.9%) 0,008 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 40)
 
 # Run progress: 14,71% complete, ETA 00:04:56
@@ -252,7 +252,7 @@ Result: 0,891 ±(99.9%) 0,044 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 60)
 
 # Run progress: 17,65% complete, ETA 00:04:46
@@ -293,7 +293,7 @@ Result: 0,797 ±(99.9%) 0,009 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 80)
 
 # Run progress: 20,59% complete, ETA 00:04:36
@@ -334,7 +334,7 @@ Result: 1,223 ±(99.9%) 0,027 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 100)
 
 # Run progress: 23,53% complete, ETA 00:04:25
@@ -375,7 +375,7 @@ Result: 1,514 ±(99.9%) 0,020 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 200)
 
 # Run progress: 26,47% complete, ETA 00:04:15
@@ -416,7 +416,7 @@ Result: 2,832 ±(99.9%) 0,058 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 400)
 
 # Run progress: 29,41% complete, ETA 00:04:05
@@ -457,7 +457,7 @@ Result: 6,390 ±(99.9%) 0,114 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 800)
 
 # Run progress: 32,35% complete, ETA 00:03:55
@@ -498,7 +498,7 @@ Result: 14,428 ±(99.9%) 0,289 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 1000)
 
 # Run progress: 35,29% complete, ETA 00:03:44
@@ -539,7 +539,7 @@ Result: 23,983 ±(99.9%) 0,547 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 10000)
 
 # Run progress: 38,24% complete, ETA 00:03:34
@@ -580,7 +580,7 @@ Result: 485,999 ±(99.9%) 10,875 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 100000)
 
 # Run progress: 41,18% complete, ETA 00:03:24
@@ -621,7 +621,7 @@ Result: 4556,539 ±(99.9%) 88,539 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 1000000)
 
 # Run progress: 44,12% complete, ETA 00:03:14
@@ -662,7 +662,7 @@ Result: 42901,678 ±(99.9%) 743,831 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 10000000)
 
 # Run progress: 47,06% complete, ETA 00:03:04
@@ -703,7 +703,7 @@ Result: 446897,009 ±(99.9%) 16468,338 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 10)
 
 # Run progress: 50,00% complete, ETA 00:03:03
@@ -744,7 +744,7 @@ Result: 1,572 ±(99.9%) 0,052 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 15)
 
 # Run progress: 52,94% complete, ETA 00:02:51
@@ -785,7 +785,7 @@ Result: 1,882 ±(99.9%) 0,089 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 20)
 
 # Run progress: 55,88% complete, ETA 00:02:40
@@ -826,7 +826,7 @@ Result: 2,761 ±(99.9%) 0,101 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 25)
 
 # Run progress: 58,82% complete, ETA 00:02:29
@@ -867,7 +867,7 @@ Result: 2,386 ±(99.9%) 0,061 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 30)
 
 # Run progress: 61,76% complete, ETA 00:02:18
@@ -908,7 +908,7 @@ Result: 2,691 ±(99.9%) 0,038 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 40)
 
 # Run progress: 64,71% complete, ETA 00:02:07
@@ -949,7 +949,7 @@ Result: 3,211 ±(99.9%) 0,170 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 60)
 
 # Run progress: 67,65% complete, ETA 00:01:56
@@ -990,7 +990,7 @@ Result: 2,781 ±(99.9%) 0,118 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 80)
 
 # Run progress: 70,59% complete, ETA 00:01:46
@@ -1031,7 +1031,7 @@ Result: 3,545 ±(99.9%) 0,274 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 100)
 
 # Run progress: 73,53% complete, ETA 00:01:35
@@ -1072,7 +1072,7 @@ Result: 4,078 ±(99.9%) 0,106 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 200)
 
 # Run progress: 76,47% complete, ETA 00:01:24
@@ -1113,7 +1113,7 @@ Result: 4,353 ±(99.9%) 0,114 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 400)
 
 # Run progress: 79,41% complete, ETA 00:01:13
@@ -1154,7 +1154,7 @@ Result: 9,160 ±(99.9%) 0,639 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 800)
 
 # Run progress: 82,35% complete, ETA 00:01:03
@@ -1195,7 +1195,7 @@ Result: 21,803 ±(99.9%) 2,512 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 1000)
 
 # Run progress: 85,29% complete, ETA 00:00:52
@@ -1236,7 +1236,7 @@ Result: 24,512 ±(99.9%) 1,269 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 10000)
 
 # Run progress: 88,24% complete, ETA 00:00:42
@@ -1277,7 +1277,7 @@ Result: 288,608 ±(99.9%) 46,759 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 100000)
 
 # Run progress: 91,18% complete, ETA 00:00:31
@@ -1318,7 +1318,7 @@ Result: 2437,229 ±(99.9%) 148,924 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 1000000)
 
 # Run progress: 94,12% complete, ETA 00:00:21
@@ -1359,7 +1359,7 @@ Result: 21457,243 ±(99.9%) 2002,566 us/op [Average]
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Average time, time/op
-# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_parallel_sort
 # Parameters: (arraySize = 10000000)
 
 # Run progress: 97,06% complete, ETA 00:00:10
@@ -1395,37 +1395,37 @@ Result: 197455,148 ±(99.9%) 10646,848 us/op [Average]
 # Run complete. Total time: 00:06:00
 
 Benchmark                                       (arraySize)  Mode  Cnt       Score       Error  Units
-ParalelSortArrayBenchmark.baseline                       10  avgt   10       0,152 ±     0,003  us/op
-ParalelSortArrayBenchmark.baseline                       15  avgt   10       0,198 ±     0,004  us/op
-ParalelSortArrayBenchmark.baseline                       20  avgt   10       0,295 ±     0,004  us/op
-ParalelSortArrayBenchmark.baseline                       25  avgt   10       0,458 ±     0,011  us/op
-ParalelSortArrayBenchmark.baseline                       30  avgt   10       0,492 ±     0,008  us/op
-ParalelSortArrayBenchmark.baseline                       40  avgt   10       0,891 ±     0,044  us/op
-ParalelSortArrayBenchmark.baseline                       60  avgt   10       0,797 ±     0,009  us/op
-ParalelSortArrayBenchmark.baseline                       80  avgt   10       1,223 ±     0,027  us/op
-ParalelSortArrayBenchmark.baseline                      100  avgt   10       1,514 ±     0,020  us/op
-ParalelSortArrayBenchmark.baseline                      200  avgt   10       2,832 ±     0,058  us/op
-ParalelSortArrayBenchmark.baseline                      400  avgt   10       6,390 ±     0,114  us/op
-ParalelSortArrayBenchmark.baseline                      800  avgt   10      14,428 ±     0,289  us/op
-ParalelSortArrayBenchmark.baseline                     1000  avgt   10      23,983 ±     0,547  us/op
-ParalelSortArrayBenchmark.baseline                    10000  avgt   10     485,999 ±    10,875  us/op
-ParalelSortArrayBenchmark.baseline                   100000  avgt   10    4556,539 ±    88,539  us/op
-ParalelSortArrayBenchmark.baseline                  1000000  avgt   10   42901,678 ±   743,831  us/op
-ParalelSortArrayBenchmark.baseline                 10000000  avgt   10  446897,009 ± 16468,338  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           10  avgt   10       1,572 ±     0,052  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           15  avgt   10       1,882 ±     0,089  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           20  avgt   10       2,761 ±     0,101  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           25  avgt   10       2,386 ±     0,061  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           30  avgt   10       2,691 ±     0,038  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           40  avgt   10       3,211 ±     0,170  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           60  avgt   10       2,781 ±     0,118  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           80  avgt   10       3,545 ±     0,274  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort          100  avgt   10       4,078 ±     0,106  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort          200  avgt   10       4,353 ±     0,114  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort          400  avgt   10       9,160 ±     0,639  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort          800  avgt   10      21,803 ±     2,512  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort         1000  avgt   10      24,512 ±     1,269  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort        10000  avgt   10     288,608 ±    46,759  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort       100000  avgt   10    2437,229 ±   148,924  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort      1000000  avgt   10   21457,243 ±  2002,566  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort     10000000  avgt   10  197455,148 ± 10646,848  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                       10  avgt   10       0,152 ±     0,003  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                       15  avgt   10       0,198 ±     0,004  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                       20  avgt   10       0,295 ±     0,004  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                       25  avgt   10       0,458 ±     0,011  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                       30  avgt   10       0,492 ±     0,008  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                       40  avgt   10       0,891 ±     0,044  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                       60  avgt   10       0,797 ±     0,009  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                       80  avgt   10       1,223 ±     0,027  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                      100  avgt   10       1,514 ±     0,020  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                      200  avgt   10       2,832 ±     0,058  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                      400  avgt   10       6,390 ±     0,114  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                      800  avgt   10      14,428 ±     0,289  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                     1000  avgt   10      23,983 ±     0,547  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                    10000  avgt   10     485,999 ±    10,875  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                   100000  avgt   10    4556,539 ±    88,539  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                  1000000  avgt   10   42901,678 ±   743,831  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort                 10000000  avgt   10  446897,009 ± 16468,338  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort           10  avgt   10       1,572 ±     0,052  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort           15  avgt   10       1,882 ±     0,089  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort           20  avgt   10       2,761 ±     0,101  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort           25  avgt   10       2,386 ±     0,061  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort           30  avgt   10       2,691 ±     0,038  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort           40  avgt   10       3,211 ±     0,170  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort           60  avgt   10       2,781 ±     0,118  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort           80  avgt   10       3,545 ±     0,274  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort          100  avgt   10       4,078 ±     0,106  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort          200  avgt   10       4,353 ±     0,114  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort          400  avgt   10       9,160 ±     0,639  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort          800  avgt   10      21,803 ±     2,512  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort         1000  avgt   10      24,512 ±     1,269  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort        10000  avgt   10     288,608 ±    46,759  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort       100000  avgt   10    2437,229 ±   148,924  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort      1000000  avgt   10   21457,243 ±  2002,566  us/op
+ParalelSortArrayBenchmark.benchmark_array_parallel_sort     10000000  avgt   10  197455,148 ± 10646,848  us/op

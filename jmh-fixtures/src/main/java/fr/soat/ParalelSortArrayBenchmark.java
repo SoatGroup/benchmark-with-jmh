@@ -60,7 +60,7 @@ public class ParalelSortArrayBenchmark {
 	}
 	
 	@Benchmark
-	public int[] benchmark_array_sort(ArrayContainer d) {
+	public int[] benchmark_array_parallel_sort(ArrayContainer d) {
 		// parallel sort array
 	    return Arrays.stream(d.getArrayToSort())
 	    		.parallel()
@@ -69,7 +69,7 @@ public class ParalelSortArrayBenchmark {
 	}
 
 	@Benchmark
-	public int[] baseline(ArrayContainer d) {
+	public int[] benchmark_array_sort(ArrayContainer d) {
         // sort array
 		return Arrays.stream(d.getArrayToSort())
 				.sorted()
