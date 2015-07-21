@@ -1,6 +1,6 @@
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -9,38 +9,80 @@
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 10)
 
-# Run progress: 0,00% complete, ETA 00:04:20
+# Run progress: 0,00% complete, ETA 00:05:40
 # Fork: 1 of 1
-# Warmup Iteration   1: 0,412 us/op
-# Warmup Iteration   2: 0,218 us/op
-# Warmup Iteration   3: 0,213 us/op
-# Warmup Iteration   4: 0,221 us/op
-# Warmup Iteration   5: 0,208 us/op
-# Warmup Iteration   6: 0,206 us/op
-# Warmup Iteration   7: 0,209 us/op
-# Warmup Iteration   8: 0,207 us/op
-# Warmup Iteration   9: 0,211 us/op
-# Warmup Iteration  10: 0,206 us/op
-Iteration   1: 0,208 us/op
-Iteration   2: 0,207 us/op
-Iteration   3: 0,207 us/op
-Iteration   4: 0,206 us/op
-Iteration   5: 0,208 us/op
-Iteration   6: 0,207 us/op
-Iteration   7: 0,206 us/op
-Iteration   8: 0,210 us/op
-Iteration   9: 0,273 us/op
-Iteration  10: 0,210 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 0,215 us/op
+# Warmup Iteration   2: 0,158 us/op
+# Warmup Iteration   3: 0,158 us/op
+# Warmup Iteration   4: 0,156 us/op
+# Warmup Iteration   5: 0,149 us/op
+# Warmup Iteration   6: 0,148 us/op
+# Warmup Iteration   7: 0,148 us/op
+# Warmup Iteration   8: 0,152 us/op
+# Warmup Iteration   9: 0,153 us/op
+# Warmup Iteration  10: 0,155 us/op
+Iteration   1: 0,150 us/op
+Iteration   2: 0,151 us/op
+Iteration   3: 0,151 us/op
+Iteration   4: 0,151 us/op
+Iteration   5: 0,151 us/op
+Iteration   6: 0,153 us/op
+Iteration   7: 0,155 us/op
+Iteration   8: 0,154 us/op
+Iteration   9: 0,149 us/op
+Iteration  10: 0,153 us/op
 
 
-Result: 0,214 ±(99.9%) 0,031 us/op [Average]
-  Statistics: (min, avg, max) = (0,206, 0,214, 0,273), stdev = 0,021
-  Confidence interval (99.9%): [0,183, 0,245]
+Result: 0,152 ±(99.9%) 0,003 us/op [Average]
+  Statistics: (min, avg, max) = (0,149, 0,152, 0,155), stdev = 0,002
+  Confidence interval (99.9%): [0,149, 0,155]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Parameters: (arraySize = 15)
+
+# Run progress: 2,94% complete, ETA 00:05:39
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 0,279 us/op
+# Warmup Iteration   2: 0,207 us/op
+# Warmup Iteration   3: 0,204 us/op
+# Warmup Iteration   4: 0,205 us/op
+# Warmup Iteration   5: 0,201 us/op
+# Warmup Iteration   6: 0,197 us/op
+# Warmup Iteration   7: 0,200 us/op
+# Warmup Iteration   8: 0,195 us/op
+# Warmup Iteration   9: 0,199 us/op
+# Warmup Iteration  10: 0,195 us/op
+Iteration   1: 0,195 us/op
+Iteration   2: 0,201 us/op
+Iteration   3: 0,194 us/op
+Iteration   4: 0,201 us/op
+Iteration   5: 0,198 us/op
+Iteration   6: 0,196 us/op
+Iteration   7: 0,199 us/op
+Iteration   8: 0,200 us/op
+Iteration   9: 0,197 us/op
+Iteration  10: 0,202 us/op
+
+
+Result: 0,198 ±(99.9%) 0,004 us/op [Average]
+  Statistics: (min, avg, max) = (0,194, 0,198, 0,202), stdev = 0,003
+  Confidence interval (99.9%): [0,194, 0,202]
+
+
+# JMH 1.5.2 (released 165 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -49,38 +91,121 @@ Result: 0,214 ±(99.9%) 0,031 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 20)
 
-# Run progress: 3,85% complete, ETA 00:04:17
+# Run progress: 5,88% complete, ETA 00:05:28
 # Fork: 1 of 1
-# Warmup Iteration   1: 0,725 us/op
-# Warmup Iteration   2: 0,351 us/op
-# Warmup Iteration   3: 0,344 us/op
-# Warmup Iteration   4: 0,352 us/op
-# Warmup Iteration   5: 0,340 us/op
-# Warmup Iteration   6: 0,337 us/op
-# Warmup Iteration   7: 0,351 us/op
-# Warmup Iteration   8: 0,339 us/op
-# Warmup Iteration   9: 0,343 us/op
-# Warmup Iteration  10: 0,336 us/op
-Iteration   1: 0,340 us/op
-Iteration   2: 0,368 us/op
-Iteration   3: 0,385 us/op
-Iteration   4: 0,337 us/op
-Iteration   5: 0,339 us/op
-Iteration   6: 0,339 us/op
-Iteration   7: 0,339 us/op
-Iteration   8: 0,346 us/op
-Iteration   9: 0,339 us/op
-Iteration  10: 0,343 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 0,401 us/op
+# Warmup Iteration   2: 0,307 us/op
+# Warmup Iteration   3: 0,300 us/op
+# Warmup Iteration   4: 0,303 us/op
+# Warmup Iteration   5: 0,303 us/op
+# Warmup Iteration   6: 0,297 us/op
+# Warmup Iteration   7: 0,291 us/op
+# Warmup Iteration   8: 0,291 us/op
+# Warmup Iteration   9: 0,290 us/op
+# Warmup Iteration  10: 0,296 us/op
+Iteration   1: 0,292 us/op
+Iteration   2: 0,298 us/op
+Iteration   3: 0,296 us/op
+Iteration   4: 0,292 us/op
+Iteration   5: 0,293 us/op
+Iteration   6: 0,297 us/op
+Iteration   7: 0,291 us/op
+Iteration   8: 0,295 us/op
+Iteration   9: 0,295 us/op
+Iteration  10: 0,299 us/op
 
 
-Result: 0,347 ±(99.9%) 0,024 us/op [Average]
-  Statistics: (min, avg, max) = (0,337, 0,347, 0,385), stdev = 0,016
-  Confidence interval (99.9%): [0,323, 0,372]
+Result: 0,295 ±(99.9%) 0,004 us/op [Average]
+  Statistics: (min, avg, max) = (0,291, 0,295, 0,299), stdev = 0,003
+  Confidence interval (99.9%): [0,290, 0,299]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Parameters: (arraySize = 25)
+
+# Run progress: 8,82% complete, ETA 00:05:17
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 0,590 us/op
+# Warmup Iteration   2: 0,473 us/op
+# Warmup Iteration   3: 0,454 us/op
+# Warmup Iteration   4: 0,454 us/op
+# Warmup Iteration   5: 0,446 us/op
+# Warmup Iteration   6: 0,451 us/op
+# Warmup Iteration   7: 0,459 us/op
+# Warmup Iteration   8: 0,454 us/op
+# Warmup Iteration   9: 0,456 us/op
+# Warmup Iteration  10: 0,457 us/op
+Iteration   1: 0,454 us/op
+Iteration   2: 0,460 us/op
+Iteration   3: 0,450 us/op
+Iteration   4: 0,460 us/op
+Iteration   5: 0,452 us/op
+Iteration   6: 0,454 us/op
+Iteration   7: 0,468 us/op
+Iteration   8: 0,458 us/op
+Iteration   9: 0,456 us/op
+Iteration  10: 0,472 us/op
+
+
+Result: 0,458 ±(99.9%) 0,011 us/op [Average]
+  Statistics: (min, avg, max) = (0,450, 0,458, 0,472), stdev = 0,007
+  Confidence interval (99.9%): [0,448, 0,469]
+
+
+# JMH 1.5.2 (released 165 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Parameters: (arraySize = 30)
+
+# Run progress: 11,76% complete, ETA 00:05:07
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 0,652 us/op
+# Warmup Iteration   2: 0,506 us/op
+# Warmup Iteration   3: 0,489 us/op
+# Warmup Iteration   4: 0,489 us/op
+# Warmup Iteration   5: 0,485 us/op
+# Warmup Iteration   6: 0,494 us/op
+# Warmup Iteration   7: 0,493 us/op
+# Warmup Iteration   8: 0,490 us/op
+# Warmup Iteration   9: 0,494 us/op
+# Warmup Iteration  10: 0,497 us/op
+Iteration   1: 0,502 us/op
+Iteration   2: 0,494 us/op
+Iteration   3: 0,487 us/op
+Iteration   4: 0,495 us/op
+Iteration   5: 0,486 us/op
+Iteration   6: 0,487 us/op
+Iteration   7: 0,495 us/op
+Iteration   8: 0,497 us/op
+Iteration   9: 0,491 us/op
+Iteration  10: 0,487 us/op
+
+
+Result: 0,492 ±(99.9%) 0,008 us/op [Average]
+  Statistics: (min, avg, max) = (0,486, 0,492, 0,502), stdev = 0,005
+  Confidence interval (99.9%): [0,484, 0,500]
+
+
+# JMH 1.5.2 (released 165 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -89,38 +214,80 @@ Result: 0,347 ±(99.9%) 0,024 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 40)
 
-# Run progress: 7,69% complete, ETA 00:04:06
+# Run progress: 14,71% complete, ETA 00:04:56
 # Fork: 1 of 1
-# Warmup Iteration   1: 1,540 us/op
-# Warmup Iteration   2: 0,861 us/op
-# Warmup Iteration   3: 0,892 us/op
-# Warmup Iteration   4: 0,856 us/op
-# Warmup Iteration   5: 0,841 us/op
-# Warmup Iteration   6: 0,857 us/op
-# Warmup Iteration   7: 0,843 us/op
-# Warmup Iteration   8: 0,842 us/op
-# Warmup Iteration   9: 0,845 us/op
-# Warmup Iteration  10: 0,832 us/op
-Iteration   1: 0,835 us/op
-Iteration   2: 0,845 us/op
-Iteration   3: 0,836 us/op
-Iteration   4: 0,835 us/op
-Iteration   5: 0,846 us/op
-Iteration   6: 0,841 us/op
-Iteration   7: 0,853 us/op
-Iteration   8: 0,850 us/op
-Iteration   9: 0,846 us/op
-Iteration  10: 0,945 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 1,111 us/op
+# Warmup Iteration   2: 0,881 us/op
+# Warmup Iteration   3: 0,875 us/op
+# Warmup Iteration   4: 0,861 us/op
+# Warmup Iteration   5: 0,856 us/op
+# Warmup Iteration   6: 0,876 us/op
+# Warmup Iteration   7: 0,855 us/op
+# Warmup Iteration   8: 0,857 us/op
+# Warmup Iteration   9: 0,916 us/op
+# Warmup Iteration  10: 0,889 us/op
+Iteration   1: 0,869 us/op
+Iteration   2: 0,864 us/op
+Iteration   3: 0,935 us/op
+Iteration   4: 0,880 us/op
+Iteration   5: 0,870 us/op
+Iteration   6: 0,927 us/op
+Iteration   7: 0,932 us/op
+Iteration   8: 0,889 us/op
+Iteration   9: 0,877 us/op
+Iteration  10: 0,865 us/op
 
 
-Result: 0,853 ±(99.9%) 0,050 us/op [Average]
-  Statistics: (min, avg, max) = (0,835, 0,853, 0,945), stdev = 0,033
-  Confidence interval (99.9%): [0,803, 0,903]
+Result: 0,891 ±(99.9%) 0,044 us/op [Average]
+  Statistics: (min, avg, max) = (0,864, 0,891, 0,935), stdev = 0,029
+  Confidence interval (99.9%): [0,847, 0,934]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
+# Parameters: (arraySize = 60)
+
+# Run progress: 17,65% complete, ETA 00:04:46
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 1,171 us/op
+# Warmup Iteration   2: 0,830 us/op
+# Warmup Iteration   3: 0,793 us/op
+# Warmup Iteration   4: 0,817 us/op
+# Warmup Iteration   5: 0,788 us/op
+# Warmup Iteration   6: 0,796 us/op
+# Warmup Iteration   7: 0,814 us/op
+# Warmup Iteration   8: 0,805 us/op
+# Warmup Iteration   9: 0,787 us/op
+# Warmup Iteration  10: 0,792 us/op
+Iteration   1: 0,795 us/op
+Iteration   2: 0,803 us/op
+Iteration   3: 0,797 us/op
+Iteration   4: 0,802 us/op
+Iteration   5: 0,793 us/op
+Iteration   6: 0,810 us/op
+Iteration   7: 0,790 us/op
+Iteration   8: 0,791 us/op
+Iteration   9: 0,792 us/op
+Iteration  10: 0,800 us/op
+
+
+Result: 0,797 ±(99.9%) 0,009 us/op [Average]
+  Statistics: (min, avg, max) = (0,790, 0,797, 0,810), stdev = 0,006
+  Confidence interval (99.9%): [0,788, 0,807]
+
+
+# JMH 1.5.2 (released 165 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -129,38 +296,39 @@ Result: 0,853 ±(99.9%) 0,050 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 80)
 
-# Run progress: 11,54% complete, ETA 00:03:56
+# Run progress: 20,59% complete, ETA 00:04:36
 # Fork: 1 of 1
-# Warmup Iteration   1: 2,740 us/op
-# Warmup Iteration   2: 1,014 us/op
-# Warmup Iteration   3: 1,005 us/op
-# Warmup Iteration   4: 0,991 us/op
-# Warmup Iteration   5: 0,998 us/op
-# Warmup Iteration   6: 0,981 us/op
-# Warmup Iteration   7: 0,995 us/op
-# Warmup Iteration   8: 0,992 us/op
-# Warmup Iteration   9: 0,997 us/op
-# Warmup Iteration  10: 0,992 us/op
-Iteration   1: 0,991 us/op
-Iteration   2: 0,983 us/op
-Iteration   3: 0,985 us/op
-Iteration   4: 0,986 us/op
-Iteration   5: 0,985 us/op
-Iteration   6: 0,984 us/op
-Iteration   7: 1,005 us/op
-Iteration   8: 0,984 us/op
-Iteration   9: 1,017 us/op
-Iteration  10: 0,989 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 1,703 us/op
+# Warmup Iteration   2: 1,259 us/op
+# Warmup Iteration   3: 1,213 us/op
+# Warmup Iteration   4: 1,220 us/op
+# Warmup Iteration   5: 1,213 us/op
+# Warmup Iteration   6: 1,225 us/op
+# Warmup Iteration   7: 1,212 us/op
+# Warmup Iteration   8: 1,209 us/op
+# Warmup Iteration   9: 1,225 us/op
+# Warmup Iteration  10: 1,221 us/op
+Iteration   1: 1,225 us/op
+Iteration   2: 1,214 us/op
+Iteration   3: 1,204 us/op
+Iteration   4: 1,232 us/op
+Iteration   5: 1,217 us/op
+Iteration   6: 1,206 us/op
+Iteration   7: 1,209 us/op
+Iteration   8: 1,260 us/op
+Iteration   9: 1,242 us/op
+Iteration  10: 1,221 us/op
 
 
-Result: 0,991 ±(99.9%) 0,017 us/op [Average]
-  Statistics: (min, avg, max) = (0,983, 0,991, 1,017), stdev = 0,011
-  Confidence interval (99.9%): [0,974, 1,008]
+Result: 1,223 ±(99.9%) 0,027 us/op [Average]
+  Statistics: (min, avg, max) = (1,204, 1,223, 1,260), stdev = 0,018
+  Confidence interval (99.9%): [1,196, 1,250]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -169,38 +337,39 @@ Result: 0,991 ±(99.9%) 0,017 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 100)
 
-# Run progress: 15,38% complete, ETA 00:03:46
+# Run progress: 23,53% complete, ETA 00:04:25
 # Fork: 1 of 1
-# Warmup Iteration   1: 2,822 us/op
-# Warmup Iteration   2: 1,247 us/op
-# Warmup Iteration   3: 1,168 us/op
-# Warmup Iteration   4: 1,159 us/op
-# Warmup Iteration   5: 1,167 us/op
-# Warmup Iteration   6: 1,154 us/op
-# Warmup Iteration   7: 1,143 us/op
-# Warmup Iteration   8: 1,149 us/op
-# Warmup Iteration   9: 1,143 us/op
-# Warmup Iteration  10: 1,152 us/op
-Iteration   1: 1,149 us/op
-Iteration   2: 1,150 us/op
-Iteration   3: 1,144 us/op
-Iteration   4: 1,142 us/op
-Iteration   5: 1,146 us/op
-Iteration   6: 1,156 us/op
-Iteration   7: 1,156 us/op
-Iteration   8: 1,150 us/op
-Iteration   9: 1,163 us/op
-Iteration  10: 1,150 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 2,223 us/op
+# Warmup Iteration   2: 1,540 us/op
+# Warmup Iteration   3: 1,590 us/op
+# Warmup Iteration   4: 1,566 us/op
+# Warmup Iteration   5: 1,503 us/op
+# Warmup Iteration   6: 1,504 us/op
+# Warmup Iteration   7: 1,561 us/op
+# Warmup Iteration   8: 1,490 us/op
+# Warmup Iteration   9: 1,491 us/op
+# Warmup Iteration  10: 1,551 us/op
+Iteration   1: 1,510 us/op
+Iteration   2: 1,521 us/op
+Iteration   3: 1,497 us/op
+Iteration   4: 1,499 us/op
+Iteration   5: 1,530 us/op
+Iteration   6: 1,494 us/op
+Iteration   7: 1,519 us/op
+Iteration   8: 1,515 us/op
+Iteration   9: 1,528 us/op
+Iteration  10: 1,523 us/op
 
 
-Result: 1,150 ±(99.9%) 0,009 us/op [Average]
-  Statistics: (min, avg, max) = (1,142, 1,150, 1,163), stdev = 0,006
-  Confidence interval (99.9%): [1,141, 1,160]
+Result: 1,514 ±(99.9%) 0,020 us/op [Average]
+  Statistics: (min, avg, max) = (1,494, 1,514, 1,530), stdev = 0,013
+  Confidence interval (99.9%): [1,494, 1,533]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -209,38 +378,39 @@ Result: 1,150 ±(99.9%) 0,009 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 200)
 
-# Run progress: 19,23% complete, ETA 00:03:36
+# Run progress: 26,47% complete, ETA 00:04:15
 # Fork: 1 of 1
-# Warmup Iteration   1: 5,499 us/op
-# Warmup Iteration   2: 2,849 us/op
-# Warmup Iteration   3: 2,734 us/op
-# Warmup Iteration   4: 2,764 us/op
-# Warmup Iteration   5: 2,744 us/op
-# Warmup Iteration   6: 2,731 us/op
-# Warmup Iteration   7: 2,729 us/op
-# Warmup Iteration   8: 2,730 us/op
-# Warmup Iteration   9: 2,741 us/op
-# Warmup Iteration  10: 2,726 us/op
-Iteration   1: 2,718 us/op
-Iteration   2: 2,727 us/op
-Iteration   3: 2,708 us/op
-Iteration   4: 2,742 us/op
-Iteration   5: 2,706 us/op
-Iteration   6: 2,746 us/op
-Iteration   7: 2,708 us/op
-Iteration   8: 2,729 us/op
-Iteration   9: 2,741 us/op
-Iteration  10: 2,737 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 3,846 us/op
+# Warmup Iteration   2: 2,897 us/op
+# Warmup Iteration   3: 2,773 us/op
+# Warmup Iteration   4: 2,894 us/op
+# Warmup Iteration   5: 2,800 us/op
+# Warmup Iteration   6: 2,776 us/op
+# Warmup Iteration   7: 2,785 us/op
+# Warmup Iteration   8: 2,834 us/op
+# Warmup Iteration   9: 2,786 us/op
+# Warmup Iteration  10: 2,777 us/op
+Iteration   1: 2,821 us/op
+Iteration   2: 2,844 us/op
+Iteration   3: 2,782 us/op
+Iteration   4: 2,828 us/op
+Iteration   5: 2,837 us/op
+Iteration   6: 2,852 us/op
+Iteration   7: 2,802 us/op
+Iteration   8: 2,812 us/op
+Iteration   9: 2,924 us/op
+Iteration  10: 2,816 us/op
 
 
-Result: 2,726 ±(99.9%) 0,023 us/op [Average]
-  Statistics: (min, avg, max) = (2,706, 2,726, 2,746), stdev = 0,015
-  Confidence interval (99.9%): [2,703, 2,749]
+Result: 2,832 ±(99.9%) 0,058 us/op [Average]
+  Statistics: (min, avg, max) = (2,782, 2,832, 2,924), stdev = 0,038
+  Confidence interval (99.9%): [2,774, 2,890]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -249,38 +419,39 @@ Result: 2,726 ±(99.9%) 0,023 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 400)
 
-# Run progress: 23,08% complete, ETA 00:03:25
+# Run progress: 29,41% complete, ETA 00:04:05
 # Fork: 1 of 1
-# Warmup Iteration   1: 15,275 us/op
-# Warmup Iteration   2: 6,868 us/op
-# Warmup Iteration   3: 6,798 us/op
-# Warmup Iteration   4: 6,710 us/op
-# Warmup Iteration   5: 6,634 us/op
-# Warmup Iteration   6: 6,688 us/op
-# Warmup Iteration   7: 6,622 us/op
-# Warmup Iteration   8: 6,643 us/op
-# Warmup Iteration   9: 6,680 us/op
-# Warmup Iteration  10: 6,664 us/op
-Iteration   1: 6,626 us/op
-Iteration   2: 6,630 us/op
-Iteration   3: 6,621 us/op
-Iteration   4: 6,631 us/op
-Iteration   5: 6,638 us/op
-Iteration   6: 6,704 us/op
-Iteration   7: 6,620 us/op
-Iteration   8: 6,632 us/op
-Iteration   9: 6,659 us/op
-Iteration  10: 6,690 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 8,967 us/op
+# Warmup Iteration   2: 6,384 us/op
+# Warmup Iteration   3: 6,454 us/op
+# Warmup Iteration   4: 6,604 us/op
+# Warmup Iteration   5: 6,322 us/op
+# Warmup Iteration   6: 6,306 us/op
+# Warmup Iteration   7: 6,373 us/op
+# Warmup Iteration   8: 6,439 us/op
+# Warmup Iteration   9: 6,341 us/op
+# Warmup Iteration  10: 6,407 us/op
+Iteration   1: 6,377 us/op
+Iteration   2: 6,316 us/op
+Iteration   3: 6,426 us/op
+Iteration   4: 6,403 us/op
+Iteration   5: 6,309 us/op
+Iteration   6: 6,310 us/op
+Iteration   7: 6,494 us/op
+Iteration   8: 6,321 us/op
+Iteration   9: 6,501 us/op
+Iteration  10: 6,445 us/op
 
 
-Result: 6,645 ±(99.9%) 0,045 us/op [Average]
-  Statistics: (min, avg, max) = (6,620, 6,645, 6,704), stdev = 0,030
-  Confidence interval (99.9%): [6,600, 6,690]
+Result: 6,390 ±(99.9%) 0,114 us/op [Average]
+  Statistics: (min, avg, max) = (6,309, 6,390, 6,501), stdev = 0,075
+  Confidence interval (99.9%): [6,277, 6,504]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -289,38 +460,39 @@ Result: 6,645 ±(99.9%) 0,045 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 800)
 
-# Run progress: 26,92% complete, ETA 00:03:15
+# Run progress: 32,35% complete, ETA 00:03:55
 # Fork: 1 of 1
-# Warmup Iteration   1: 27,382 us/op
-# Warmup Iteration   2: 12,763 us/op
-# Warmup Iteration   3: 12,169 us/op
-# Warmup Iteration   4: 13,046 us/op
-# Warmup Iteration   5: 12,227 us/op
-# Warmup Iteration   6: 11,930 us/op
-# Warmup Iteration   7: 11,995 us/op
-# Warmup Iteration   8: 12,175 us/op
-# Warmup Iteration   9: 14,390 us/op
-# Warmup Iteration  10: 13,054 us/op
-Iteration   1: 12,221 us/op
-Iteration   2: 12,160 us/op
-Iteration   3: 11,979 us/op
-Iteration   4: 12,155 us/op
-Iteration   5: 12,140 us/op
-Iteration   6: 12,133 us/op
-Iteration   7: 12,029 us/op
-Iteration   8: 12,152 us/op
-Iteration   9: 12,147 us/op
-Iteration  10: 12,077 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 20,739 us/op
+# Warmup Iteration   2: 14,723 us/op
+# Warmup Iteration   3: 14,595 us/op
+# Warmup Iteration   4: 15,095 us/op
+# Warmup Iteration   5: 14,692 us/op
+# Warmup Iteration   6: 14,260 us/op
+# Warmup Iteration   7: 15,152 us/op
+# Warmup Iteration   8: 14,214 us/op
+# Warmup Iteration   9: 14,219 us/op
+# Warmup Iteration  10: 14,235 us/op
+Iteration   1: 14,355 us/op
+Iteration   2: 14,568 us/op
+Iteration   3: 14,835 us/op
+Iteration   4: 14,405 us/op
+Iteration   5: 14,443 us/op
+Iteration   6: 14,593 us/op
+Iteration   7: 14,334 us/op
+Iteration   8: 14,313 us/op
+Iteration   9: 14,197 us/op
+Iteration  10: 14,240 us/op
 
 
-Result: 12,119 ±(99.9%) 0,107 us/op [Average]
-  Statistics: (min, avg, max) = (11,979, 12,119, 12,221), stdev = 0,071
-  Confidence interval (99.9%): [12,012, 12,227]
+Result: 14,428 ±(99.9%) 0,289 us/op [Average]
+  Statistics: (min, avg, max) = (14,197, 14,428, 14,835), stdev = 0,191
+  Confidence interval (99.9%): [14,139, 14,718]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -329,38 +501,39 @@ Result: 12,119 ±(99.9%) 0,107 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 1000)
 
-# Run progress: 30,77% complete, ETA 00:03:04
+# Run progress: 35,29% complete, ETA 00:03:44
 # Fork: 1 of 1
-# Warmup Iteration   1: 45,595 us/op
-# Warmup Iteration   2: 24,825 us/op
-# Warmup Iteration   3: 24,542 us/op
-# Warmup Iteration   4: 24,253 us/op
-# Warmup Iteration   5: 23,907 us/op
-# Warmup Iteration   6: 23,867 us/op
-# Warmup Iteration   7: 23,595 us/op
-# Warmup Iteration   8: 23,712 us/op
-# Warmup Iteration   9: 23,785 us/op
-# Warmup Iteration  10: 23,548 us/op
-Iteration   1: 23,608 us/op
-Iteration   2: 23,856 us/op
-Iteration   3: 23,637 us/op
-Iteration   4: 23,696 us/op
-Iteration   5: 23,805 us/op
-Iteration   6: 23,555 us/op
-Iteration   7: 24,060 us/op
-Iteration   8: 23,723 us/op
-Iteration   9: 23,843 us/op
-Iteration  10: 23,663 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 32,877 us/op
+# Warmup Iteration   2: 23,951 us/op
+# Warmup Iteration   3: 24,027 us/op
+# Warmup Iteration   4: 23,776 us/op
+# Warmup Iteration   5: 24,174 us/op
+# Warmup Iteration   6: 23,470 us/op
+# Warmup Iteration   7: 23,429 us/op
+# Warmup Iteration   8: 23,455 us/op
+# Warmup Iteration   9: 23,894 us/op
+# Warmup Iteration  10: 23,709 us/op
+Iteration   1: 23,895 us/op
+Iteration   2: 24,053 us/op
+Iteration   3: 24,298 us/op
+Iteration   4: 24,250 us/op
+Iteration   5: 23,405 us/op
+Iteration   6: 23,615 us/op
+Iteration   7: 24,007 us/op
+Iteration   8: 23,746 us/op
+Iteration   9: 24,662 us/op
+Iteration  10: 23,898 us/op
 
 
-Result: 23,745 ±(99.9%) 0,226 us/op [Average]
-  Statistics: (min, avg, max) = (23,555, 23,745, 24,060), stdev = 0,149
-  Confidence interval (99.9%): [23,519, 23,971]
+Result: 23,983 ±(99.9%) 0,547 us/op [Average]
+  Statistics: (min, avg, max) = (23,405, 23,983, 24,662), stdev = 0,362
+  Confidence interval (99.9%): [23,436, 24,529]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -369,38 +542,39 @@ Result: 23,745 ±(99.9%) 0,226 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 10000)
 
-# Run progress: 34,62% complete, ETA 00:02:54
+# Run progress: 38,24% complete, ETA 00:03:34
 # Fork: 1 of 1
-# Warmup Iteration   1: 898,619 us/op
-# Warmup Iteration   2: 589,438 us/op
-# Warmup Iteration   3: 590,145 us/op
-# Warmup Iteration   4: 592,542 us/op
-# Warmup Iteration   5: 589,517 us/op
-# Warmup Iteration   6: 590,025 us/op
-# Warmup Iteration   7: 591,245 us/op
-# Warmup Iteration   8: 592,173 us/op
-# Warmup Iteration   9: 592,517 us/op
-# Warmup Iteration  10: 586,299 us/op
-Iteration   1: 583,576 us/op
-Iteration   2: 586,666 us/op
-Iteration   3: 589,565 us/op
-Iteration   4: 593,056 us/op
-Iteration   5: 588,028 us/op
-Iteration   6: 586,424 us/op
-Iteration   7: 586,756 us/op
-Iteration   8: 586,995 us/op
-Iteration   9: 588,178 us/op
-Iteration  10: 586,899 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 599,206 us/op
+# Warmup Iteration   2: 486,372 us/op
+# Warmup Iteration   3: 483,977 us/op
+# Warmup Iteration   4: 482,858 us/op
+# Warmup Iteration   5: 489,430 us/op
+# Warmup Iteration   6: 476,264 us/op
+# Warmup Iteration   7: 478,239 us/op
+# Warmup Iteration   8: 497,508 us/op
+# Warmup Iteration   9: 478,638 us/op
+# Warmup Iteration  10: 478,430 us/op
+Iteration   1: 481,452 us/op
+Iteration   2: 498,913 us/op
+Iteration   3: 490,845 us/op
+Iteration   4: 481,529 us/op
+Iteration   5: 479,060 us/op
+Iteration   6: 488,745 us/op
+Iteration   7: 481,340 us/op
+Iteration   8: 495,932 us/op
+Iteration   9: 478,808 us/op
+Iteration  10: 483,362 us/op
 
 
-Result: 587,614 ±(99.9%) 3,709 us/op [Average]
-  Statistics: (min, avg, max) = (583,576, 587,614, 593,056), stdev = 2,453
-  Confidence interval (99.9%): [583,905, 591,323]
+Result: 485,999 ±(99.9%) 10,875 us/op [Average]
+  Statistics: (min, avg, max) = (478,808, 485,999, 498,913), stdev = 7,193
+  Confidence interval (99.9%): [475,124, 496,873]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -409,38 +583,39 @@ Result: 587,614 ±(99.9%) 3,709 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 100000)
 
-# Run progress: 38,46% complete, ETA 00:02:44
+# Run progress: 41,18% complete, ETA 00:03:24
 # Fork: 1 of 1
-# Warmup Iteration   1: 6978,195 us/op
-# Warmup Iteration   2: 5379,893 us/op
-# Warmup Iteration   3: 5401,703 us/op
-# Warmup Iteration   4: 5493,350 us/op
-# Warmup Iteration   5: 5428,646 us/op
-# Warmup Iteration   6: 5338,044 us/op
-# Warmup Iteration   7: 5351,804 us/op
-# Warmup Iteration   8: 5363,539 us/op
-# Warmup Iteration   9: 5355,616 us/op
-# Warmup Iteration  10: 5343,183 us/op
-Iteration   1: 5415,608 us/op
-Iteration   2: 5331,113 us/op
-Iteration   3: 5349,529 us/op
-Iteration   4: 5409,190 us/op
-Iteration   5: 5333,127 us/op
-Iteration   6: 5340,699 us/op
-Iteration   7: 5336,974 us/op
-Iteration   8: 5355,378 us/op
-Iteration   9: 5343,364 us/op
-Iteration  10: 5410,007 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 5425,911 us/op
+# Warmup Iteration   2: 4567,395 us/op
+# Warmup Iteration   3: 4534,540 us/op
+# Warmup Iteration   4: 4566,809 us/op
+# Warmup Iteration   5: 4504,049 us/op
+# Warmup Iteration   6: 4498,625 us/op
+# Warmup Iteration   7: 4637,343 us/op
+# Warmup Iteration   8: 4611,393 us/op
+# Warmup Iteration   9: 4459,517 us/op
+# Warmup Iteration  10: 4582,350 us/op
+Iteration   1: 4617,974 us/op
+Iteration   2: 4484,683 us/op
+Iteration   3: 4570,628 us/op
+Iteration   4: 4602,570 us/op
+Iteration   5: 4494,895 us/op
+Iteration   6: 4480,284 us/op
+Iteration   7: 4532,490 us/op
+Iteration   8: 4580,560 us/op
+Iteration   9: 4650,399 us/op
+Iteration  10: 4550,902 us/op
 
 
-Result: 5362,499 ±(99.9%) 52,414 us/op [Average]
-  Statistics: (min, avg, max) = (5331,113, 5362,499, 5415,608), stdev = 34,669
-  Confidence interval (99.9%): [5310,085, 5414,913]
+Result: 4556,539 ±(99.9%) 88,539 us/op [Average]
+  Statistics: (min, avg, max) = (4480,284, 4556,539, 4650,399), stdev = 58,563
+  Confidence interval (99.9%): [4468,000, 4645,077]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -449,38 +624,39 @@ Result: 5362,499 ±(99.9%) 52,414 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 1000000)
 
-# Run progress: 42,31% complete, ETA 00:02:34
+# Run progress: 44,12% complete, ETA 00:03:14
 # Fork: 1 of 1
-# Warmup Iteration   1: 77434,845 us/op
-# Warmup Iteration   2: 54214,631 us/op
-# Warmup Iteration   3: 54248,726 us/op
-# Warmup Iteration   4: 54449,026 us/op
-# Warmup Iteration   5: 56518,420 us/op
-# Warmup Iteration   6: 54077,161 us/op
-# Warmup Iteration   7: 54418,184 us/op
-# Warmup Iteration   8: 54375,054 us/op
-# Warmup Iteration   9: 54432,089 us/op
-# Warmup Iteration  10: 54442,731 us/op
-Iteration   1: 54029,116 us/op
-Iteration   2: 54383,160 us/op
-Iteration   3: 56230,531 us/op
-Iteration   4: 54170,998 us/op
-Iteration   5: 54052,613 us/op
-Iteration   6: 54010,582 us/op
-Iteration   7: 54248,397 us/op
-Iteration   8: 54383,240 us/op
-Iteration   9: 54119,663 us/op
-Iteration  10: 54073,149 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 61735,430 us/op
+# Warmup Iteration   2: 43376,569 us/op
+# Warmup Iteration   3: 43338,151 us/op
+# Warmup Iteration   4: 43802,006 us/op
+# Warmup Iteration   5: 43647,566 us/op
+# Warmup Iteration   6: 42713,190 us/op
+# Warmup Iteration   7: 43722,207 us/op
+# Warmup Iteration   8: 43861,780 us/op
+# Warmup Iteration   9: 42441,922 us/op
+# Warmup Iteration  10: 42820,960 us/op
+Iteration   1: 43024,493 us/op
+Iteration   2: 42590,912 us/op
+Iteration   3: 43966,567 us/op
+Iteration   4: 42892,916 us/op
+Iteration   5: 42561,615 us/op
+Iteration   6: 42239,495 us/op
+Iteration   7: 43188,707 us/op
+Iteration   8: 43267,596 us/op
+Iteration   9: 42524,330 us/op
+Iteration  10: 42760,150 us/op
 
 
-Result: 54370,145 ±(99.9%) 1009,569 us/op [Average]
-  Statistics: (min, avg, max) = (54010,582, 54370,145, 56230,531), stdev = 667,767
-  Confidence interval (99.9%): [53360,576, 55379,714]
+Result: 42901,678 ±(99.9%) 743,831 us/op [Average]
+  Statistics: (min, avg, max) = (42239,495, 42901,678, 43966,567), stdev = 491,998
+  Confidence interval (99.9%): [42157,848, 43645,509]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -489,38 +665,39 @@ Result: 54370,145 ±(99.9%) 1009,569 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.baseline
 # Parameters: (arraySize = 10000000)
 
-# Run progress: 46,15% complete, ETA 00:02:24
+# Run progress: 47,06% complete, ETA 00:03:04
 # Fork: 1 of 1
-# Warmup Iteration   1: 629247,671 us/op
-# Warmup Iteration   2: 576812,658 us/op
-# Warmup Iteration   3: 541754,102 us/op
-# Warmup Iteration   4: 541405,047 us/op
-# Warmup Iteration   5: 581288,924 us/op
-# Warmup Iteration   6: 540189,279 us/op
-# Warmup Iteration   7: 540076,026 us/op
-# Warmup Iteration   8: 579093,319 us/op
-# Warmup Iteration   9: 545905,649 us/op
-# Warmup Iteration  10: 542693,574 us/op
-Iteration   1: 541139,026 us/op
-Iteration   2: 582303,971 us/op
-Iteration   3: 539995,787 us/op
-Iteration   4: 543823,923 us/op
-Iteration   5: 541637,510 us/op
-Iteration   6: 581426,119 us/op
-Iteration   7: 540302,390 us/op
-Iteration   8: 540100,113 us/op
-Iteration   9: 539618,274 us/op
-Iteration  10: 572320,679 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 542162,094 us/op
+# Warmup Iteration   2: 459616,320 us/op
+# Warmup Iteration   3: 460436,497 us/op
+# Warmup Iteration   4: 439706,766 us/op
+# Warmup Iteration   5: 443689,403 us/op
+# Warmup Iteration   6: 439748,724 us/op
+# Warmup Iteration   7: 459794,166 us/op
+# Warmup Iteration   8: 441940,168 us/op
+# Warmup Iteration   9: 439618,342 us/op
+# Warmup Iteration  10: 439481,232 us/op
+Iteration   1: 463683,983 us/op
+Iteration   2: 440268,097 us/op
+Iteration   3: 441385,067 us/op
+Iteration   4: 442620,237 us/op
+Iteration   5: 438987,963 us/op
+Iteration   6: 448089,517 us/op
+Iteration   7: 440330,077 us/op
+Iteration   8: 449556,084 us/op
+Iteration   9: 468252,665 us/op
+Iteration  10: 435796,404 us/op
 
 
-Result: 552266,779 ±(99.9%) 27897,695 us/op [Average]
-  Statistics: (min, avg, max) = (539618,274, 552266,779, 582303,971), stdev = 18452,598
-  Confidence interval (99.9%): [524369,084, 580164,474]
+Result: 446897,009 ±(99.9%) 16468,338 us/op [Average]
+  Statistics: (min, avg, max) = (435796,404, 446897,009, 468252,665), stdev = 10892,786
+  Confidence interval (99.9%): [430428,671, 463365,347]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -529,38 +706,80 @@ Result: 552266,779 ±(99.9%) 27897,695 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 10)
 
-# Run progress: 50,00% complete, ETA 00:02:15
+# Run progress: 50,00% complete, ETA 00:03:03
 # Fork: 1 of 1
-# Warmup Iteration   1: 12,262 us/op
-# Warmup Iteration   2: 8,824 us/op
-# Warmup Iteration   3: 6,856 us/op
-# Warmup Iteration   4: 6,804 us/op
-# Warmup Iteration   5: 7,304 us/op
-# Warmup Iteration   6: 7,021 us/op
-# Warmup Iteration   7: 6,944 us/op
-# Warmup Iteration   8: 7,169 us/op
-# Warmup Iteration   9: 7,245 us/op
-# Warmup Iteration  10: 7,020 us/op
-Iteration   1: 6,936 us/op
-Iteration   2: 6,863 us/op
-Iteration   3: 7,113 us/op
-Iteration   4: 6,753 us/op
-Iteration   5: 6,733 us/op
-Iteration   6: 7,005 us/op
-Iteration   7: 7,046 us/op
-Iteration   8: 7,061 us/op
-Iteration   9: 6,884 us/op
-Iteration  10: 7,036 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 2,432 us/op
+# Warmup Iteration   2: 1,595 us/op
+# Warmup Iteration   3: 1,672 us/op
+# Warmup Iteration   4: 1,682 us/op
+# Warmup Iteration   5: 1,472 us/op
+# Warmup Iteration   6: 1,607 us/op
+# Warmup Iteration   7: 1,520 us/op
+# Warmup Iteration   8: 1,513 us/op
+# Warmup Iteration   9: 1,574 us/op
+# Warmup Iteration  10: 1,586 us/op
+Iteration   1: 1,557 us/op
+Iteration   2: 1,592 us/op
+Iteration   3: 1,640 us/op
+Iteration   4: 1,609 us/op
+Iteration   5: 1,549 us/op
+Iteration   6: 1,527 us/op
+Iteration   7: 1,544 us/op
+Iteration   8: 1,581 us/op
+Iteration   9: 1,572 us/op
+Iteration  10: 1,546 us/op
 
 
-Result: 6,943 ±(99.9%) 0,199 us/op [Average]
-  Statistics: (min, avg, max) = (6,733, 6,943, 7,113), stdev = 0,132
-  Confidence interval (99.9%): [6,744, 7,142]
+Result: 1,572 ±(99.9%) 0,052 us/op [Average]
+  Statistics: (min, avg, max) = (1,527, 1,572, 1,640), stdev = 0,034
+  Confidence interval (99.9%): [1,519, 1,624]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Parameters: (arraySize = 15)
+
+# Run progress: 52,94% complete, ETA 00:02:51
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 3,000 us/op
+# Warmup Iteration   2: 1,916 us/op
+# Warmup Iteration   3: 1,976 us/op
+# Warmup Iteration   4: 1,930 us/op
+# Warmup Iteration   5: 1,897 us/op
+# Warmup Iteration   6: 1,932 us/op
+# Warmup Iteration   7: 1,820 us/op
+# Warmup Iteration   8: 1,878 us/op
+# Warmup Iteration   9: 1,709 us/op
+# Warmup Iteration  10: 1,834 us/op
+Iteration   1: 1,827 us/op
+Iteration   2: 1,926 us/op
+Iteration   3: 1,831 us/op
+Iteration   4: 1,930 us/op
+Iteration   5: 1,781 us/op
+Iteration   6: 1,927 us/op
+Iteration   7: 1,897 us/op
+Iteration   8: 1,971 us/op
+Iteration   9: 1,875 us/op
+Iteration  10: 1,851 us/op
+
+
+Result: 1,882 ±(99.9%) 0,089 us/op [Average]
+  Statistics: (min, avg, max) = (1,781, 1,882, 1,971), stdev = 0,059
+  Confidence interval (99.9%): [1,792, 1,971]
+
+
+# JMH 1.5.2 (released 165 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -569,38 +788,121 @@ Result: 6,943 ±(99.9%) 0,199 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 20)
 
-# Run progress: 53,85% complete, ETA 00:02:05
+# Run progress: 55,88% complete, ETA 00:02:40
 # Fork: 1 of 1
-# Warmup Iteration   1: 15,878 us/op
-# Warmup Iteration   2: 7,648 us/op
-# Warmup Iteration   3: 7,146 us/op
-# Warmup Iteration   4: 6,990 us/op
-# Warmup Iteration   5: 7,036 us/op
-# Warmup Iteration   6: 6,954 us/op
-# Warmup Iteration   7: 6,949 us/op
-# Warmup Iteration   8: 6,950 us/op
-# Warmup Iteration   9: 6,777 us/op
-# Warmup Iteration  10: 6,826 us/op
-Iteration   1: 6,854 us/op
-Iteration   2: 6,881 us/op
-Iteration   3: 6,884 us/op
-Iteration   4: 7,018 us/op
-Iteration   5: 6,962 us/op
-Iteration   6: 6,798 us/op
-Iteration   7: 6,978 us/op
-Iteration   8: 6,926 us/op
-Iteration   9: 6,884 us/op
-Iteration  10: 6,767 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 3,995 us/op
+# Warmup Iteration   2: 2,815 us/op
+# Warmup Iteration   3: 2,824 us/op
+# Warmup Iteration   4: 2,765 us/op
+# Warmup Iteration   5: 2,901 us/op
+# Warmup Iteration   6: 2,774 us/op
+# Warmup Iteration   7: 2,698 us/op
+# Warmup Iteration   8: 2,886 us/op
+# Warmup Iteration   9: 2,816 us/op
+# Warmup Iteration  10: 2,715 us/op
+Iteration   1: 2,779 us/op
+Iteration   2: 2,764 us/op
+Iteration   3: 2,752 us/op
+Iteration   4: 2,702 us/op
+Iteration   5: 2,861 us/op
+Iteration   6: 2,731 us/op
+Iteration   7: 2,703 us/op
+Iteration   8: 2,848 us/op
+Iteration   9: 2,655 us/op
+Iteration  10: 2,814 us/op
 
 
-Result: 6,895 ±(99.9%) 0,119 us/op [Average]
-  Statistics: (min, avg, max) = (6,767, 6,895, 7,018), stdev = 0,078
-  Confidence interval (99.9%): [6,777, 7,014]
+Result: 2,761 ±(99.9%) 0,101 us/op [Average]
+  Statistics: (min, avg, max) = (2,655, 2,761, 2,861), stdev = 0,067
+  Confidence interval (99.9%): [2,660, 2,862]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Parameters: (arraySize = 25)
+
+# Run progress: 58,82% complete, ETA 00:02:29
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 3,858 us/op
+# Warmup Iteration   2: 2,534 us/op
+# Warmup Iteration   3: 2,478 us/op
+# Warmup Iteration   4: 2,436 us/op
+# Warmup Iteration   5: 2,358 us/op
+# Warmup Iteration   6: 2,406 us/op
+# Warmup Iteration   7: 2,336 us/op
+# Warmup Iteration   8: 2,695 us/op
+# Warmup Iteration   9: 2,364 us/op
+# Warmup Iteration  10: 2,357 us/op
+Iteration   1: 2,391 us/op
+Iteration   2: 2,380 us/op
+Iteration   3: 2,421 us/op
+Iteration   4: 2,311 us/op
+Iteration   5: 2,346 us/op
+Iteration   6: 2,355 us/op
+Iteration   7: 2,447 us/op
+Iteration   8: 2,419 us/op
+Iteration   9: 2,387 us/op
+Iteration  10: 2,400 us/op
+
+
+Result: 2,386 ±(99.9%) 0,061 us/op [Average]
+  Statistics: (min, avg, max) = (2,311, 2,386, 2,447), stdev = 0,040
+  Confidence interval (99.9%): [2,325, 2,446]
+
+
+# JMH 1.5.2 (released 165 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Parameters: (arraySize = 30)
+
+# Run progress: 61,76% complete, ETA 00:02:18
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 4,078 us/op
+# Warmup Iteration   2: 2,769 us/op
+# Warmup Iteration   3: 2,784 us/op
+# Warmup Iteration   4: 2,675 us/op
+# Warmup Iteration   5: 2,725 us/op
+# Warmup Iteration   6: 2,960 us/op
+# Warmup Iteration   7: 2,716 us/op
+# Warmup Iteration   8: 2,698 us/op
+# Warmup Iteration   9: 2,729 us/op
+# Warmup Iteration  10: 2,608 us/op
+Iteration   1: 2,682 us/op
+Iteration   2: 2,698 us/op
+Iteration   3: 2,660 us/op
+Iteration   4: 2,721 us/op
+Iteration   5: 2,707 us/op
+Iteration   6: 2,741 us/op
+Iteration   7: 2,687 us/op
+Iteration   8: 2,675 us/op
+Iteration   9: 2,668 us/op
+Iteration  10: 2,675 us/op
+
+
+Result: 2,691 ±(99.9%) 0,038 us/op [Average]
+  Statistics: (min, avg, max) = (2,660, 2,691, 2,741), stdev = 0,025
+  Confidence interval (99.9%): [2,653, 2,729]
+
+
+# JMH 1.5.2 (released 165 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -609,38 +911,80 @@ Result: 6,895 ±(99.9%) 0,119 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 40)
 
-# Run progress: 57,69% complete, ETA 00:01:54
+# Run progress: 64,71% complete, ETA 00:02:07
 # Fork: 1 of 1
-# Warmup Iteration   1: 16,140 us/op
-# Warmup Iteration   2: 11,876 us/op
-# Warmup Iteration   3: 12,301 us/op
-# Warmup Iteration   4: 11,454 us/op
-# Warmup Iteration   5: 11,295 us/op
-# Warmup Iteration   6: 11,379 us/op
-# Warmup Iteration   7: 11,089 us/op
-# Warmup Iteration   8: 12,011 us/op
-# Warmup Iteration   9: 11,333 us/op
-# Warmup Iteration  10: 11,438 us/op
-Iteration   1: 11,223 us/op
-Iteration   2: 11,306 us/op
-Iteration   3: 11,229 us/op
-Iteration   4: 11,353 us/op
-Iteration   5: 11,180 us/op
-Iteration   6: 11,341 us/op
-Iteration   7: 11,311 us/op
-Iteration   8: 11,359 us/op
-Iteration   9: 11,181 us/op
-Iteration  10: 11,091 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 5,044 us/op
+# Warmup Iteration   2: 3,299 us/op
+# Warmup Iteration   3: 3,321 us/op
+# Warmup Iteration   4: 3,441 us/op
+# Warmup Iteration   5: 3,278 us/op
+# Warmup Iteration   6: 3,136 us/op
+# Warmup Iteration   7: 3,398 us/op
+# Warmup Iteration   8: 3,401 us/op
+# Warmup Iteration   9: 3,205 us/op
+# Warmup Iteration  10: 3,134 us/op
+Iteration   1: 3,175 us/op
+Iteration   2: 3,400 us/op
+Iteration   3: 3,208 us/op
+Iteration   4: 3,396 us/op
+Iteration   5: 3,071 us/op
+Iteration   6: 3,105 us/op
+Iteration   7: 3,197 us/op
+Iteration   8: 3,107 us/op
+Iteration   9: 3,217 us/op
+Iteration  10: 3,229 us/op
 
 
-Result: 11,257 ±(99.9%) 0,136 us/op [Average]
-  Statistics: (min, avg, max) = (11,091, 11,257, 11,359), stdev = 0,090
-  Confidence interval (99.9%): [11,121, 11,394]
+Result: 3,211 ±(99.9%) 0,170 us/op [Average]
+  Statistics: (min, avg, max) = (3,071, 3,211, 3,400), stdev = 0,112
+  Confidence interval (99.9%): [3,041, 3,380]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 500 ms each
+# Measurement: 10 iterations, 500 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
+# Parameters: (arraySize = 60)
+
+# Run progress: 67,65% complete, ETA 00:01:56
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 4,639 us/op
+# Warmup Iteration   2: 3,081 us/op
+# Warmup Iteration   3: 2,826 us/op
+# Warmup Iteration   4: 2,926 us/op
+# Warmup Iteration   5: 2,781 us/op
+# Warmup Iteration   6: 2,717 us/op
+# Warmup Iteration   7: 2,843 us/op
+# Warmup Iteration   8: 2,681 us/op
+# Warmup Iteration   9: 2,718 us/op
+# Warmup Iteration  10: 2,721 us/op
+Iteration   1: 2,887 us/op
+Iteration   2: 2,811 us/op
+Iteration   3: 2,742 us/op
+Iteration   4: 2,757 us/op
+Iteration   5: 2,719 us/op
+Iteration   6: 2,726 us/op
+Iteration   7: 2,919 us/op
+Iteration   8: 2,710 us/op
+Iteration   9: 2,838 us/op
+Iteration  10: 2,703 us/op
+
+
+Result: 2,781 ±(99.9%) 0,118 us/op [Average]
+  Statistics: (min, avg, max) = (2,703, 2,781, 2,919), stdev = 0,078
+  Confidence interval (99.9%): [2,664, 2,899]
+
+
+# JMH 1.5.2 (released 165 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -649,38 +993,39 @@ Result: 11,257 ±(99.9%) 0,136 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 80)
 
-# Run progress: 61,54% complete, ETA 00:01:44
+# Run progress: 70,59% complete, ETA 00:01:46
 # Fork: 1 of 1
-# Warmup Iteration   1: 23,190 us/op
-# Warmup Iteration   2: 12,335 us/op
-# Warmup Iteration   3: 12,454 us/op
-# Warmup Iteration   4: 12,067 us/op
-# Warmup Iteration   5: 12,049 us/op
-# Warmup Iteration   6: 11,443 us/op
-# Warmup Iteration   7: 11,970 us/op
-# Warmup Iteration   8: 12,038 us/op
-# Warmup Iteration   9: 11,788 us/op
-# Warmup Iteration  10: 11,790 us/op
-Iteration   1: 12,008 us/op
-Iteration   2: 11,715 us/op
-Iteration   3: 11,947 us/op
-Iteration   4: 11,947 us/op
-Iteration   5: 11,838 us/op
-Iteration   6: 11,726 us/op
-Iteration   7: 11,848 us/op
-Iteration   8: 11,828 us/op
-Iteration   9: 11,954 us/op
-Iteration  10: 12,211 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 7,141 us/op
+# Warmup Iteration   2: 3,558 us/op
+# Warmup Iteration   3: 3,640 us/op
+# Warmup Iteration   4: 3,410 us/op
+# Warmup Iteration   5: 3,456 us/op
+# Warmup Iteration   6: 3,408 us/op
+# Warmup Iteration   7: 3,355 us/op
+# Warmup Iteration   8: 3,739 us/op
+# Warmup Iteration   9: 3,871 us/op
+# Warmup Iteration  10: 3,392 us/op
+Iteration   1: 3,920 us/op
+Iteration   2: 3,381 us/op
+Iteration   3: 3,647 us/op
+Iteration   4: 3,488 us/op
+Iteration   5: 3,380 us/op
+Iteration   6: 3,405 us/op
+Iteration   7: 3,702 us/op
+Iteration   8: 3,380 us/op
+Iteration   9: 3,660 us/op
+Iteration  10: 3,483 us/op
 
 
-Result: 11,902 ±(99.9%) 0,221 us/op [Average]
-  Statistics: (min, avg, max) = (11,715, 11,902, 12,211), stdev = 0,146
-  Confidence interval (99.9%): [11,681, 12,123]
+Result: 3,545 ±(99.9%) 0,274 us/op [Average]
+  Statistics: (min, avg, max) = (3,380, 3,545, 3,920), stdev = 0,182
+  Confidence interval (99.9%): [3,270, 3,819]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -689,38 +1034,39 @@ Result: 11,902 ±(99.9%) 0,221 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 100)
 
-# Run progress: 65,38% complete, ETA 00:01:33
+# Run progress: 73,53% complete, ETA 00:01:35
 # Fork: 1 of 1
-# Warmup Iteration   1: 22,669 us/op
-# Warmup Iteration   2: 11,772 us/op
-# Warmup Iteration   3: 12,283 us/op
-# Warmup Iteration   4: 11,778 us/op
-# Warmup Iteration   5: 11,974 us/op
-# Warmup Iteration   6: 11,589 us/op
-# Warmup Iteration   7: 11,984 us/op
-# Warmup Iteration   8: 11,850 us/op
-# Warmup Iteration   9: 11,846 us/op
-# Warmup Iteration  10: 12,072 us/op
-Iteration   1: 11,841 us/op
-Iteration   2: 12,124 us/op
-Iteration   3: 12,005 us/op
-Iteration   4: 11,625 us/op
-Iteration   5: 11,786 us/op
-Iteration   6: 11,701 us/op
-Iteration   7: 12,043 us/op
-Iteration   8: 11,766 us/op
-Iteration   9: 11,618 us/op
-Iteration  10: 11,985 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 6,740 us/op
+# Warmup Iteration   2: 4,195 us/op
+# Warmup Iteration   3: 4,296 us/op
+# Warmup Iteration   4: 4,247 us/op
+# Warmup Iteration   5: 4,006 us/op
+# Warmup Iteration   6: 4,203 us/op
+# Warmup Iteration   7: 4,012 us/op
+# Warmup Iteration   8: 4,254 us/op
+# Warmup Iteration   9: 3,933 us/op
+# Warmup Iteration  10: 4,056 us/op
+Iteration   1: 4,078 us/op
+Iteration   2: 4,061 us/op
+Iteration   3: 4,023 us/op
+Iteration   4: 4,131 us/op
+Iteration   5: 4,028 us/op
+Iteration   6: 4,193 us/op
+Iteration   7: 3,990 us/op
+Iteration   8: 4,099 us/op
+Iteration   9: 4,007 us/op
+Iteration  10: 4,173 us/op
 
 
-Result: 11,849 ±(99.9%) 0,273 us/op [Average]
-  Statistics: (min, avg, max) = (11,618, 11,849, 12,124), stdev = 0,180
-  Confidence interval (99.9%): [11,577, 12,122]
+Result: 4,078 ±(99.9%) 0,106 us/op [Average]
+  Statistics: (min, avg, max) = (3,990, 4,078, 4,193), stdev = 0,070
+  Confidence interval (99.9%): [3,973, 4,184]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -729,38 +1075,39 @@ Result: 11,849 ±(99.9%) 0,273 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 200)
 
-# Run progress: 69,23% complete, ETA 00:01:23
+# Run progress: 76,47% complete, ETA 00:01:24
 # Fork: 1 of 1
-# Warmup Iteration   1: 25,279 us/op
-# Warmup Iteration   2: 14,253 us/op
-# Warmup Iteration   3: 14,597 us/op
-# Warmup Iteration   4: 13,558 us/op
-# Warmup Iteration   5: 14,085 us/op
-# Warmup Iteration   6: 14,217 us/op
-# Warmup Iteration   7: 14,275 us/op
-# Warmup Iteration   8: 13,221 us/op
-# Warmup Iteration   9: 12,993 us/op
-# Warmup Iteration  10: 14,059 us/op
-Iteration   1: 13,982 us/op
-Iteration   2: 13,807 us/op
-Iteration   3: 13,836 us/op
-Iteration   4: 13,809 us/op
-Iteration   5: 13,841 us/op
-Iteration   6: 13,594 us/op
-Iteration   7: 14,053 us/op
-Iteration   8: 14,810 us/op
-Iteration   9: 13,480 us/op
-Iteration  10: 14,215 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 8,219 us/op
+# Warmup Iteration   2: 4,463 us/op
+# Warmup Iteration   3: 4,408 us/op
+# Warmup Iteration   4: 4,448 us/op
+# Warmup Iteration   5: 4,316 us/op
+# Warmup Iteration   6: 4,363 us/op
+# Warmup Iteration   7: 4,334 us/op
+# Warmup Iteration   8: 4,557 us/op
+# Warmup Iteration   9: 4,335 us/op
+# Warmup Iteration  10: 4,224 us/op
+Iteration   1: 4,324 us/op
+Iteration   2: 4,381 us/op
+Iteration   3: 4,349 us/op
+Iteration   4: 4,374 us/op
+Iteration   5: 4,230 us/op
+Iteration   6: 4,299 us/op
+Iteration   7: 4,393 us/op
+Iteration   8: 4,521 us/op
+Iteration   9: 4,318 us/op
+Iteration  10: 4,341 us/op
 
 
-Result: 13,943 ±(99.9%) 0,560 us/op [Average]
-  Statistics: (min, avg, max) = (13,480, 13,943, 14,810), stdev = 0,370
-  Confidence interval (99.9%): [13,383, 14,503]
+Result: 4,353 ±(99.9%) 0,114 us/op [Average]
+  Statistics: (min, avg, max) = (4,230, 4,353, 4,521), stdev = 0,076
+  Confidence interval (99.9%): [4,239, 4,467]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -769,38 +1116,39 @@ Result: 13,943 ±(99.9%) 0,560 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 400)
 
-# Run progress: 73,08% complete, ETA 00:01:12
+# Run progress: 79,41% complete, ETA 00:01:13
 # Fork: 1 of 1
-# Warmup Iteration   1: 47,728 us/op
-# Warmup Iteration   2: 17,693 us/op
-# Warmup Iteration   3: 17,419 us/op
-# Warmup Iteration   4: 17,938 us/op
-# Warmup Iteration   5: 16,639 us/op
-# Warmup Iteration   6: 17,175 us/op
-# Warmup Iteration   7: 17,767 us/op
-# Warmup Iteration   8: 17,896 us/op
-# Warmup Iteration   9: 17,532 us/op
-# Warmup Iteration  10: 17,787 us/op
-Iteration   1: 17,265 us/op
-Iteration   2: 17,892 us/op
-Iteration   3: 16,867 us/op
-Iteration   4: 17,562 us/op
-Iteration   5: 17,842 us/op
-Iteration   6: 17,586 us/op
-Iteration   7: 17,729 us/op
-Iteration   8: 17,743 us/op
-Iteration   9: 17,571 us/op
-Iteration  10: 16,725 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 16,450 us/op
+# Warmup Iteration   2: 8,943 us/op
+# Warmup Iteration   3: 8,935 us/op
+# Warmup Iteration   4: 9,048 us/op
+# Warmup Iteration   5: 8,809 us/op
+# Warmup Iteration   6: 8,854 us/op
+# Warmup Iteration   7: 9,970 us/op
+# Warmup Iteration   8: 9,265 us/op
+# Warmup Iteration   9: 8,815 us/op
+# Warmup Iteration  10: 9,019 us/op
+Iteration   1: 8,733 us/op
+Iteration   2: 9,212 us/op
+Iteration   3: 8,957 us/op
+Iteration   4: 9,467 us/op
+Iteration   5: 8,944 us/op
+Iteration   6: 8,936 us/op
+Iteration   7: 10,193 us/op
+Iteration   8: 8,938 us/op
+Iteration   9: 8,926 us/op
+Iteration  10: 9,292 us/op
 
 
-Result: 17,478 ±(99.9%) 0,607 us/op [Average]
-  Statistics: (min, avg, max) = (16,725, 17,478, 17,892), stdev = 0,401
-  Confidence interval (99.9%): [16,871, 18,085]
+Result: 9,160 ±(99.9%) 0,639 us/op [Average]
+  Statistics: (min, avg, max) = (8,733, 9,160, 10,193), stdev = 0,423
+  Confidence interval (99.9%): [8,521, 9,799]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -809,38 +1157,39 @@ Result: 17,478 ±(99.9%) 0,607 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 800)
 
-# Run progress: 76,92% complete, ETA 00:01:02
+# Run progress: 82,35% complete, ETA 00:01:03
 # Fork: 1 of 1
-# Warmup Iteration   1: 63,334 us/op
-# Warmup Iteration   2: 24,582 us/op
-# Warmup Iteration   3: 23,580 us/op
-# Warmup Iteration   4: 24,219 us/op
-# Warmup Iteration   5: 23,768 us/op
-# Warmup Iteration   6: 24,892 us/op
-# Warmup Iteration   7: 24,894 us/op
-# Warmup Iteration   8: 24,090 us/op
-# Warmup Iteration   9: 24,126 us/op
-# Warmup Iteration  10: 23,918 us/op
-Iteration   1: 24,096 us/op
-Iteration   2: 24,010 us/op
-Iteration   3: 23,689 us/op
-Iteration   4: 24,162 us/op
-Iteration   5: 24,211 us/op
-Iteration   6: 23,944 us/op
-Iteration   7: 24,144 us/op
-Iteration   8: 24,035 us/op
-Iteration   9: 24,094 us/op
-Iteration  10: 23,952 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 34,896 us/op
+# Warmup Iteration   2: 20,513 us/op
+# Warmup Iteration   3: 20,106 us/op
+# Warmup Iteration   4: 20,122 us/op
+# Warmup Iteration   5: 20,494 us/op
+# Warmup Iteration   6: 19,884 us/op
+# Warmup Iteration   7: 20,150 us/op
+# Warmup Iteration   8: 21,149 us/op
+# Warmup Iteration   9: 20,072 us/op
+# Warmup Iteration  10: 21,247 us/op
+Iteration   1: 20,697 us/op
+Iteration   2: 21,699 us/op
+Iteration   3: 21,646 us/op
+Iteration   4: 22,051 us/op
+Iteration   5: 21,640 us/op
+Iteration   6: 21,485 us/op
+Iteration   7: 21,324 us/op
+Iteration   8: 20,194 us/op
+Iteration   9: 26,271 us/op
+Iteration  10: 21,023 us/op
 
 
-Result: 24,034 ±(99.9%) 0,226 us/op [Average]
-  Statistics: (min, avg, max) = (23,689, 24,034, 24,211), stdev = 0,150
-  Confidence interval (99.9%): [23,807, 24,260]
+Result: 21,803 ±(99.9%) 2,512 us/op [Average]
+  Statistics: (min, avg, max) = (20,194, 21,803, 26,271), stdev = 1,661
+  Confidence interval (99.9%): [19,291, 24,315]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -849,38 +1198,39 @@ Result: 24,034 ±(99.9%) 0,226 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 1000)
 
-# Run progress: 80,77% complete, ETA 00:00:51
+# Run progress: 85,29% complete, ETA 00:00:52
 # Fork: 1 of 1
-# Warmup Iteration   1: 85,471 us/op
-# Warmup Iteration   2: 34,153 us/op
-# Warmup Iteration   3: 33,493 us/op
-# Warmup Iteration   4: 33,718 us/op
-# Warmup Iteration   5: 33,491 us/op
-# Warmup Iteration   6: 33,607 us/op
-# Warmup Iteration   7: 33,793 us/op
-# Warmup Iteration   8: 32,454 us/op
-# Warmup Iteration   9: 33,935 us/op
-# Warmup Iteration  10: 32,729 us/op
-Iteration   1: 33,433 us/op
-Iteration   2: 33,079 us/op
-Iteration   3: 33,009 us/op
-Iteration   4: 32,908 us/op
-Iteration   5: 32,676 us/op
-Iteration   6: 33,032 us/op
-Iteration   7: 33,152 us/op
-Iteration   8: 32,398 us/op
-Iteration   9: 33,673 us/op
-Iteration  10: 33,040 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 63,346 us/op
+# Warmup Iteration   2: 25,034 us/op
+# Warmup Iteration   3: 24,668 us/op
+# Warmup Iteration   4: 24,595 us/op
+# Warmup Iteration   5: 24,213 us/op
+# Warmup Iteration   6: 25,446 us/op
+# Warmup Iteration   7: 25,973 us/op
+# Warmup Iteration   8: 25,133 us/op
+# Warmup Iteration   9: 24,852 us/op
+# Warmup Iteration  10: 23,964 us/op
+Iteration   1: 24,879 us/op
+Iteration   2: 26,250 us/op
+Iteration   3: 25,433 us/op
+Iteration   4: 23,997 us/op
+Iteration   5: 24,139 us/op
+Iteration   6: 24,647 us/op
+Iteration   7: 24,104 us/op
+Iteration   8: 23,686 us/op
+Iteration   9: 24,502 us/op
+Iteration  10: 23,479 us/op
 
 
-Result: 33,040 ±(99.9%) 0,536 us/op [Average]
-  Statistics: (min, avg, max) = (32,398, 33,040, 33,673), stdev = 0,355
-  Confidence interval (99.9%): [32,504, 33,576]
+Result: 24,512 ±(99.9%) 1,269 us/op [Average]
+  Statistics: (min, avg, max) = (23,479, 24,512, 26,250), stdev = 0,839
+  Confidence interval (99.9%): [23,242, 25,781]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -889,38 +1239,39 @@ Result: 33,040 ±(99.9%) 0,536 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 10000)
 
-# Run progress: 84,62% complete, ETA 00:00:41
+# Run progress: 88,24% complete, ETA 00:00:42
 # Fork: 1 of 1
-# Warmup Iteration   1: 952,399 us/op
-# Warmup Iteration   2: 370,444 us/op
-# Warmup Iteration   3: 336,361 us/op
-# Warmup Iteration   4: 334,956 us/op
-# Warmup Iteration   5: 342,407 us/op
-# Warmup Iteration   6: 315,887 us/op
-# Warmup Iteration   7: 314,495 us/op
-# Warmup Iteration   8: 322,646 us/op
-# Warmup Iteration   9: 317,708 us/op
-# Warmup Iteration  10: 317,222 us/op
-Iteration   1: 315,939 us/op
-Iteration   2: 314,822 us/op
-Iteration   3: 319,873 us/op
-Iteration   4: 319,049 us/op
-Iteration   5: 319,521 us/op
-Iteration   6: 316,667 us/op
-Iteration   7: 322,801 us/op
-Iteration   8: 319,072 us/op
-Iteration   9: 317,597 us/op
-Iteration  10: 315,779 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 650,292 us/op
+# Warmup Iteration   2: 271,700 us/op
+# Warmup Iteration   3: 284,041 us/op
+# Warmup Iteration   4: 296,351 us/op
+# Warmup Iteration   5: 287,541 us/op
+# Warmup Iteration   6: 274,663 us/op
+# Warmup Iteration   7: 273,335 us/op
+# Warmup Iteration   8: 272,505 us/op
+# Warmup Iteration   9: 268,675 us/op
+# Warmup Iteration  10: 278,417 us/op
+Iteration   1: 273,421 us/op
+Iteration   2: 304,795 us/op
+Iteration   3: 272,705 us/op
+Iteration   4: 277,613 us/op
+Iteration   5: 271,885 us/op
+Iteration   6: 287,796 us/op
+Iteration   7: 278,624 us/op
+Iteration   8: 278,556 us/op
+Iteration   9: 269,124 us/op
+Iteration  10: 371,565 us/op
 
 
-Result: 318,112 ±(99.9%) 3,642 us/op [Average]
-  Statistics: (min, avg, max) = (314,822, 318,112, 322,801), stdev = 2,409
-  Confidence interval (99.9%): [314,470, 321,754]
+Result: 288,608 ±(99.9%) 46,759 us/op [Average]
+  Statistics: (min, avg, max) = (269,124, 288,608, 371,565), stdev = 30,928
+  Confidence interval (99.9%): [241,849, 335,368]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -929,38 +1280,39 @@ Result: 318,112 ±(99.9%) 3,642 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 100000)
 
-# Run progress: 88,46% complete, ETA 00:00:31
+# Run progress: 91,18% complete, ETA 00:00:31
 # Fork: 1 of 1
-# Warmup Iteration   1: 6845,832 us/op
-# Warmup Iteration   2: 3603,192 us/op
-# Warmup Iteration   3: 3666,609 us/op
-# Warmup Iteration   4: 3660,895 us/op
-# Warmup Iteration   5: 3362,805 us/op
-# Warmup Iteration   6: 3298,131 us/op
-# Warmup Iteration   7: 3303,388 us/op
-# Warmup Iteration   8: 3348,054 us/op
-# Warmup Iteration   9: 3318,776 us/op
-# Warmup Iteration  10: 3291,751 us/op
-Iteration   1: 3304,871 us/op
-Iteration   2: 3284,813 us/op
-Iteration   3: 3326,877 us/op
-Iteration   4: 3310,082 us/op
-Iteration   5: 3310,252 us/op
-Iteration   6: 3283,617 us/op
-Iteration   7: 3289,591 us/op
-Iteration   8: 3305,842 us/op
-Iteration   9: 3316,376 us/op
-Iteration  10: 3349,199 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 4306,994 us/op
+# Warmup Iteration   2: 2557,137 us/op
+# Warmup Iteration   3: 2572,712 us/op
+# Warmup Iteration   4: 2483,621 us/op
+# Warmup Iteration   5: 2362,708 us/op
+# Warmup Iteration   6: 2392,841 us/op
+# Warmup Iteration   7: 2299,358 us/op
+# Warmup Iteration   8: 2557,598 us/op
+# Warmup Iteration   9: 2386,704 us/op
+# Warmup Iteration  10: 2318,302 us/op
+Iteration   1: 2377,383 us/op
+Iteration   2: 2336,824 us/op
+Iteration   3: 2574,407 us/op
+Iteration   4: 2414,536 us/op
+Iteration   5: 2542,832 us/op
+Iteration   6: 2502,946 us/op
+Iteration   7: 2475,882 us/op
+Iteration   8: 2471,399 us/op
+Iteration   9: 2428,936 us/op
+Iteration  10: 2247,149 us/op
 
 
-Result: 3308,152 ±(99.9%) 30,315 us/op [Average]
-  Statistics: (min, avg, max) = (3283,617, 3308,152, 3349,199), stdev = 20,052
-  Confidence interval (99.9%): [3277,837, 3338,467]
+Result: 2437,229 ±(99.9%) 148,924 us/op [Average]
+  Statistics: (min, avg, max) = (2247,149, 2437,229, 2574,407), stdev = 98,504
+  Confidence interval (99.9%): [2288,306, 2586,153]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -969,38 +1321,39 @@ Result: 3308,152 ±(99.9%) 30,315 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 1000000)
 
-# Run progress: 92,31% complete, ETA 00:00:20
+# Run progress: 94,12% complete, ETA 00:00:21
 # Fork: 1 of 1
-# Warmup Iteration   1: 46322,344 us/op
-# Warmup Iteration   2: 32600,781 us/op
-# Warmup Iteration   3: 32517,982 us/op
-# Warmup Iteration   4: 29233,429 us/op
-# Warmup Iteration   5: 29373,319 us/op
-# Warmup Iteration   6: 29341,414 us/op
-# Warmup Iteration   7: 30184,314 us/op
-# Warmup Iteration   8: 29408,558 us/op
-# Warmup Iteration   9: 29799,716 us/op
-# Warmup Iteration  10: 30059,252 us/op
-Iteration   1: 29021,186 us/op
-Iteration   2: 29272,335 us/op
-Iteration   3: 29646,482 us/op
-Iteration   4: 29245,809 us/op
-Iteration   5: 38251,135 us/op
-Iteration   6: 29035,089 us/op
-Iteration   7: 29193,793 us/op
-Iteration   8: 29029,748 us/op
-Iteration   9: 29191,794 us/op
-Iteration  10: 29096,648 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 38023,585 us/op
+# Warmup Iteration   2: 24439,027 us/op
+# Warmup Iteration   3: 21398,746 us/op
+# Warmup Iteration   4: 20014,608 us/op
+# Warmup Iteration   5: 19551,599 us/op
+# Warmup Iteration   6: 20021,532 us/op
+# Warmup Iteration   7: 19735,279 us/op
+# Warmup Iteration   8: 21695,181 us/op
+# Warmup Iteration   9: 22824,817 us/op
+# Warmup Iteration  10: 20474,895 us/op
+Iteration   1: 20293,024 us/op
+Iteration   2: 21654,433 us/op
+Iteration   3: 22203,043 us/op
+Iteration   4: 20230,852 us/op
+Iteration   5: 23139,355 us/op
+Iteration   6: 22379,710 us/op
+Iteration   7: 20928,338 us/op
+Iteration   8: 20223,828 us/op
+Iteration   9: 19933,565 us/op
+Iteration  10: 23586,283 us/op
 
 
-Result: 30098,402 ±(99.9%) 4339,771 us/op [Average]
-  Statistics: (min, avg, max) = (29021,186, 30098,402, 38251,135), stdev = 2870,490
-  Confidence interval (99.9%): [25758,631, 34438,173]
+Result: 21457,243 ±(99.9%) 2002,566 us/op [Average]
+  Statistics: (min, avg, max) = (19933,565, 21457,243, 23586,283), stdev = 1324,573
+  Confidence interval (99.9%): [19454,677, 23459,809]
 
 
 # JMH 1.5.2 (released 165 days ago, please consider updating!)
-# VM invoker: /home/my/dev/java/jdk1.8.0_31/jre/bin/java
-# VM options: <none>
+# VM invoker: /home/my/dev/java/jdk1.8.0_40/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
 # Warmup: 10 iterations, 500 ms each
 # Measurement: 10 iterations, 500 ms each
 # Timeout: 10 min per iteration
@@ -1009,61 +1362,70 @@ Result: 30098,402 ±(99.9%) 4339,771 us/op [Average]
 # Benchmark: fr.soat.ParalelSortArrayBenchmark.benchmark_array_sort
 # Parameters: (arraySize = 10000000)
 
-# Run progress: 96,15% complete, ETA 00:00:10
+# Run progress: 97,06% complete, ETA 00:00:10
 # Fork: 1 of 1
-# Warmup Iteration   1: 382135,301 us/op
-# Warmup Iteration   2: 285889,340 us/op
-# Warmup Iteration   3: 286955,578 us/op
-# Warmup Iteration   4: 279380,165 us/op
-# Warmup Iteration   5: 283144,531 us/op
-# Warmup Iteration   6: 282736,454 us/op
-# Warmup Iteration   7: 285240,821 us/op
-# Warmup Iteration   8: 279278,168 us/op
-# Warmup Iteration   9: 281572,935 us/op
-# Warmup Iteration  10: 286904,602 us/op
-Iteration   1: 285878,331 us/op
-Iteration   2: 288053,612 us/op
-Iteration   3: 290574,633 us/op
-Iteration   4: 283134,503 us/op
-Iteration   5: 286774,539 us/op
-Iteration   6: 286489,031 us/op
-Iteration   7: 288613,356 us/op
-Iteration   8: 284393,761 us/op
-Iteration   9: 281304,933 us/op
-Iteration  10: 281643,468 us/op
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: 520812,121 us/op
+# Warmup Iteration   2: 199354,300 us/op
+# Warmup Iteration   3: 202044,289 us/op
+# Warmup Iteration   4: 200438,433 us/op
+# Warmup Iteration   5: 207506,256 us/op
+# Warmup Iteration   6: 209213,108 us/op
+# Warmup Iteration   7: 202500,214 us/op
+# Warmup Iteration   8: 191487,994 us/op
+# Warmup Iteration   9: 192927,066 us/op
+# Warmup Iteration  10: 193202,884 us/op
+Iteration   1: 195278,807 us/op
+Iteration   2: 189159,301 us/op
+Iteration   3: 203810,613 us/op
+Iteration   4: 203804,444 us/op
+Iteration   5: 200586,280 us/op
+Iteration   6: 193746,523 us/op
+Iteration   7: 190697,684 us/op
+Iteration   8: 210869,159 us/op
+Iteration   9: 195345,753 us/op
+Iteration  10: 191252,918 us/op
 
 
-Result: 285686,017 ±(99.9%) 4609,342 us/op [Average]
-  Statistics: (min, avg, max) = (281304,933, 285686,017, 290574,633), stdev = 3048,795
-  Confidence interval (99.9%): [281076,674, 290295,359]
+Result: 197455,148 ±(99.9%) 10646,848 us/op [Average]
+  Statistics: (min, avg, max) = (189159,301, 197455,148, 210869,159), stdev = 7042,231
+  Confidence interval (99.9%): [186808,300, 208101,997]
 
 
-# Run complete. Total time: 00:04:32
+# Run complete. Total time: 00:06:00
 
 Benchmark                                       (arraySize)  Mode  Cnt       Score       Error  Units
-ParalelSortArrayBenchmark.baseline                       10  avgt   10       0,214 ±     0,031  us/op
-ParalelSortArrayBenchmark.baseline                       20  avgt   10       0,347 ±     0,024  us/op
-ParalelSortArrayBenchmark.baseline                       40  avgt   10       0,853 ±     0,050  us/op
-ParalelSortArrayBenchmark.baseline                       80  avgt   10       0,991 ±     0,017  us/op
-ParalelSortArrayBenchmark.baseline                      100  avgt   10       1,150 ±     0,009  us/op
-ParalelSortArrayBenchmark.baseline                      200  avgt   10       2,726 ±     0,023  us/op
-ParalelSortArrayBenchmark.baseline                      400  avgt   10       6,645 ±     0,045  us/op
-ParalelSortArrayBenchmark.baseline                      800  avgt   10      12,119 ±     0,107  us/op
-ParalelSortArrayBenchmark.baseline                     1000  avgt   10      23,745 ±     0,226  us/op
-ParalelSortArrayBenchmark.baseline                    10000  avgt   10     587,614 ±     3,709  us/op
-ParalelSortArrayBenchmark.baseline                   100000  avgt   10    5362,499 ±    52,414  us/op
-ParalelSortArrayBenchmark.baseline                  1000000  avgt   10   54370,145 ±  1009,569  us/op
-ParalelSortArrayBenchmark.baseline                 10000000  avgt   10  552266,779 ± 27897,695  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           10  avgt   10       6,943 ±     0,199  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           20  avgt   10       6,895 ±     0,119  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           40  avgt   10      11,257 ±     0,136  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort           80  avgt   10      11,902 ±     0,221  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort          100  avgt   10      11,849 ±     0,273  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort          200  avgt   10      13,943 ±     0,560  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort          400  avgt   10      17,478 ±     0,607  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort          800  avgt   10      24,034 ±     0,226  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort         1000  avgt   10      33,040 ±     0,536  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort        10000  avgt   10     318,112 ±     3,642  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort       100000  avgt   10    3308,152 ±    30,315  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort      1000000  avgt   10   30098,402 ±  4339,771  us/op
-ParalelSortArrayBenchmark.benchmark_array_sort     10000000  avgt   10  285686,017 ±  4609,342  us/op
+ParalelSortArrayBenchmark.baseline                       10  avgt   10       0,152 ±     0,003  us/op
+ParalelSortArrayBenchmark.baseline                       15  avgt   10       0,198 ±     0,004  us/op
+ParalelSortArrayBenchmark.baseline                       20  avgt   10       0,295 ±     0,004  us/op
+ParalelSortArrayBenchmark.baseline                       25  avgt   10       0,458 ±     0,011  us/op
+ParalelSortArrayBenchmark.baseline                       30  avgt   10       0,492 ±     0,008  us/op
+ParalelSortArrayBenchmark.baseline                       40  avgt   10       0,891 ±     0,044  us/op
+ParalelSortArrayBenchmark.baseline                       60  avgt   10       0,797 ±     0,009  us/op
+ParalelSortArrayBenchmark.baseline                       80  avgt   10       1,223 ±     0,027  us/op
+ParalelSortArrayBenchmark.baseline                      100  avgt   10       1,514 ±     0,020  us/op
+ParalelSortArrayBenchmark.baseline                      200  avgt   10       2,832 ±     0,058  us/op
+ParalelSortArrayBenchmark.baseline                      400  avgt   10       6,390 ±     0,114  us/op
+ParalelSortArrayBenchmark.baseline                      800  avgt   10      14,428 ±     0,289  us/op
+ParalelSortArrayBenchmark.baseline                     1000  avgt   10      23,983 ±     0,547  us/op
+ParalelSortArrayBenchmark.baseline                    10000  avgt   10     485,999 ±    10,875  us/op
+ParalelSortArrayBenchmark.baseline                   100000  avgt   10    4556,539 ±    88,539  us/op
+ParalelSortArrayBenchmark.baseline                  1000000  avgt   10   42901,678 ±   743,831  us/op
+ParalelSortArrayBenchmark.baseline                 10000000  avgt   10  446897,009 ± 16468,338  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort           10  avgt   10       1,572 ±     0,052  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort           15  avgt   10       1,882 ±     0,089  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort           20  avgt   10       2,761 ±     0,101  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort           25  avgt   10       2,386 ±     0,061  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort           30  avgt   10       2,691 ±     0,038  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort           40  avgt   10       3,211 ±     0,170  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort           60  avgt   10       2,781 ±     0,118  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort           80  avgt   10       3,545 ±     0,274  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort          100  avgt   10       4,078 ±     0,106  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort          200  avgt   10       4,353 ±     0,114  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort          400  avgt   10       9,160 ±     0,639  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort          800  avgt   10      21,803 ±     2,512  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort         1000  avgt   10      24,512 ±     1,269  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort        10000  avgt   10     288,608 ±    46,759  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort       100000  avgt   10    2437,229 ±   148,924  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort      1000000  avgt   10   21457,243 ±  2002,566  us/op
+ParalelSortArrayBenchmark.benchmark_array_sort     10000000  avgt   10  197455,148 ± 10646,848  us/op

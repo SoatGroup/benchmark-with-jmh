@@ -31,7 +31,7 @@ public class ParalelSortArrayBenchmark {
 	@State(Scope.Benchmark)
 	public static class ArrayContainer {
 
-		@Param({ "10", "20", "40", "80", "100", "200", "400", "800", "1000", "10000", "100000", "1000000", "10000000" })
+		@Param({ "10", "15", "20", "25", "30", "40", "60", "80", "100", "200", "400", "800", "1000", "10000", "100000", "1000000", "10000000" })
 		int arraySize;
 
 		// initial unsorted array
@@ -61,14 +61,19 @@ public class ParalelSortArrayBenchmark {
 	
 	@Benchmark
 	public int[] benchmark_array_sort(ArrayContainer d) {
-		// sort copy of shuffled array
-	    return Arrays.stream(d.getArrayToSort()).parallel().sorted().toArray();
+		// parallel sort array
+	    return Arrays.stream(d.getArrayToSort())
+	    		.parallel()
+	    		.sorted()
+	    		.toArray();
 	}
 
 	@Benchmark
 	public int[] baseline(ArrayContainer d) {
-        // sort copy of shuffled array
-	    return Arrays.stream(d.getArrayToSort()).sorted().toArray();
+        // sort array
+		return Arrays.stream(d.getArrayToSort())
+				.sorted()
+				.toArray();
 	}
 
 
