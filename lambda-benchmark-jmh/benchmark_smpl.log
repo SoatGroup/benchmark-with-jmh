@@ -1,0 +1,1873 @@
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 10)
+
+# Run progress: 0,00% complete, ETA 00:11:20
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 24708, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 34, 236, 6274, 57606 us/op
+# Warmup Iteration   2: n = 14532, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 37, 229, 268 us/op
+# Warmup Iteration   3: n = 15603, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 7, 61, 78 us/op
+# Warmup Iteration   4: n = 15487, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 11, 230, 345 us/op
+# Warmup Iteration   5: n = 15922, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 2, 6, 6, 10, 248, 272 us/op
+# Warmup Iteration   6: n = 16209, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 2, 5, 6, 41, 122, 135 us/op
+# Warmup Iteration   7: n = 16229, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 8, 165, 210 us/op
+# Warmup Iteration   8: n = 15804, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 8, 146, 206 us/op
+# Warmup Iteration   9: n = 16141, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 9, 126, 133 us/op
+# Warmup Iteration  10: n = 15835, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 9, 91, 102 us/op
+Iteration   1: n = 16228, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 9, 537, 1237 us/op
+Iteration   2: n = 15535, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 15, 120, 129 us/op
+Iteration   3: n = 15822, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 11, 170, 287 us/op
+Iteration   4: n = 16118, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 9, 112, 128 us/op
+Iteration   5: n = 15437, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 2, 5, 6, 9, 349, 521 us/op
+Iteration   6: n = 15576, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 16, 1593, 3408 us/op
+Iteration   7: n = 15497, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 9, 619, 1237 us/op
+Iteration   8: n = 15467, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 8, 704, 1223 us/op
+Iteration   9: n = 15315, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 8, 656, 1255 us/op
+Iteration  10: n = 15578, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 9, 765, 1495 us/op
+
+
+Result: 1,884 ±(99.9%) 0,097 us/op [Average]
+  Statistics: (min, avg, max) = (0,803, 1,884, 3407,872), stdev = 11,629
+  Confidence interval (99.9%): [1,788, 1,981]
+  Samples, N = 156573
+        mean =      1,884 ±(99.9%) 0,097 us/op
+         min =      0,803 us/op
+  p( 0,0000) =      0,803 us/op
+  p(50,0000) =      1,340 us/op
+  p(90,0000) =      5,176 us/op
+  p(95,0000) =      5,504 us/op
+  p(99,0000) =      5,752 us/op
+  p(99,9000) =      9,399 us/op
+  p(99,9900) =    127,795 us/op
+  p(99,9990) =   2325,706 us/op
+  p(99,9999) =   3407,872 us/op
+         max =   3407,872 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 15)
+
+# Run progress: 2,94% complete, ETA 00:11:16
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 22209, mean = 8 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 5, 6, 67, 321, 6341, 46924 us/op
+# Warmup Iteration   2: n = 13784, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 75, 342, 364 us/op
+# Warmup Iteration   3: n = 14413, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 10, 142, 146 us/op
+# Warmup Iteration   4: n = 14541, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 13, 1620, 2855 us/op
+# Warmup Iteration   5: n = 14349, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 9, 735, 1104 us/op
+# Warmup Iteration   6: n = 14252, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 10, 174, 200 us/op
+# Warmup Iteration   7: n = 14348, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 12, 1072, 1704 us/op
+# Warmup Iteration   8: n = 14307, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 8, 157, 178 us/op
+# Warmup Iteration   9: n = 14063, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 16, 563, 874 us/op
+# Warmup Iteration  10: n = 14254, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 9, 630, 998 us/op
+Iteration   1: n = 14200, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 9, 565, 851 us/op
+Iteration   2: n = 14087, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 9, 157, 161 us/op
+Iteration   3: n = 13871, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 9, 161, 202 us/op
+Iteration   4: n = 14198, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 9, 607, 947 us/op
+Iteration   5: n = 14239, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 32, 981, 1013 us/op
+Iteration   6: n = 14199, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 26, 1139, 1307 us/op
+Iteration   7: n = 14211, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 8, 629, 894 us/op
+Iteration   8: n = 14312, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 16, 170, 170 us/op
+Iteration   9: n = 14182, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 11, 852, 881 us/op
+Iteration  10: n = 14367, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 2, 6, 6, 9, 134, 138 us/op
+
+
+Result: 2,115 ±(99.9%) 0,076 us/op [Average]
+  Statistics: (min, avg, max) = (1,224, 2,115, 1306,624), stdev = 8,675
+  Confidence interval (99.9%): [2,040, 2,191]
+  Samples, N = 141866
+        mean =      2,115 ±(99.9%) 0,076 us/op
+         min =      1,224 us/op
+  p( 0,0000) =      1,224 us/op
+  p(50,0000) =      1,680 us/op
+  p(90,0000) =      2,084 us/op
+  p(95,0000) =      5,712 us/op
+  p(99,0000) =      6,184 us/op
+  p(99,9000) =      9,492 us/op
+  p(99,9900) =    197,716 us/op
+  p(99,9990) =   1183,582 us/op
+  p(99,9999) =   1306,624 us/op
+         max =   1306,624 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 20)
+
+# Run progress: 5,88% complete, ETA 00:10:55
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 34035, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 30, 317, 7075, 46858 us/op
+# Warmup Iteration   2: n = 20647, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 138, 167, 183 us/op
+# Warmup Iteration   3: n = 10044, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 168, 967, 968 us/op
+# Warmup Iteration   4: n = 10444, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 14, 302, 310 us/op
+# Warmup Iteration   5: n = 10638, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 12, 200, 201 us/op
+# Warmup Iteration   6: n = 10515, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 12, 110, 111 us/op
+# Warmup Iteration   7: n = 10432, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 51, 758, 785 us/op
+# Warmup Iteration   8: n = 10516, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 16, 1814, 1880 us/op
+# Warmup Iteration   9: n = 10528, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 31, 912, 953 us/op
+# Warmup Iteration  10: n = 10461, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 11, 134, 135 us/op
+Iteration   1: n = 10518, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 32, 1441, 1509 us/op
+Iteration   2: n = 10263, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 38, 4711, 4833 us/op
+Iteration   3: n = 10135, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 68, 1351, 1368 us/op
+Iteration   4: n = 10394, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 23, 151, 152 us/op
+Iteration   5: n = 10375, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 19, 1290, 1335 us/op
+Iteration   6: n = 10391, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 13, 86, 87 us/op
+Iteration   7: n = 10333, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 12, 156, 158 us/op
+Iteration   8: n = 10191, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 30, 5410, 5497 us/op
+Iteration   9: n = 10206, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 29, 142, 143 us/op
+Iteration  10: n = 10221, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 29, 190, 190 us/op
+
+
+Result: 2,996 ±(99.9%) 0,250 us/op [Average]
+  Statistics: (min, avg, max) = (1,522, 2,996, 5496,832), stdev = 24,408
+  Confidence interval (99.9%): [2,746, 3,246]
+  Samples, N = 103027
+        mean =      2,996 ±(99.9%) 0,250 us/op
+         min =      1,522 us/op
+  p( 0,0000) =      1,522 us/op
+  p(50,0000) =      2,124 us/op
+  p(90,0000) =      6,104 us/op
+  p(95,0000) =      6,336 us/op
+  p(99,0000) =      6,648 us/op
+  p(99,9000) =     27,426 us/op
+  p(99,9900) =    186,842 us/op
+  p(99,9990) =   5476,740 us/op
+  p(99,9999) =   5496,832 us/op
+         max =   5496,832 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 25)
+
+# Run progress: 8,82% complete, ETA 00:10:34
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 33732, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 35, 185, 4792, 47579 us/op
+# Warmup Iteration   2: n = 20285, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 61, 260, 2511 us/op
+# Warmup Iteration   3: n = 10181, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 86, 157, 157 us/op
+# Warmup Iteration   4: n = 10162, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 34, 1934, 1964 us/op
+# Warmup Iteration   5: n = 10244, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 13, 149, 150 us/op
+# Warmup Iteration   6: n = 10387, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 43, 197, 199 us/op
+# Warmup Iteration   7: n = 10312, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 15, 2174, 2241 us/op
+# Warmup Iteration   8: n = 10168, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 11, 121, 121 us/op
+# Warmup Iteration   9: n = 10143, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 59, 310, 312 us/op
+# Warmup Iteration  10: n = 9835, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 68, 1630, 1630 us/op
+Iteration   1: n = 9805, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 65, 1372, 1372 us/op
+Iteration   2: n = 9881, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 72, 1497, 1497 us/op
+Iteration   3: n = 9415, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 89, 230, 230 us/op
+Iteration   4: n = 9720, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 27, 136, 136 us/op
+Iteration   5: n = 9686, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 17, 152, 152 us/op
+Iteration   6: n = 10158, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 11, 150, 152 us/op
+Iteration   7: n = 9811, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 55, 111, 111 us/op
+Iteration   8: n = 9981, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 55, 125, 125 us/op
+Iteration   9: n = 9952, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 39, 1442, 1442 us/op
+Iteration  10: n = 10053, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 51, 1345, 1348 us/op
+
+
+Result: 3,057 ±(99.9%) 0,140 us/op [Average]
+  Statistics: (min, avg, max) = (1,504, 3,057, 1497,088), stdev = 13,320
+  Confidence interval (99.9%): [2,918, 3,197]
+  Samples, N = 98462
+        mean =      3,057 ±(99.9%) 0,140 us/op
+         min =      1,504 us/op
+  p( 0,0000) =      1,504 us/op
+  p(50,0000) =      2,080 us/op
+  p(90,0000) =      6,048 us/op
+  p(95,0000) =      6,248 us/op
+  p(99,0000) =      6,600 us/op
+  p(99,9000) =     42,997 us/op
+  p(99,9900) =    367,186 us/op
+  p(99,9990) =   1497,088 us/op
+  p(99,9999) =   1497,088 us/op
+         max =   1497,088 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 30)
+
+# Run progress: 11,76% complete, ETA 00:10:14
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 29787, mean = 8 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 57, 209, 8356, 47186 us/op
+# Warmup Iteration   2: n = 17545, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 99, 342, 869 us/op
+# Warmup Iteration   3: n = 18521, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 52, 380, 751 us/op
+# Warmup Iteration   4: n = 18253, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 71, 1269, 4981 us/op
+# Warmup Iteration   5: n = 18628, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 49, 180, 253 us/op
+# Warmup Iteration   6: n = 18832, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 36, 144, 146 us/op
+# Warmup Iteration   7: n = 18551, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 55, 246, 979 us/op
+# Warmup Iteration   8: n = 18419, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 31, 1406, 5300 us/op
+# Warmup Iteration   9: n = 18670, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 22, 118, 166 us/op
+# Warmup Iteration  10: n = 18373, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 36, 116, 180 us/op
+Iteration   1: n = 18453, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 24, 377, 1405 us/op
+Iteration   2: n = 18455, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 13, 191, 417 us/op
+Iteration   3: n = 18381, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 13, 107, 114 us/op
+Iteration   4: n = 18438, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 31, 553, 1372 us/op
+Iteration   5: n = 18233, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 23, 210, 621 us/op
+Iteration   6: n = 18281, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 16, 204, 317 us/op
+Iteration   7: n = 18749, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 19, 137, 167 us/op
+Iteration   8: n = 18027, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 42, 199, 276 us/op
+Iteration   9: n = 18200, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 37, 478, 1085 us/op
+Iteration  10: n = 18249, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 33, 2236, 5751 us/op
+
+
+Result: 3,254 ±(99.9%) 0,120 us/op [Average]
+  Statistics: (min, avg, max) = (1,594, 3,254, 5750,784), stdev = 15,638
+  Confidence interval (99.9%): [3,134, 3,374]
+  Samples, N = 183466
+        mean =      3,254 ±(99.9%) 0,120 us/op
+         min =      1,594 us/op
+  p( 0,0000) =      1,594 us/op
+  p(50,0000) =      2,272 us/op
+  p(90,0000) =      6,208 us/op
+  p(95,0000) =      6,400 us/op
+  p(99,0000) =      6,704 us/op
+  p(99,9000) =     25,809 us/op
+  p(99,9900) =    163,007 us/op
+  p(99,9990) =   2195,223 us/op
+  p(99,9999) =   5750,784 us/op
+         max =   5750,784 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 40)
+
+# Run progress: 14,71% complete, ETA 00:09:53
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 26083, mean = 9 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 8, 71, 243, 8093, 47841 us/op
+# Warmup Iteration   2: n = 15829, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 121, 1425, 2030 us/op
+# Warmup Iteration   3: n = 16195, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 30, 1745, 4096 us/op
+# Warmup Iteration   4: n = 15891, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 36, 138, 140 us/op
+# Warmup Iteration   5: n = 16428, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 14, 162, 180 us/op
+# Warmup Iteration   6: n = 16233, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 14, 124, 126 us/op
+# Warmup Iteration   7: n = 16096, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 30, 117, 142 us/op
+# Warmup Iteration   8: n = 16434, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 15, 102, 119 us/op
+# Warmup Iteration   9: n = 16265, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 22, 840, 1993 us/op
+# Warmup Iteration  10: n = 16084, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 27, 286, 556 us/op
+Iteration   1: n = 16215, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 13, 123, 126 us/op
+Iteration   2: n = 16161, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 33, 778, 827 us/op
+Iteration   3: n = 15979, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 49, 731, 1647 us/op
+Iteration   4: n = 15840, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 72, 1596, 1628 us/op
+Iteration   5: n = 15815, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 31, 1612, 1622 us/op
+Iteration   6: n = 15849, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 31, 448, 854 us/op
+Iteration   7: n = 15550, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 14, 1547, 1645 us/op
+Iteration   8: n = 15746, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 19, 830, 1593 us/op
+Iteration   9: n = 15738, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 88, 1500, 1509 us/op
+Iteration  10: n = 15511, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 13, 1590, 1618 us/op
+
+
+Result: 3,872 ±(99.9%) 0,121 us/op [Average]
+  Statistics: (min, avg, max) = (2,108, 3,872, 1646,592), stdev = 14,581
+  Confidence interval (99.9%): [3,751, 3,992]
+  Samples, N = 158404
+        mean =      3,872 ±(99.9%) 0,121 us/op
+         min =      2,108 us/op
+  p( 0,0000) =      2,108 us/op
+  p(50,0000) =      2,780 us/op
+  p(90,0000) =      6,952 us/op
+  p(95,0000) =      7,168 us/op
+  p(99,0000) =      7,512 us/op
+  p(99,9000) =     31,475 us/op
+  p(99,9900) =    408,846 us/op
+  p(99,9990) =   1645,396 us/op
+  p(99,9999) =   1646,592 us/op
+         max =   1646,592 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 60)
+
+# Run progress: 17,65% complete, ETA 00:09:33
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 22693, mean = 10 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 12, 75, 327, 7843, 48497 us/op
+# Warmup Iteration   2: n = 13331, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 101, 235, 271 us/op
+# Warmup Iteration   3: n = 13704, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 31, 85, 85 us/op
+# Warmup Iteration   4: n = 13793, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 61, 1081, 1235 us/op
+# Warmup Iteration   5: n = 13792, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 24, 121, 130 us/op
+# Warmup Iteration   6: n = 13879, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 40, 111, 114 us/op
+# Warmup Iteration   7: n = 13842, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 36, 262, 308 us/op
+# Warmup Iteration   8: n = 13825, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 43, 398, 557 us/op
+# Warmup Iteration   9: n = 13816, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 69, 1355, 1761 us/op
+# Warmup Iteration  10: n = 13852, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 33, 1011, 1548 us/op
+Iteration   1: n = 13519, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 34, 147, 156 us/op
+Iteration   2: n = 12479, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 104, 1030, 1059 us/op
+Iteration   3: n = 13593, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 31, 135, 137 us/op
+Iteration   4: n = 13521, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 28, 1296, 1309 us/op
+Iteration   5: n = 13421, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 40, 162, 164 us/op
+Iteration   6: n = 13443, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 76, 2830, 3629 us/op
+Iteration   7: n = 13505, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 26, 865, 1276 us/op
+Iteration   8: n = 13437, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 26, 921, 1337 us/op
+Iteration   9: n = 13533, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 48, 196, 237 us/op
+Iteration  10: n = 13447, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 32, 995, 1434 us/op
+
+
+Result: 4,483 ±(99.9%) 0,137 us/op [Average]
+  Statistics: (min, avg, max) = (2,596, 4,483, 3629,056), stdev = 15,234
+  Confidence interval (99.9%): [4,346, 4,620]
+  Samples, N = 133898
+        mean =      4,483 ±(99.9%) 0,137 us/op
+         min =      2,596 us/op
+  p( 0,0000) =      2,596 us/op
+  p(50,0000) =      3,392 us/op
+  p(90,0000) =      7,504 us/op
+  p(95,0000) =      7,752 us/op
+  p(99,0000) =      8,176 us/op
+  p(99,9000) =     33,549 us/op
+  p(99,9900) =    299,259 us/op
+  p(99,9990) =   2884,818 us/op
+  p(99,9999) =   3629,056 us/op
+         max =   3629,056 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 80)
+
+# Run progress: 20,59% complete, ETA 00:09:12
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 18526, mean = 13 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 9, 12, 78, 367, 19797, 47710 us/op
+# Warmup Iteration   2: n = 11404, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 10, 84, 172, 173 us/op
+# Warmup Iteration   3: n = 11395, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 54, 190, 200 us/op
+# Warmup Iteration   4: n = 11453, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 25, 2743, 3178 us/op
+# Warmup Iteration   5: n = 11447, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 51, 187, 200 us/op
+# Warmup Iteration   6: n = 11522, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 64, 224, 234 us/op
+# Warmup Iteration   7: n = 11475, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 8, 9, 9, 27, 141, 147 us/op
+# Warmup Iteration   8: n = 11565, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 8, 9, 9, 15, 102, 106 us/op
+# Warmup Iteration   9: n = 11381, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 29, 1367, 1378 us/op
+# Warmup Iteration  10: n = 11328, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 79, 1439, 1526 us/op
+Iteration   1: n = 11309, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 30, 116, 118 us/op
+Iteration   2: n = 11252, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 8, 9, 9, 12, 895, 902 us/op
+Iteration   3: n = 11150, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 30, 886, 889 us/op
+Iteration   4: n = 11062, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 21, 113, 114 us/op
+Iteration   5: n = 11043, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 8, 9, 9, 66, 6439, 7086 us/op
+Iteration   6: n = 11225, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 8, 9, 9, 87, 884, 886 us/op
+Iteration   7: n = 11256, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 9, 9, 31, 1007, 1018 us/op
+Iteration   8: n = 11224, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 8, 9, 9, 40, 972, 980 us/op
+Iteration   9: n = 11170, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 8, 9, 9, 48, 875, 953 us/op
+Iteration  10: n = 11176, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 9, 9, 9, 41, 259, 279 us/op
+
+
+Result: 5,436 ±(99.9%) 0,232 us/op [Average]
+  Statistics: (min, avg, max) = (3,468, 5,436, 7086,080), stdev = 23,575
+  Confidence interval (99.9%): [5,204, 5,668]
+  Samples, N = 111867
+        mean =      5,436 ±(99.9%) 0,232 us/op
+         min =      3,468 us/op
+  p( 0,0000) =      3,468 us/op
+  p(50,0000) =      4,400 us/op
+  p(90,0000) =      8,448 us/op
+  p(95,0000) =      8,800 us/op
+  p(99,0000) =      9,376 us/op
+  p(99,9000) =     32,021 us/op
+  p(99,9900) =    882,891 us/op
+  p(99,9990) =   6365,903 us/op
+  p(99,9999) =   7086,080 us/op
+         max =   7086,080 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 100)
+
+# Run progress: 23,53% complete, ETA 00:08:52
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 30996, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 50, 197, 5977, 47055 us/op
+# Warmup Iteration   2: n = 18628, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 11, 96, 2468, 2535 us/op
+# Warmup Iteration   3: n = 18749, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 44, 446, 2298 us/op
+# Warmup Iteration   4: n = 18351, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 42, 125, 234 us/op
+# Warmup Iteration   5: n = 19057, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 45, 187, 240 us/op
+# Warmup Iteration   6: n = 18882, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 19, 125, 252 us/op
+# Warmup Iteration   7: n = 18682, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 67, 155, 198 us/op
+# Warmup Iteration   8: n = 18775, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 51, 359, 1989 us/op
+# Warmup Iteration   9: n = 18684, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 55, 2154, 5693 us/op
+# Warmup Iteration  10: n = 18759, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 39, 278, 1214 us/op
+Iteration   1: n = 18879, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 24, 353, 678 us/op
+Iteration   2: n = 18542, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 47, 1102, 1200 us/op
+Iteration   3: n = 18266, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 74, 1071, 1090 us/op
+Iteration   4: n = 18290, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 77, 1107, 5874 us/op
+Iteration   5: n = 17989, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 63, 2004, 5743 us/op
+Iteration   6: n = 18325, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 46, 273, 1051 us/op
+Iteration   7: n = 18276, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 79, 1024, 1087 us/op
+Iteration   8: n = 18158, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 75, 388, 1032 us/op
+Iteration   9: n = 18034, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 74, 395, 790 us/op
+Iteration  10: n = 17934, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 40, 1051, 1067 us/op
+
+
+Result: 6,639 ±(99.9%) 0,168 us/op [Average]
+  Statistics: (min, avg, max) = (4,112, 6,639, 5873,664), stdev = 21,766
+  Confidence interval (99.9%): [6,471, 6,807]
+  Samples, N = 182693
+        mean =      6,639 ±(99.9%) 0,168 us/op
+         min =      4,112 us/op
+  p( 0,0000) =      4,112 us/op
+  p(50,0000) =      5,224 us/op
+  p(90,0000) =      9,504 us/op
+  p(95,0000) =      9,728 us/op
+  p(99,0000) =     10,224 us/op
+  p(99,9000) =     65,533 us/op
+  p(99,9900) =    579,404 us/op
+  p(99,9990) =   5765,275 us/op
+  p(99,9999) =   5873,664 us/op
+         max =   5873,664 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 200)
+
+# Run progress: 26,47% complete, ETA 00:08:31
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 16307, mean = 21 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 15, 29, 124, 599, 22792, 47317 us/op
+# Warmup Iteration   2: n = 10751, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 17, 125, 300, 306 us/op
+# Warmup Iteration   3: n = 10843, mean = 12 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 16, 109, 2892, 2990 us/op
+# Warmup Iteration   4: n = 10825, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 82, 847, 910 us/op
+# Warmup Iteration   5: n = 10800, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 74, 131, 133 us/op
+# Warmup Iteration   6: n = 10959, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 91, 1325, 1440 us/op
+# Warmup Iteration   7: n = 10736, mean = 12 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 79, 4285, 4432 us/op
+# Warmup Iteration   8: n = 10666, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 81, 2340, 2494 us/op
+# Warmup Iteration   9: n = 10626, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 42, 553, 579 us/op
+# Warmup Iteration  10: n = 10747, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 48, 837, 838 us/op
+Iteration   1: n = 10504, mean = 12 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 109, 3028, 3146 us/op
+Iteration   2: n = 10537, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 98, 857, 862 us/op
+Iteration   3: n = 10597, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 81, 839, 842 us/op
+Iteration   4: n = 10725, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 67, 115, 116 us/op
+Iteration   5: n = 10618, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 82, 781, 810 us/op
+Iteration   6: n = 10543, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 74, 805, 845 us/op
+Iteration   7: n = 10823, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 97, 868, 869 us/op
+Iteration   8: n = 10682, mean = 12 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 104, 2268, 2363 us/op
+Iteration   9: n = 10594, mean = 12 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 87, 1131, 1149 us/op
+Iteration  10: n = 10490, mean = 12 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 16, 93, 793, 794 us/op
+
+
+Result: 11,452 ±(99.9%) 0,174 us/op [Average]
+  Statistics: (min, avg, max) = (7,880, 11,452, 3145,728), stdev = 17,250
+  Confidence interval (99.9%): [11,278, 11,626]
+  Samples, N = 106113
+        mean =     11,452 ±(99.9%) 0,174 us/op
+         min =      7,880 us/op
+  p( 0,0000) =      7,880 us/op
+  p(50,0000) =      9,872 us/op
+  p(90,0000) =     13,952 us/op
+  p(95,0000) =     14,304 us/op
+  p(99,0000) =     15,248 us/op
+  p(99,9000) =     85,574 us/op
+  p(99,9900) =    831,711 us/op
+  p(99,9990) =   3097,896 us/op
+  p(99,9999) =   3145,728 us/op
+         max =   3145,728 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 400)
+
+# Run progress: 29,41% complete, ETA 00:08:11
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 15120, mean = 37 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 26, 30, 34, 148, 1111, 27667, 48169 us/op
+# Warmup Iteration   2: n = 10028, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 18, 23, 27, 27, 33, 125, 761, 762 us/op
+# Warmup Iteration   3: n = 10049, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 20, 23, 27, 27, 32, 117, 967, 968 us/op
+# Warmup Iteration   4: n = 10125, mean = 25 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 30, 141, 5548, 5587 us/op
+# Warmup Iteration   5: n = 10144, mean = 25 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 29, 127, 1451, 1454 us/op
+# Warmup Iteration   6: n = 10316, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 26, 27, 29, 113, 765, 781 us/op
+# Warmup Iteration   7: n = 10207, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 29, 96, 686, 695 us/op
+# Warmup Iteration   8: n = 10111, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 30, 114, 909, 911 us/op
+# Warmup Iteration   9: n = 10060, mean = 25 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 30, 101, 4415, 4432 us/op
+# Warmup Iteration  10: n = 10116, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 30, 100, 2726, 2748 us/op
+Iteration   1: n = 10031, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 20, 23, 27, 27, 33, 103, 811, 811 us/op
+Iteration   2: n = 10247, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 29, 110, 1974, 2007 us/op
+Iteration   3: n = 10195, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 30, 99, 825, 837 us/op
+Iteration   4: n = 10110, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 29, 113, 770, 770 us/op
+Iteration   5: n = 10128, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 30, 119, 789, 790 us/op
+Iteration   6: n = 10185, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 32, 119, 406, 409 us/op
+Iteration   7: n = 10127, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 20, 23, 27, 27, 29, 109, 707, 708 us/op
+Iteration   8: n = 10302, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 29, 117, 767, 768 us/op
+Iteration   9: n = 10232, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 23, 27, 27, 30, 115, 740, 740 us/op
+Iteration  10: n = 10075, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 20, 23, 27, 27, 34, 98, 683, 684 us/op
+
+
+Result: 24,172 ±(99.9%) 0,143 us/op [Average]
+  Statistics: (min, avg, max) = (18,912, 24,172, 2007,040), stdev = 13,881
+  Confidence interval (99.9%): [24,029, 24,315]
+  Samples, N = 101632
+        mean =     24,172 ±(99.9%) 0,143 us/op
+         min =     18,912 us/op
+  p( 0,0000) =     18,912 us/op
+  p(50,0000) =     22,912 us/op
+  p(90,0000) =     26,592 us/op
+  p(95,0000) =     27,072 us/op
+  p(99,0000) =     30,144 us/op
+  p(99,9000) =    109,790 us/op
+  p(99,9900) =    736,089 us/op
+  p(99,9990) =   1987,927 us/op
+  p(99,9999) =   2007,040 us/op
+         max =   2007,040 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 800)
+
+# Run progress: 32,35% complete, ETA 00:07:50
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 11160, mean = 87 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 61, 74, 81, 89, 233, 1189, 44792, 49283 us/op
+# Warmup Iteration   2: n = 13033, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 59, 76, 78, 79, 86, 167, 1842, 1925 us/op
+# Warmup Iteration   3: n = 12870, mean = 77 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 78, 80, 100, 160, 3255, 4260 us/op
+# Warmup Iteration   4: n = 12820, mean = 77 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 78, 79, 93, 223, 4738, 6283 us/op
+# Warmup Iteration   5: n = 13001, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 78, 79, 84, 187, 961, 1063 us/op
+# Warmup Iteration   6: n = 13110, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 77, 78, 81, 169, 966, 1069 us/op
+# Warmup Iteration   7: n = 13082, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 77, 78, 83, 170, 2293, 2986 us/op
+# Warmup Iteration   8: n = 13022, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 78, 78, 88, 210, 1573, 1952 us/op
+# Warmup Iteration   9: n = 13095, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 66, 76, 77, 78, 82, 171, 1762, 1944 us/op
+# Warmup Iteration  10: n = 13049, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 78, 78, 82, 166, 3098, 3564 us/op
+Iteration   1: n = 13083, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 78, 78, 85, 163, 766, 774 us/op
+Iteration   2: n = 13014, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 78, 78, 85, 200, 2133, 2449 us/op
+Iteration   3: n = 13115, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 66, 76, 78, 78, 83, 167, 719, 727 us/op
+Iteration   4: n = 13041, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 66, 76, 78, 78, 83, 243, 2358, 2454 us/op
+Iteration   5: n = 13109, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 66, 76, 77, 78, 83, 170, 1119, 1280 us/op
+Iteration   6: n = 13066, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 66, 76, 77, 78, 82, 162, 3549, 4792 us/op
+Iteration   7: n = 13043, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67, 76, 78, 79, 83, 174, 1038, 1180 us/op
+Iteration   8: n = 13028, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68, 76, 78, 78, 81, 160, 3014, 3547 us/op
+Iteration   9: n = 13075, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 65, 76, 78, 78, 84, 164, 746, 750 us/op
+Iteration  10: n = 13033, mean = 76 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 66, 76, 78, 79, 88, 173, 740, 744 us/op
+
+
+Result: 76,011 ±(99.9%) 0,232 us/op [Average]
+  Statistics: (min, avg, max) = (64,832, 76,011, 4792,320), stdev = 25,445
+  Confidence interval (99.9%): [75,779, 76,242]
+  Samples, N = 130607
+        mean =     76,011 ±(99.9%) 0,232 us/op
+         min =     64,832 us/op
+  p( 0,0000) =     64,832 us/op
+  p(50,0000) =     75,776 us/op
+  p(90,0000) =     77,696 us/op
+  p(95,0000) =     78,336 us/op
+  p(99,0000) =     83,072 us/op
+  p(99,9000) =    167,780 us/op
+  p(99,9900) =    760,396 us/op
+  p(99,9990) =   4411,194 us/op
+  p(99,9999) =   4792,320 us/op
+         max =   4792,320 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 1000)
+
+# Run progress: 35,29% complete, ETA 00:07:30
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 8592, mean = 114 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 83, 95, 100, 113, 290, 2399, 48234, 48234 us/op
+# Warmup Iteration   2: n = 9976, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 83, 95, 103, 113, 133, 221, 4809, 4809 us/op
+# Warmup Iteration   3: n = 10058, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 84, 95, 101, 103, 136, 508, 7191, 7201 us/op
+# Warmup Iteration   4: n = 10081, mean = 98 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 85, 95, 102, 103, 123, 330, 4413, 4440 us/op
+# Warmup Iteration   5: n = 10081, mean = 98 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 85, 95, 102, 103, 114, 271, 5618, 5644 us/op
+# Warmup Iteration   6: n = 10217, mean = 96 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 85, 95, 101, 102, 108, 265, 1388, 1401 us/op
+# Warmup Iteration   7: n = 10198, mean = 97 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 83, 94, 101, 102, 115, 336, 9857, 10011 us/op
+# Warmup Iteration   8: n = 10354, mean = 96 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 84, 94, 101, 102, 109, 191, 845, 849 us/op
+# Warmup Iteration   9: n = 10030, mean = 100 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 82, 94, 101, 105, 228, 398, 764, 764 us/op
+# Warmup Iteration  10: n = 10320, mean = 96 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 82, 94, 101, 102, 106, 196, 4029, 4125 us/op
+Iteration   1: n = 10283, mean = 97 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 84, 94, 101, 102, 110, 599, 3217, 3224 us/op
+Iteration   2: n = 10377, mean = 96 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 85, 94, 101, 102, 105, 171, 801, 805 us/op
+Iteration   3: n = 10366, mean = 96 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 84, 94, 101, 102, 106, 188, 954, 964 us/op
+Iteration   4: n = 10353, mean = 96 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 85, 94, 101, 102, 106, 182, 938, 944 us/op
+Iteration   5: n = 10338, mean = 96 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 83, 94, 101, 102, 105, 184, 4724, 4866 us/op
+Iteration   6: n = 10268, mean = 97 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 84, 94, 102, 103, 120, 201, 842, 844 us/op
+Iteration   7: n = 10008, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 87, 97, 104, 105, 110, 249, 1188, 1188 us/op
+Iteration   8: n = 9992, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 86, 97, 104, 105, 115, 212, 1823, 1823 us/op
+Iteration   9: n = 10011, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 87, 97, 104, 105, 111, 192, 778, 778 us/op
+Iteration  10: n = 10009, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 88, 97, 104, 105, 113, 196, 962, 963 us/op
+
+
+Result: 97,420 ±(99.9%) 0,279 us/op [Average]
+  Statistics: (min, avg, max) = (82,816, 97,420, 4866,048), stdev = 27,095
+  Confidence interval (99.9%): [97,141, 97,699]
+  Samples, N = 102005
+        mean =     97,420 ±(99.9%) 0,279 us/op
+         min =     82,816 us/op
+  p( 0,0000) =     82,816 us/op
+  p(50,0000) =     95,872 us/op
+  p(90,0000) =    102,400 us/op
+  p(95,0000) =    104,064 us/op
+  p(99,0000) =    111,616 us/op
+  p(99,9000) =    192,254 us/op
+  p(99,9900) =    908,052 us/op
+  p(99,9990) =   4833,100 us/op
+  p(99,9999) =   4866,048 us/op
+         max =   4866,048 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 10000)
+
+# Run progress: 38,24% complete, ETA 00:07:09
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 1177, mean = 834 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 433, 682, 847, 1052, 3800, 48032, 56623, 56623 us/op
+# Warmup Iteration   2: n = 1510, mean = 653 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 422, 642, 740, 766, 871, 7170, 7651, 7651 us/op
+# Warmup Iteration   3: n = 1528, mean = 647 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 420, 641, 732, 759, 1025, 4751, 5202, 5202 us/op
+# Warmup Iteration   4: n = 1491, mean = 660 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 432, 638, 729, 763, 1763, 5345, 5816, 5816 us/op
+# Warmup Iteration   5: n = 1500, mean = 659 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 421, 637, 724, 755, 1237, 7135, 7463, 7463 us/op
+# Warmup Iteration   6: n = 1562, mean = 631 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 416, 631, 727, 753, 818, 3042, 3256, 3256 us/op
+# Warmup Iteration   7: n = 1525, mean = 648 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 432, 635, 729, 757, 1179, 6499, 7365, 7365 us/op
+# Warmup Iteration   8: n = 1557, mean = 634 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 423, 628, 717, 742, 953, 4755, 5669, 5669 us/op
+# Warmup Iteration   9: n = 1561, mean = 632 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 420, 629, 715, 739, 910, 4682, 5423, 5423 us/op
+# Warmup Iteration  10: n = 1555, mean = 635 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 423, 633, 714, 741, 818, 6206, 6365, 6365 us/op
+Iteration   1: n = 1573, mean = 627 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 425, 628, 711, 740, 853, 2825, 2933, 2933 us/op
+Iteration   2: n = 1531, mean = 645 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 416, 635, 725, 753, 874, 6330, 7397, 7397 us/op
+Iteration   3: n = 1578, mean = 625 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 421, 627, 715, 741, 847, 2890, 3486, 3486 us/op
+Iteration   4: n = 1564, mean = 631 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 421, 630, 717, 740, 829, 5124, 5980, 5980 us/op
+Iteration   5: n = 1578, mean = 625 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 422, 627, 717, 740, 780, 3139, 5595, 5595 us/op
+Iteration   6: n = 1557, mean = 634 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 423, 631, 718, 740, 849, 5154, 5415, 5415 us/op
+Iteration   7: n = 1549, mean = 637 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 421, 634, 722, 748, 930, 4282, 4530, 4530 us/op
+Iteration   8: n = 1515, mean = 651 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 421, 647, 740, 768, 1057, 5159, 5751, 5751 us/op
+Iteration   9: n = 1523, mean = 648 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 427, 640, 728, 753, 1179, 5750, 6652, 6652 us/op
+Iteration  10: n = 1558, mean = 633 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 424, 631, 720, 743, 832, 6074, 7471, 7471 us/op
+
+
+Result: 635,455 ±(99.9%) 5,218 us/op [Average]
+  Statistics: (min, avg, max) = (416,256, 635,455, 7471,104), stdev = 197,552
+  Confidence interval (99.9%): [630,238, 640,673]
+  Samples, N = 15526
+        mean =    635,455 ±(99.9%) 5,218 us/op
+         min =    416,256 us/op
+  p( 0,0000) =    416,256 us/op
+  p(50,0000) =    631,808 us/op
+  p(90,0000) =    721,920 us/op
+  p(95,0000) =    745,472 us/op
+  p(99,0000) =    871,148 us/op
+  p(99,9000) =   4300,587 us/op
+  p(99,9900) =   7430,355 us/op
+  p(99,9990) =   7471,104 us/op
+  p(99,9999) =   7471,104 us/op
+         max =   7471,104 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 100000)
+
+# Run progress: 41,18% complete, ETA 00:06:49
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 157, mean = 6278 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4604, 5038, 6521, 9770, 64318, 98566, 98566, 98566 us/op
+# Warmup Iteration   2: n = 187, mean = 5235 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4604, 4989, 6034, 7179, 9602, 10093, 10093, 10093 us/op
+# Warmup Iteration   3: n = 194, mean = 5039 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4604, 4960, 5251, 5554, 7120, 8069, 8069, 8069 us/op
+# Warmup Iteration   4: n = 194, mean = 5099 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4612, 4923, 5337, 6154, 10712, 10961, 10961, 10961 us/op
+# Warmup Iteration   5: n = 196, mean = 5034 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4547, 4932, 5281, 5719, 7731, 7938, 7938, 7938 us/op
+# Warmup Iteration   6: n = 199, mean = 4943 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4620, 4891, 5161, 5243, 6554, 6922, 6922, 6922 us/op
+# Warmup Iteration   7: n = 198, mean = 4967 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4530, 4899, 5161, 5254, 6947, 6996, 6996, 6996 us/op
+# Warmup Iteration   8: n = 198, mean = 4978 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4620, 4927, 5177, 5253, 6266, 6947, 6947, 6947 us/op
+# Warmup Iteration   9: n = 198, mean = 4969 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4538, 4940, 5177, 5227, 6792, 6840, 6840, 6840 us/op
+# Warmup Iteration  10: n = 199, mean = 4960 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4563, 4874, 5177, 5407, 6201, 6693, 6693, 6693 us/op
+Iteration   1: n = 194, mean = 5080 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4547, 5026, 5411, 5681, 6969, 7553, 7553, 7553 us/op
+Iteration   2: n = 196, mean = 5037 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4579, 4981, 5284, 5787, 6393, 6513, 6513, 6513 us/op
+Iteration   3: n = 193, mean = 5101 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4604, 4956, 5402, 6208, 7981, 10453, 10453, 10453 us/op
+Iteration   4: n = 196, mean = 5028 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4506, 4927, 5245, 5585, 7007, 10273, 10273, 10273 us/op
+Iteration   5: n = 192, mean = 5153 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4612, 5022, 5775, 6068, 7028, 9191, 9191, 9191 us/op
+Iteration   6: n = 195, mean = 5067 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4661, 5014, 5366, 5661, 6415, 7021, 7021, 7021 us/op
+Iteration   7: n = 194, mean = 5095 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4678, 5034, 5353, 5849, 6685, 6857, 6857, 6857 us/op
+Iteration   8: n = 197, mean = 5002 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4530, 4948, 5220, 5478, 6293, 6390, 6390, 6390 us/op
+Iteration   9: n = 194, mean = 5099 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4547, 5005, 5267, 5718, 9235, 10682, 10682, 10682 us/op
+Iteration  10: n = 193, mean = 5111 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4563, 4997, 5623, 6282, 7610, 7725, 7725, 7725 us/op
+
+
+Result: 5076,971 ±(99.9%) 33,582 us/op [Average]
+  Statistics: (min, avg, max) = (4505,600, 5076,971, 10682,368), stdev = 449,294
+  Confidence interval (99.9%): [5043,389, 5110,553]
+  Samples, N = 1944
+        mean =   5076,971 ±(99.9%) 33,582 us/op
+         min =   4505,600 us/op
+  p( 0,0000) =   4505,600 us/op
+  p(50,0000) =   4988,928 us/op
+  p(90,0000) =   5349,376 us/op
+  p(95,0000) =   5808,128 us/op
+  p(99,0000) =   6861,210 us/op
+  p(99,9000) =  10465,608 us/op
+  p(99,9900) =  10682,368 us/op
+  p(99,9990) =  10682,368 us/op
+  p(99,9999) =  10682,368 us/op
+         max =  10682,368 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 1000000)
+
+# Run progress: 44,12% complete, ETA 00:06:28
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 10, mean = 100768 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 70648, 74318, 307836, 332399, 332399, 332399, 332399, 332399 us/op
+# Warmup Iteration   2: n = 14, mean = 72848 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68420, 71762, 82903, 84541, 84541, 84541, 84541, 84541 us/op
+# Warmup Iteration   3: n = 14, mean = 70807 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68289, 70582, 74318, 76153, 76153, 76153, 76153, 76153 us/op
+# Warmup Iteration   4: n = 14, mean = 71790 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67502, 70582, 81199, 86901, 86901, 86901, 86901, 86901 us/op
+# Warmup Iteration   5: n = 10, mean = 99418 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 69337, 71631, 326238, 354419, 354419, 354419, 354419, 354419 us/op
+# Warmup Iteration   6: n = 14, mean = 71837 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67633, 72090, 74449, 74449, 74449, 74449, 74449, 74449 us/op
+# Warmup Iteration   7: n = 14, mean = 71668 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68551, 71762, 73925, 74187, 74187, 74187, 74187, 74187 us/op
+# Warmup Iteration   8: n = 13, mean = 78754 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 69206, 72614, 108475, 108528, 108528, 108528, 108528, 108528 us/op
+# Warmup Iteration   9: n = 14, mean = 71144 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68813, 69861, 77267, 80085, 80085, 80085, 80085, 80085 us/op
+# Warmup Iteration  10: n = 14, mean = 71912 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68682, 71565, 74514, 74580, 74580, 74580, 74580, 74580 us/op
+Iteration   1: n = 14, mean = 72164 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67240, 72286, 76743, 78512, 78512, 78512, 78512, 78512 us/op
+Iteration   2: n = 14, mean = 70994 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67895, 71500, 73925, 74187, 74187, 74187, 74187, 74187 us/op
+Iteration   3: n = 14, mean = 71930 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 70255, 71696, 74121, 74187, 74187, 74187, 74187, 74187 us/op
+Iteration   4: n = 14, mean = 74056 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 70124, 73466, 78184, 79430, 79430, 79430, 79430, 79430 us/op
+Iteration   5: n = 14, mean = 70985 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68420, 71303, 73204, 73662, 73662, 73662, 73662, 73662 us/op
+Iteration   6: n = 14, mean = 71565 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 69599, 71696, 73859, 74449, 74449, 74449, 74449, 74449 us/op
+Iteration   7: n = 14, mean = 71228 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67371, 71041, 74514, 74842, 74842, 74842, 74842, 74842 us/op
+Iteration   8: n = 15, mean = 70176 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67502, 69992, 72352, 72745, 72745, 72745, 72745, 72745 us/op
+Iteration   9: n = 14, mean = 71940 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 69075, 71500, 74187, 74318, 74318, 74318, 74318, 74318 us/op
+Iteration  10: n = 14, mean = 71706 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67109, 71369, 74842, 75891, 75891, 75891, 75891, 75891 us/op
+
+
+Result: 71663,848 ±(99.9%) 604,252 us/op [Average]
+  Statistics: (min, avg, max) = (67108,864, 71663,848, 79429,632), stdev = 2134,569
+  Confidence interval (99.9%): [71059,597, 72268,100]
+  Samples, N = 141
+        mean =  71663,848 ±(99.9%) 604,252 us/op
+         min =  67108,864 us/op
+  p( 0,0000) =  67108,864 us/op
+  p(50,0000) =  71434,240 us/op
+  p(90,0000) =  74186,752 us/op
+  p(95,0000) =  74960,077 us/op
+  p(99,0000) =  79044,280 us/op
+  p(99,9000) =  79429,632 us/op
+  p(99,9900) =  79429,632 us/op
+  p(99,9990) =  79429,632 us/op
+  p(99,9999) =  79429,632 us/op
+         max =  79429,632 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_anonymous_class
+# Parameters: (arraySize = 10000000)
+
+# Run progress: 47,06% complete, ETA 00:06:08
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 1, mean = 988807 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 988807, 988807, 988807, 988807, 988807, 988807, 988807, 988807 us/op
+# Warmup Iteration   2: n = 2, mean = 1748500 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 753926, 1748500, 2743075, 2743075, 2743075, 2743075, 2743075, 2743075 us/op
+# Warmup Iteration   3: n = 2, mean = 823132 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 768606, 823132, 877658, 877658, 877658, 877658, 877658, 877658 us/op
+# Warmup Iteration   4: n = 2, mean = 816841 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 786432, 816841, 847249, 847249, 847249, 847249, 847249, 847249 us/op
+# Warmup Iteration   5: n = 2, mean = 812646 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 780141, 812646, 845152, 845152, 845152, 845152, 845152, 845152 us/op
+# Warmup Iteration   6: n = 2, mean = 772276 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 765460, 772276, 779092, 779092, 779092, 779092, 779092, 779092 us/op
+# Warmup Iteration   7: n = 2, mean = 774373 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 734003, 774373, 814744, 814744, 814744, 814744, 814744, 814744 us/op
+# Warmup Iteration   8: n = 2, mean = 799539 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 780141, 799539, 818938, 818938, 818938, 818938, 818938, 818938 us/op
+# Warmup Iteration   9: n = 2, mean = 786432 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 786432, 786432, 786432, 786432, 786432, 786432, 786432, 786432 us/op
+# Warmup Iteration  10: n = 2, mean = 784335 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 771752, 784335, 796918, 796918, 796918, 796918, 796918, 796918 us/op
+Iteration   1: n = 2, mean = 767033 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 759169, 767033, 774898, 774898, 774898, 774898, 774898, 774898 us/op
+Iteration   2: n = 2, mean = 1473249 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 731906, 1473249, 2214593, 2214593, 2214593, 2214593, 2214593, 2214593 us/op
+Iteration   3: n = 2, mean = 753402 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 752878, 753402, 753926, 753926, 753926, 753926, 753926, 753926 us/op
+Iteration   4: n = 2, mean = 773849 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 767558, 773849, 780141, 780141, 780141, 780141, 780141, 780141 us/op
+Iteration   5: n = 2, mean = 780665 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 736100, 780665, 825229, 825229, 825229, 825229, 825229, 825229 us/op
+Iteration   6: n = 2, mean = 806355 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 789578, 806355, 823132, 823132, 823132, 823132, 823132, 823132 us/op
+Iteration   7: n = 2, mean = 791151 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 784335, 791151, 797966, 797966, 797966, 797966, 797966, 797966 us/op
+Iteration   8: n = 2, mean = 762315 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 731906, 762315, 792723, 792723, 792723, 792723, 792723, 792723 us/op
+Iteration   9: n = 2, mean = 768606 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 734003, 768606, 803209, 803209, 803209, 803209, 803209, 803209 us/op
+Iteration  10: n = 2, mean = 762315 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 758120, 762315, 766509, 766509, 766509, 766509, 766509, 766509 us/op
+
+
+Result: 843893,965 ±(99.9%) 281224,775 us/op [Average]
+  Statistics: (min, avg, max) = (731906,048, 843893,965, 2214592,512), stdev = 323858,869
+  Confidence interval (99.9%): [562669,190, 1125118,740]
+  Samples, N = 20
+        mean = 843893,965 ±(99.9%) 281224,775 us/op
+         min = 731906,048 us/op
+  p( 0,0000) = 731906,048 us/op
+  p(50,0000) = 771227,648 us/op
+  p(90,0000) = 825019,597 us/op
+  p(95,0000) = 2145124,352 us/op
+  p(99,0000) = 2214592,512 us/op
+  p(99,9000) = 2214592,512 us/op
+  p(99,9900) = 2214592,512 us/op
+  p(99,9990) = 2214592,512 us/op
+  p(99,9999) = 2214592,512 us/op
+         max = 2214592,512 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 10)
+
+# Run progress: 50,00% complete, ETA 00:06:05
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 23644, mean = 8 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 7, 44, 272, 10530, 47841 us/op
+# Warmup Iteration   2: n = 14259, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 28, 158, 158 us/op
+# Warmup Iteration   3: n = 14688, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 10, 139, 157 us/op
+# Warmup Iteration   4: n = 14410, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 26, 543, 822 us/op
+# Warmup Iteration   5: n = 14860, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 7, 95, 103 us/op
+# Warmup Iteration   6: n = 14766, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 9, 1143, 2093 us/op
+# Warmup Iteration   7: n = 14716, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 7, 3118, 4358 us/op
+# Warmup Iteration   8: n = 14614, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 9, 204, 281 us/op
+# Warmup Iteration   9: n = 13805, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 13, 234, 236 us/op
+# Warmup Iteration  10: n = 14670, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 16, 131, 141 us/op
+Iteration   1: n = 14550, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 11, 883, 1507 us/op
+Iteration   2: n = 14219, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 20, 144, 165 us/op
+Iteration   3: n = 14399, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 11, 540, 852 us/op
+Iteration   4: n = 14370, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 17, 167, 182 us/op
+Iteration   5: n = 14362, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 5, 6, 26, 1899, 2150 us/op
+Iteration   6: n = 14299, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 10, 118, 131 us/op
+Iteration   7: n = 14084, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 12, 123, 135 us/op
+Iteration   8: n = 14111, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 8, 163, 207 us/op
+Iteration   9: n = 14131, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 9, 124, 133 us/op
+Iteration  10: n = 14242, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 1, 5, 6, 6, 13, 958, 1573 us/op
+
+
+Result: 2,088 ±(99.9%) 0,091 us/op [Average]
+  Statistics: (min, avg, max) = (0,817, 2,088, 2150,400), stdev = 10,432
+  Confidence interval (99.9%): [1,997, 2,179]
+  Samples, N = 142767
+        mean =      2,088 ±(99.9%) 0,091 us/op
+         min =      0,817 us/op
+  p( 0,0000) =      0,817 us/op
+  p(50,0000) =      1,388 us/op
+  p(90,0000) =      5,296 us/op
+  p(95,0000) =      5,504 us/op
+  p(99,0000) =      5,752 us/op
+  p(99,9000) =     10,795 us/op
+  p(99,9900) =    132,624 us/op
+  p(99,9990) =   1904,275 us/op
+  p(99,9999) =   2150,400 us/op
+         max =   2150,400 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 15)
+
+# Run progress: 52,94% complete, ETA 00:05:43
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 21082, mean = 8 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 32, 585, 5341, 48955 us/op
+# Warmup Iteration   2: n = 12482, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 117, 790, 991 us/op
+# Warmup Iteration   3: n = 12497, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 10, 133, 134 us/op
+# Warmup Iteration   4: n = 12442, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 18, 162, 165 us/op
+# Warmup Iteration   5: n = 12386, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 11, 137, 142 us/op
+# Warmup Iteration   6: n = 12695, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 30, 218, 241 us/op
+# Warmup Iteration   7: n = 12501, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 15, 209, 233 us/op
+# Warmup Iteration   8: n = 12551, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 21, 993, 1257 us/op
+# Warmup Iteration   9: n = 12438, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 10, 986, 1260 us/op
+# Warmup Iteration  10: n = 12273, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 25, 1113, 1176 us/op
+Iteration   1: n = 12213, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 10, 172, 208 us/op
+Iteration   2: n = 11989, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 14, 130, 135 us/op
+Iteration   3: n = 11958, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 36, 1060, 1141 us/op
+Iteration   4: n = 12457, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 11, 214, 241 us/op
+Iteration   5: n = 12226, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 10, 120, 131 us/op
+Iteration   6: n = 12494, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 31, 1185, 1196 us/op
+Iteration   7: n = 12692, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 11, 278, 351 us/op
+Iteration   8: n = 12399, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 10, 132, 133 us/op
+Iteration   9: n = 12392, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 13, 195, 204 us/op
+Iteration  10: n = 12469, mean = 2 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 6, 13, 1723, 2249 us/op
+
+
+Result: 2,384 ±(99.9%) 0,087 us/op [Average]
+  Statistics: (min, avg, max) = (1,232, 2,384, 2248,704), stdev = 9,267
+  Confidence interval (99.9%): [2,298, 2,471]
+  Samples, N = 123289
+        mean =      2,384 ±(99.9%) 0,087 us/op
+         min =      1,232 us/op
+  p( 0,0000) =      1,232 us/op
+  p(50,0000) =      1,734 us/op
+  p(90,0000) =      5,712 us/op
+  p(95,0000) =      6,016 us/op
+  p(99,0000) =      6,336 us/op
+  p(99,9000) =     12,091 us/op
+  p(99,9900) =    141,746 us/op
+  p(99,9990) =   2003,537 us/op
+  p(99,9999) =   2248,704 us/op
+         max =   2248,704 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 20)
+
+# Run progress: 55,88% complete, ETA 00:05:21
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 33303, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 37, 238, 2962, 49283 us/op
+# Warmup Iteration   2: n = 20455, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 85, 167, 1139 us/op
+# Warmup Iteration   3: n = 10347, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 116, 1937, 2001 us/op
+# Warmup Iteration   4: n = 10275, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 31, 195, 196 us/op
+# Warmup Iteration   5: n = 10237, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 71, 123, 123 us/op
+# Warmup Iteration   6: n = 10197, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 33, 1614, 1645 us/op
+# Warmup Iteration   7: n = 10223, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 23, 372, 378 us/op
+# Warmup Iteration   8: n = 10120, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 35, 1133, 1145 us/op
+# Warmup Iteration   9: n = 10232, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 20, 1194, 1196 us/op
+# Warmup Iteration  10: n = 10147, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 30, 1126, 1126 us/op
+Iteration   1: n = 10156, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 14, 144, 144 us/op
+Iteration   2: n = 10027, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 36, 1114, 1114 us/op
+Iteration   3: n = 10020, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 15, 4899, 4907 us/op
+Iteration   4: n = 10288, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 16, 1119, 1126 us/op
+Iteration   5: n = 10099, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 25, 1134, 1145 us/op
+Iteration   6: n = 10017, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 55, 1045, 1046 us/op
+Iteration   7: n = 10053, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 13, 1215, 1221 us/op
+Iteration   8: n = 10231, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 13, 1235, 1262 us/op
+Iteration   9: n = 10093, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 29, 1190, 1200 us/op
+Iteration  10: n = 10079, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 22, 1147, 1155 us/op
+
+
+Result: 3,038 ±(99.9%) 0,205 us/op [Average]
+  Statistics: (min, avg, max) = (1,526, 3,038, 4907,008), stdev = 19,834
+  Confidence interval (99.9%): [2,832, 3,243]
+  Samples, N = 101063
+        mean =      3,038 ±(99.9%) 0,205 us/op
+         min =      1,526 us/op
+  p( 0,0000) =      1,526 us/op
+  p(50,0000) =      2,088 us/op
+  p(90,0000) =      6,064 us/op
+  p(95,0000) =      6,280 us/op
+  p(99,0000) =      6,608 us/op
+  p(99,9000) =     21,038 us/op
+  p(99,9900) =   1053,739 us/op
+  p(99,9990) =   4868,221 us/op
+  p(99,9999) =   4907,008 us/op
+         max =   4907,008 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 25)
+
+# Run progress: 58,82% complete, ETA 00:04:58
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 32169, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 37, 242, 4677, 47907 us/op
+# Warmup Iteration   2: n = 20478, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 88, 216, 316 us/op
+# Warmup Iteration   3: n = 10184, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 37, 247, 249 us/op
+# Warmup Iteration   4: n = 10079, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 47, 366, 366 us/op
+# Warmup Iteration   5: n = 10195, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 29, 144, 144 us/op
+# Warmup Iteration   6: n = 10237, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 11, 120, 121 us/op
+# Warmup Iteration   7: n = 10130, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 14, 174, 174 us/op
+# Warmup Iteration   8: n = 9714, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1, 2, 6, 6, 7, 117, 1049, 1049 us/op
+# Warmup Iteration   9: n = 10159, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 11, 113, 114 us/op
+# Warmup Iteration  10: n = 10067, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 26, 132, 132 us/op
+Iteration   1: n = 9969, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 30, 164, 164 us/op
+Iteration   2: n = 9875, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 10, 1266, 1266 us/op
+Iteration   3: n = 10155, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 58, 1355, 1356 us/op
+Iteration   4: n = 9996, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 16, 1362, 1362 us/op
+Iteration   5: n = 9872, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 36, 1335, 1335 us/op
+Iteration   6: n = 9991, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 65, 1251, 1251 us/op
+Iteration   7: n = 9678, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 31, 130, 130 us/op
+Iteration   8: n = 9961, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 49, 613, 613 us/op
+Iteration   9: n = 9824, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 31, 1436, 1436 us/op
+Iteration  10: n = 10244, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 32, 1401, 1403 us/op
+
+
+Result: 3,095 ±(99.9%) 0,158 us/op [Average]
+  Statistics: (min, avg, max) = (1,504, 3,095, 1435,648), stdev = 15,115
+  Confidence interval (99.9%): [2,938, 3,253]
+  Samples, N = 99565
+        mean =      3,095 ±(99.9%) 0,158 us/op
+         min =      1,504 us/op
+  p( 0,0000) =      1,504 us/op
+  p(50,0000) =      2,104 us/op
+  p(90,0000) =      6,016 us/op
+  p(95,0000) =      6,224 us/op
+  p(99,0000) =      6,568 us/op
+  p(99,9000) =     31,288 us/op
+  p(99,9900) =   1251,950 us/op
+  p(99,9990) =   1435,648 us/op
+  p(99,9999) =   1435,648 us/op
+         max =   1435,648 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 30)
+
+# Run progress: 61,76% complete, ETA 00:04:37
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 31503, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 42, 187, 3447, 47514 us/op
+# Warmup Iteration   2: n = 18456, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 67, 154, 161 us/op
+# Warmup Iteration   3: n = 19123, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 7, 12, 213, 799 us/op
+# Warmup Iteration   4: n = 18676, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 7, 13, 336, 371 us/op
+# Warmup Iteration   5: n = 18960, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 26, 198, 458 us/op
+# Warmup Iteration   6: n = 18864, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 45, 236, 369 us/op
+# Warmup Iteration   7: n = 19110, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 29, 209, 849 us/op
+# Warmup Iteration   8: n = 18637, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 7, 15, 137, 153 us/op
+# Warmup Iteration   9: n = 18850, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 26, 118, 136 us/op
+# Warmup Iteration  10: n = 18752, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 29, 116, 120 us/op
+Iteration   1: n = 18333, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 29, 169, 500 us/op
+Iteration   2: n = 18245, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 7, 31, 436, 1362 us/op
+Iteration   3: n = 18431, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 7, 13, 119, 153 us/op
+Iteration   4: n = 18353, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 7, 7, 34, 1549, 2511 us/op
+Iteration   5: n = 18350, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 26, 1379, 1405 us/op
+Iteration   6: n = 18475, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 28, 1441, 1460 us/op
+Iteration   7: n = 18813, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 29, 376, 1409 us/op
+Iteration   8: n = 18368, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 41, 300, 909 us/op
+Iteration   9: n = 18328, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 26, 1693, 2953 us/op
+Iteration  10: n = 18470, mean = 3 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 2, 6, 6, 7, 28, 432, 1366 us/op
+
+
+Result: 3,278 ±(99.9%) 0,108 us/op [Average]
+  Statistics: (min, avg, max) = (1,678, 3,278, 2953,216), stdev = 14,046
+  Confidence interval (99.9%): [3,170, 3,385]
+  Samples, N = 184166
+        mean =      3,278 ±(99.9%) 0,108 us/op
+         min =      1,678 us/op
+  p( 0,0000) =      1,678 us/op
+  p(50,0000) =      2,312 us/op
+  p(90,0000) =      6,280 us/op
+  p(95,0000) =      6,480 us/op
+  p(99,0000) =      6,840 us/op
+  p(99,9000) =     28,965 us/op
+  p(99,9900) =    225,812 us/op
+  p(99,9990) =   2580,888 us/op
+  p(99,9999) =   2953,216 us/op
+         max =   2953,216 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 40)
+
+# Run progress: 64,71% complete, ETA 00:04:15
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 24971, mean = 9 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 9, 63, 242, 8053, 48497 us/op
+# Warmup Iteration   2: n = 15503, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 136, 553, 947 us/op
+# Warmup Iteration   3: n = 16093, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 37, 207, 342 us/op
+# Warmup Iteration   4: n = 15698, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 48, 253, 383 us/op
+# Warmup Iteration   5: n = 15694, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 31, 347, 644 us/op
+# Warmup Iteration   6: n = 15611, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 73, 474, 864 us/op
+# Warmup Iteration   7: n = 16077, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 36, 118, 127 us/op
+# Warmup Iteration   8: n = 15763, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 33, 858, 1772 us/op
+# Warmup Iteration   9: n = 15906, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 32, 174, 266 us/op
+# Warmup Iteration  10: n = 15855, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 74, 1683, 1778 us/op
+Iteration   1: n = 15701, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 8, 33, 1105, 1442 us/op
+Iteration   2: n = 15354, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 26, 134, 141 us/op
+Iteration   3: n = 15498, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 31, 109, 113 us/op
+Iteration   4: n = 15420, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 19, 156, 185 us/op
+Iteration   5: n = 15402, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 20, 768, 1524 us/op
+Iteration   6: n = 15325, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 28, 149, 183 us/op
+Iteration   7: n = 15606, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 71, 763, 1384 us/op
+Iteration   8: n = 15206, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 36, 752, 1415 us/op
+Iteration   9: n = 15236, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 43, 786, 1460 us/op
+Iteration  10: n = 15430, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 2, 3, 7, 7, 7, 30, 694, 1346 us/op
+
+
+Result: 3,849 ±(99.9%) 0,082 us/op [Average]
+  Statistics: (min, avg, max) = (2,104, 3,849, 1523,712), stdev = 9,761
+  Confidence interval (99.9%): [3,767, 3,931]
+  Samples, N = 154178
+        mean =      3,849 ±(99.9%) 0,082 us/op
+         min =      2,104 us/op
+  p( 0,0000) =      2,104 us/op
+  p(50,0000) =      2,776 us/op
+  p(90,0000) =      6,880 us/op
+  p(95,0000) =      7,096 us/op
+  p(99,0000) =      7,464 us/op
+  p(99,9000) =     30,924 us/op
+  p(99,9900) =    173,033 us/op
+  p(99,9990) =   1489,315 us/op
+  p(99,9999) =   1523,712 us/op
+         max =   1523,712 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 60)
+
+# Run progress: 67,65% complete, ETA 00:03:53
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 20828, mean = 12 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 4, 8, 11, 75, 635, 14884, 47841 us/op
+# Warmup Iteration   2: n = 12999, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 9, 107, 3404, 4776 us/op
+# Warmup Iteration   3: n = 13324, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 33, 1705, 2474 us/op
+# Warmup Iteration   4: n = 13210, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 32, 1382, 1954 us/op
+# Warmup Iteration   5: n = 13417, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 31, 169, 201 us/op
+# Warmup Iteration   6: n = 12518, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 94, 471, 529 us/op
+# Warmup Iteration   7: n = 13163, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 74, 692, 961 us/op
+# Warmup Iteration   8: n = 13090, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 31, 150, 171 us/op
+# Warmup Iteration   9: n = 13187, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 32, 143, 154 us/op
+# Warmup Iteration  10: n = 13133, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 44, 1015, 1020 us/op
+Iteration   1: n = 12768, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 61, 2874, 3514 us/op
+Iteration   2: n = 13319, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 78, 1032, 1036 us/op
+Iteration   3: n = 13196, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 61, 637, 881 us/op
+Iteration   4: n = 13202, mean = 4 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 7, 8, 8, 26, 142, 144 us/op
+Iteration   5: n = 13067, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 39, 1116, 1169 us/op
+Iteration   6: n = 12916, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 63, 1029, 1043 us/op
+Iteration   7: n = 12796, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 32, 1035, 1110 us/op
+Iteration   8: n = 12959, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 32, 992, 1001 us/op
+Iteration   9: n = 12856, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 46, 1697, 1886 us/op
+Iteration  10: n = 12938, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 3, 3, 8, 8, 8, 26, 119, 120 us/op
+
+
+Result: 4,697 ±(99.9%) 0,156 us/op [Average]
+  Statistics: (min, avg, max) = (2,668, 4,697, 3514,368), stdev = 17,103
+  Confidence interval (99.9%): [4,541, 4,853]
+  Samples, N = 130017
+        mean =      4,697 ±(99.9%) 0,156 us/op
+         min =      2,668 us/op
+  p( 0,0000) =      2,668 us/op
+  p(50,0000) =      3,452 us/op
+  p(90,0000) =      7,576 us/op
+  p(95,0000) =      7,840 us/op
+  p(99,0000) =      8,272 us/op
+  p(99,9000) =     39,419 us/op
+  p(99,9900) =   1009,649 us/op
+  p(99,9990) =   3025,627 us/op
+  p(99,9999) =   3514,368 us/op
+         max =   3514,368 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 80)
+
+# Run progress: 70,59% complete, ETA 00:03:32
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 33403, mean = 9 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 12, 35, 248, 4812, 48300 us/op
+# Warmup Iteration   2: n = 21385, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 10, 109, 174, 2253 us/op
+# Warmup Iteration   3: n = 10814, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 10, 95, 1762, 1837 us/op
+# Warmup Iteration   4: n = 10823, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 41, 236, 238 us/op
+# Warmup Iteration   5: n = 11016, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 9, 9, 9, 33, 273, 290 us/op
+# Warmup Iteration   6: n = 10986, mean = 5 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 9, 9, 9, 44, 113, 115 us/op
+# Warmup Iteration   7: n = 10945, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 58, 176, 178 us/op
+# Warmup Iteration   8: n = 10750, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 34, 99, 99 us/op
+# Warmup Iteration   9: n = 10793, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 32, 143, 147 us/op
+# Warmup Iteration  10: n = 10683, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 103, 959, 1017 us/op
+Iteration   1: n = 10781, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 63, 1972, 2048 us/op
+Iteration   2: n = 10517, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 4, 9, 9, 9, 37, 921, 961 us/op
+Iteration   3: n = 10657, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 30, 999, 1063 us/op
+Iteration   4: n = 10630, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 59, 1062, 1065 us/op
+Iteration   5: n = 10559, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 86, 1049, 1051 us/op
+Iteration   6: n = 10595, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 31, 1029, 1069 us/op
+Iteration   7: n = 10621, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 66, 907, 955 us/op
+Iteration   8: n = 10697, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 34, 275, 288 us/op
+Iteration   9: n = 10519, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 10, 82, 141, 143 us/op
+Iteration  10: n = 10620, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 9, 9, 24, 1045, 1047 us/op
+
+
+Result: 5,686 ±(99.9%) 0,130 us/op [Average]
+  Statistics: (min, avg, max) = (3,580, 5,686, 2048,000), stdev = 12,922
+  Confidence interval (99.9%): [5,555, 5,816]
+  Samples, N = 106196
+        mean =      5,686 ±(99.9%) 0,130 us/op
+         min =      3,580 us/op
+  p( 0,0000) =      3,580 us/op
+  p(50,0000) =      4,512 us/op
+  p(90,0000) =      8,608 us/op
+  p(95,0000) =      8,896 us/op
+  p(99,0000) =      9,440 us/op
+  p(99,9000) =     53,134 us/op
+  p(99,9900) =    979,594 us/op
+  p(99,9990) =   1988,096 us/op
+  p(99,9999) =   2048,000 us/op
+         max =   2048,000 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 100)
+
+# Run progress: 73,53% complete, ETA 00:03:10
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 30812, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 73, 255, 5940, 48759 us/op
+# Warmup Iteration   2: n = 18658, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 11, 151, 1723, 5751 us/op
+# Warmup Iteration   3: n = 19061, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 10, 10, 10, 35, 1009, 1923 us/op
+# Warmup Iteration   4: n = 18592, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 34, 253, 259 us/op
+# Warmup Iteration   5: n = 19038, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 44, 289, 1182 us/op
+# Warmup Iteration   6: n = 18915, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 49, 1334, 1522 us/op
+# Warmup Iteration   7: n = 18939, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 32, 374, 900 us/op
+# Warmup Iteration   8: n = 19077, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 62, 1369, 1737 us/op
+# Warmup Iteration   9: n = 18982, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 59, 595, 1362 us/op
+# Warmup Iteration  10: n = 18959, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 33, 272, 1118 us/op
+Iteration   1: n = 19158, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 50, 243, 1237 us/op
+Iteration   2: n = 18884, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 34, 539, 1239 us/op
+Iteration   3: n = 18618, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 33, 119, 196 us/op
+Iteration   4: n = 18866, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 62, 1129, 1505 us/op
+Iteration   5: n = 18380, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 41, 1070, 1085 us/op
+Iteration   6: n = 18555, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 76, 1183, 1509 us/op
+Iteration   7: n = 18769, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 31, 253, 1235 us/op
+Iteration   8: n = 18686, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 90, 1075, 1141 us/op
+Iteration   9: n = 18757, mean = 7 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 78, 1356, 3351 us/op
+Iteration  10: n = 18843, mean = 6 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4, 5, 9, 10, 10, 65, 1034, 1046 us/op
+
+
+Result: 6,457 ±(99.9%) 0,109 us/op [Average]
+  Statistics: (min, avg, max) = (4,044, 6,457, 3350,528), stdev = 14,366
+  Confidence interval (99.9%): [6,348, 6,566]
+  Samples, N = 187516
+        mean =      6,457 ±(99.9%) 0,109 us/op
+         min =      4,044 us/op
+  p( 0,0000) =      4,044 us/op
+  p(50,0000) =      5,048 us/op
+  p(90,0000) =      9,424 us/op
+  p(95,0000) =      9,632 us/op
+  p(99,0000) =     10,080 us/op
+  p(99,9000) =     56,894 us/op
+  p(99,9900) =   1027,574 us/op
+  p(99,9990) =   1739,207 us/op
+  p(99,9999) =   3350,528 us/op
+         max =   3350,528 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 200)
+
+# Run progress: 76,47% complete, ETA 00:02:49
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 17474, mean = 20 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 17, 113, 707, 21307, 48103 us/op
+# Warmup Iteration   2: n = 10879, mean = 12 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 26, 162, 2520, 2691 us/op
+# Warmup Iteration   3: n = 11305, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 9, 14, 14, 15, 81, 142, 144 us/op
+# Warmup Iteration   4: n = 11120, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 99, 641, 694 us/op
+# Warmup Iteration   5: n = 10800, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 9, 14, 14, 15, 109, 1863, 2005 us/op
+# Warmup Iteration   6: n = 11212, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 88, 115, 116 us/op
+# Warmup Iteration   7: n = 11013, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 86, 219, 224 us/op
+# Warmup Iteration   8: n = 11214, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 73, 1116, 1255 us/op
+# Warmup Iteration   9: n = 11159, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 47, 1088, 1208 us/op
+# Warmup Iteration  10: n = 11150, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 66, 1316, 1450 us/op
+Iteration   1: n = 11097, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 48, 1239, 1366 us/op
+Iteration   2: n = 11194, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 9, 14, 14, 15, 74, 184, 194 us/op
+Iteration   3: n = 11158, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 9, 14, 14, 15, 66, 1222, 1225 us/op
+Iteration   4: n = 11163, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 68, 1139, 1143 us/op
+Iteration   5: n = 11138, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 79, 975, 1081 us/op
+Iteration   6: n = 11017, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 36, 1138, 1188 us/op
+Iteration   7: n = 10852, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 83, 1168, 1171 us/op
+Iteration   8: n = 10959, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 67, 1395, 1427 us/op
+Iteration   9: n = 10953, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 73, 165, 168 us/op
+Iteration  10: n = 10816, mean = 11 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 8, 10, 14, 14, 15, 103, 1163, 1178 us/op
+
+
+Result: 11,095 ±(99.9%) 0,143 us/op [Average]
+  Statistics: (min, avg, max) = (7,912, 11,095, 1427,456), stdev = 14,442
+  Confidence interval (99.9%): [10,952, 11,238]
+  Samples, N = 110347
+        mean =     11,095 ±(99.9%) 0,143 us/op
+         min =      7,912 us/op
+  p( 0,0000) =      7,912 us/op
+  p(50,0000) =      9,536 us/op
+  p(90,0000) =     13,696 us/op
+  p(95,0000) =     13,984 us/op
+  p(99,0000) =     14,720 us/op
+  p(99,9000) =     71,535 us/op
+  p(99,9900) =   1085,297 us/op
+  p(99,9990) =   1421,098 us/op
+  p(99,9999) =   1427,456 us/op
+         max =   1427,456 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 400)
+
+# Run progress: 79,41% complete, ETA 00:02:27
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 15196, mean = 37 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 20, 27, 30, 35, 136, 1188, 27759, 50332 us/op
+# Warmup Iteration   2: n = 19477, mean = 25 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 25, 27, 28, 34, 122, 2491, 3387 us/op
+# Warmup Iteration   3: n = 10136, mean = 25 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 35, 125, 1150, 1155 us/op
+# Warmup Iteration   4: n = 9969, mean = 26 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 30, 141, 6758, 6758 us/op
+# Warmup Iteration   5: n = 9861, mean = 25 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 25, 27, 27, 31, 108, 4571, 4571 us/op
+# Warmup Iteration   6: n = 10183, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 30, 125, 721, 722 us/op
+# Warmup Iteration   7: n = 10032, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 29, 121, 810, 810 us/op
+# Warmup Iteration   8: n = 10162, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 29, 93, 1785, 1802 us/op
+# Warmup Iteration   9: n = 10082, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 30, 89, 842, 844 us/op
+# Warmup Iteration  10: n = 10223, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 25, 26, 27, 29, 119, 914, 914 us/op
+Iteration   1: n = 10237, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 17, 24, 26, 27, 30, 122, 683, 683 us/op
+Iteration   2: n = 10121, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 29, 111, 733, 740 us/op
+Iteration   3: n = 10237, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 30, 120, 734, 735 us/op
+Iteration   4: n = 10115, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 25, 26, 27, 30, 92, 628, 632 us/op
+Iteration   5: n = 10102, mean = 25 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 18, 25, 26, 27, 29, 108, 4272, 4309 us/op
+Iteration   6: n = 10270, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 28, 120, 1167, 1182 us/op
+Iteration   7: n = 9993, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 32, 117, 1950, 1950 us/op
+Iteration   8: n = 10197, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 29, 108, 778, 778 us/op
+Iteration   9: n = 10264, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 26, 27, 29, 114, 1146, 1159 us/op
+Iteration  10: n = 10068, mean = 24 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 19, 24, 27, 27, 33, 115, 653, 656 us/op
+
+
+Result: 24,199 ±(99.9%) 0,196 us/op [Average]
+  Statistics: (min, avg, max) = (17,440, 24,199, 4308,992), stdev = 18,977
+  Confidence interval (99.9%): [24,003, 24,395]
+  Samples, N = 101604
+        mean =     24,199 ±(99.9%) 0,196 us/op
+         min =     17,440 us/op
+  p( 0,0000) =     17,440 us/op
+  p(50,0000) =     24,448 us/op
+  p(90,0000) =     26,368 us/op
+  p(95,0000) =     26,880 us/op
+  p(99,0000) =     29,696 us/op
+  p(99,9000) =    112,947 us/op
+  p(99,9900) =    688,166 us/op
+  p(99,9990) =   4271,125 us/op
+  p(99,9999) =   4308,992 us/op
+         max =   4308,992 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 800)
+
+# Run progress: 82,35% complete, ETA 00:02:06
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 11734, mean = 84 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 57, 66, 74, 121, 245, 1921, 43852, 48759 us/op
+# Warmup Iteration   2: n = 13934, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 59, 70, 74, 76, 79, 156, 1673, 1696 us/op
+# Warmup Iteration   3: n = 13829, mean = 72 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 74, 76, 80, 242, 4277, 5366 us/op
+# Warmup Iteration   4: n = 13738, mean = 72 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 74, 76, 80, 219, 5362, 6136 us/op
+# Warmup Iteration   5: n = 13936, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 75, 76, 81, 204, 1682, 1878 us/op
+# Warmup Iteration   6: n = 14130, mean = 70 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 61, 70, 74, 76, 78, 169, 700, 714 us/op
+# Warmup Iteration   7: n = 13870, mean = 72 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 61, 70, 74, 76, 86, 176, 7614, 11977 us/op
+# Warmup Iteration   8: n = 14040, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 74, 76, 80, 176, 1535, 1876 us/op
+# Warmup Iteration   9: n = 14054, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 74, 76, 82, 160, 1866, 2466 us/op
+# Warmup Iteration  10: n = 14061, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 61, 70, 74, 76, 81, 187, 899, 1026 us/op
+Iteration   1: n = 13790, mean = 72 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 74, 76, 81, 176, 5862, 5980 us/op
+Iteration   2: n = 14018, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 61, 70, 74, 76, 79, 168, 747, 750 us/op
+Iteration   3: n = 13973, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 74, 76, 81, 145, 755, 770 us/op
+Iteration   4: n = 13915, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 75, 77, 86, 162, 1435, 1890 us/op
+Iteration   5: n = 14020, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 63, 70, 74, 76, 78, 166, 723, 734 us/op
+Iteration   6: n = 13999, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 74, 76, 79, 166, 921, 971 us/op
+Iteration   7: n = 13956, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 75, 77, 80, 160, 886, 985 us/op
+Iteration   8: n = 13916, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 62, 70, 75, 77, 82, 165, 1841, 1890 us/op
+Iteration   9: n = 13956, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 63, 70, 75, 77, 80, 166, 1114, 1350 us/op
+Iteration  10: n = 13948, mean = 71 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 61, 70, 75, 76, 81, 194, 1673, 1970 us/op
+
+
+Result: 71,141 ±(99.9%) 0,258 us/op [Average]
+  Statistics: (min, avg, max) = (61,248, 71,141, 5980,160), stdev = 29,285
+  Confidence interval (99.9%): [70,883, 71,399]
+  Samples, N = 139491
+        mean =     71,141 ±(99.9%) 0,258 us/op
+         min =     61,248 us/op
+  p( 0,0000) =     61,248 us/op
+  p(50,0000) =     70,272 us/op
+  p(90,0000) =     74,624 us/op
+  p(95,0000) =     76,416 us/op
+  p(99,0000) =     79,872 us/op
+  p(99,9000) =    165,506 us/op
+  p(99,9900) =    846,916 us/op
+  p(99,9990) =   5857,223 us/op
+  p(99,9999) =   5980,160 us/op
+         max =   5980,160 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 1000)
+
+# Run progress: 85,29% complete, ETA 00:01:45
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 8667, mean = 113 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 86, 96, 102, 167, 326, 1462, 49021, 49021 us/op
+# Warmup Iteration   2: n = 9942, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 85, 98, 100, 101, 113, 197, 6013, 6013 us/op
+# Warmup Iteration   3: n = 10087, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 90, 98, 100, 101, 107, 187, 1175, 1178 us/op
+# Warmup Iteration   4: n = 9550, mean = 103 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 88, 98, 100, 102, 195, 714, 12599, 12599 us/op
+# Warmup Iteration   5: n = 10010, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 90, 98, 100, 101, 109, 262, 915, 915 us/op
+# Warmup Iteration   6: n = 10024, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 100, 101, 114, 209, 1008, 1009 us/op
+# Warmup Iteration   7: n = 9882, mean = 101 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 88, 98, 105, 119, 154, 187, 772, 772 us/op
+# Warmup Iteration   8: n = 10100, mean = 98 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 88, 98, 99, 100, 136, 185, 846, 847 us/op
+# Warmup Iteration   9: n = 10017, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 100, 104, 129, 305, 2148, 2150 us/op
+# Warmup Iteration  10: n = 10050, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 99, 101, 111, 541, 1650, 1653 us/op
+Iteration   1: n = 10074, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 99, 101, 121, 236, 744, 744 us/op
+Iteration   2: n = 9986, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 100, 101, 129, 437, 4514, 4514 us/op
+Iteration   3: n = 10077, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 99, 101, 117, 202, 871, 872 us/op
+Iteration   4: n = 10065, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 90, 98, 100, 101, 111, 343, 974, 976 us/op
+Iteration   5: n = 10054, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 100, 101, 124, 189, 1895, 1901 us/op
+Iteration   6: n = 10100, mean = 98 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 99, 101, 108, 197, 742, 742 us/op
+Iteration   7: n = 10079, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 90, 98, 99, 101, 112, 240, 1128, 1130 us/op
+Iteration   8: n = 10016, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 88, 98, 100, 101, 122, 588, 2868, 2871 us/op
+Iteration   9: n = 10016, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 90, 98, 99, 101, 112, 313, 4168, 4174 us/op
+Iteration  10: n = 10036, mean = 99 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 89, 98, 99, 101, 110, 246, 4871, 4882 us/op
+
+
+Result: 98,862 ±(99.9%) 0,332 us/op [Average]
+  Statistics: (min, avg, max) = (88,192, 98,862, 4882,432), stdev = 31,999
+  Confidence interval (99.9%): [98,530, 99,195]
+  Samples, N = 100503
+        mean =     98,862 ±(99.9%) 0,332 us/op
+         min =     88,192 us/op
+  p( 0,0000) =     88,192 us/op
+  p(50,0000) =     97,920 us/op
+  p(90,0000) =     99,584 us/op
+  p(95,0000) =    100,864 us/op
+  p(99,0000) =    115,072 us/op
+  p(99,9000) =    234,490 us/op
+  p(99,9900) =    893,944 us/op
+  p(99,9990) =   4880,574 us/op
+  p(99,9999) =   4882,432 us/op
+         max =   4882,432 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 10000)
+
+# Run progress: 88,24% complete, ETA 00:01:24
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 1214, mean = 811 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 443, 671, 804, 1014, 3661, 47041, 57344, 57344 us/op
+# Warmup Iteration   2: n = 1481, mean = 664 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 435, 660, 754, 781, 880, 5203, 5792, 5792 us/op
+# Warmup Iteration   3: n = 1522, mean = 651 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 438, 646, 733, 763, 922, 6035, 6087, 6087 us/op
+# Warmup Iteration   4: n = 1457, mean = 677 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 425, 653, 743, 778, 1528, 6231, 7094, 7094 us/op
+# Warmup Iteration   5: n = 1507, mean = 654 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 427, 649, 742, 769, 948, 5858, 7135, 7135 us/op
+# Warmup Iteration   6: n = 1504, mean = 656 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 420, 652, 741, 763, 913, 5913, 6119, 6119 us/op
+# Warmup Iteration   7: n = 1517, mean = 650 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 427, 646, 733, 764, 1197, 5746, 6250, 6250 us/op
+# Warmup Iteration   8: n = 1503, mean = 656 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 420, 652, 751, 782, 1045, 5056, 5382, 5382 us/op
+# Warmup Iteration   9: n = 1528, mean = 646 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 422, 642, 728, 759, 889, 6674, 7324, 7324 us/op
+# Warmup Iteration  10: n = 1505, mean = 656 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 431, 645, 741, 771, 964, 6130, 6291, 6291 us/op
+Iteration   1: n = 1517, mean = 650 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 428, 646, 732, 763, 1007, 4890, 5136, 5136 us/op
+Iteration   2: n = 1500, mean = 658 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 431, 648, 736, 765, 1079, 6925, 7479, 7479 us/op
+Iteration   3: n = 1513, mean = 652 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 423, 651, 736, 766, 1002, 4610, 6947, 6947 us/op
+Iteration   4: n = 1523, mean = 649 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 429, 646, 736, 765, 915, 4622, 5530, 5530 us/op
+Iteration   5: n = 1507, mean = 655 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 438, 648, 744, 769, 1001, 6272, 7479, 7479 us/op
+Iteration   6: n = 1523, mean = 647 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 426, 650, 733, 763, 962, 3262, 4612, 4612 us/op
+Iteration   7: n = 1510, mean = 653 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 433, 650, 740, 763, 879, 4304, 4743, 4743 us/op
+Iteration   8: n = 1497, mean = 659 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 435, 649, 739, 768, 1003, 7320, 7528, 7528 us/op
+Iteration   9: n = 1545, mean = 638 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 425, 642, 731, 758, 829, 1393, 1427, 1427 us/op
+Iteration  10: n = 1531, mean = 644 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 426, 643, 734, 761, 837, 4361, 4694, 4694 us/op
+
+
+Result: 650,504 ±(99.9%) 5,680 us/op [Average]
+  Statistics: (min, avg, max) = (423,424, 650,504, 7528,448), stdev = 212,543
+  Confidence interval (99.9%): [644,824, 656,184]
+  Samples, N = 15166
+        mean =    650,504 ±(99.9%) 5,680 us/op
+         min =    423,424 us/op
+  p( 0,0000) =    423,424 us/op
+  p(50,0000) =    647,168 us/op
+  p(90,0000) =    736,256 us/op
+  p(95,0000) =    763,904 us/op
+  p(99,0000) =    918,497 us/op
+  p(99,9000) =   4521,120 us/op
+  p(99,9900) =   7503,051 us/op
+  p(99,9990) =   7528,448 us/op
+  p(99,9999) =   7528,448 us/op
+         max =   7528,448 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 100000)
+
+# Run progress: 91,18% complete, ETA 00:01:03
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 150, mean = 6574 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4776, 5136, 6627, 10642, 63519, 89522, 89522, 89522 us/op
+# Warmup Iteration   2: n = 188, mean = 5217 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4678, 5042, 5481, 6349, 9835, 10535, 10535, 10535 us/op
+# Warmup Iteration   3: n = 189, mean = 5205 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4669, 5014, 5456, 6566, 9858, 10551, 10551, 10551 us/op
+# Warmup Iteration   4: n = 187, mean = 5264 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4694, 5087, 5633, 6544, 9629, 10551, 10551, 10551 us/op
+# Warmup Iteration   5: n = 193, mean = 5111 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4653, 5022, 5326, 5543, 8598, 9830, 9830, 9830 us/op
+# Warmup Iteration   6: n = 195, mean = 5039 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4694, 4964, 5267, 5400, 6442, 7299, 7299, 7299 us/op
+# Warmup Iteration   7: n = 193, mean = 5097 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4694, 5030, 5297, 5498, 6476, 7438, 7438, 7438 us/op
+# Warmup Iteration   8: n = 195, mean = 5034 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4710, 5005, 5246, 5317, 5696, 6144, 6144, 6144 us/op
+# Warmup Iteration   9: n = 195, mean = 5054 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4686, 4997, 5279, 5390, 6864, 7234, 7234, 7234 us/op
+# Warmup Iteration  10: n = 195, mean = 5062 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4702, 4997, 5282, 5377, 6489, 6521, 6521, 6521 us/op
+Iteration   1: n = 194, mean = 5092 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4694, 5042, 5333, 5464, 6379, 6799, 6799, 6799 us/op
+Iteration   2: n = 194, mean = 5065 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4727, 5009, 5247, 5382, 6551, 6808, 6808, 6808 us/op
+Iteration   3: n = 194, mean = 5091 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4735, 5009, 5308, 5427, 7088, 7127, 7127, 7127 us/op
+Iteration   4: n = 195, mean = 5050 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4669, 4989, 5243, 5318, 6753, 6808, 6808, 6808 us/op
+Iteration   5: n = 193, mean = 5111 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4719, 4997, 5376, 5691, 7337, 10240, 10240, 10240 us/op
+Iteration   6: n = 188, mean = 5235 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4694, 5104, 5726, 6222, 7450, 7479, 7479, 7479 us/op
+Iteration   7: n = 193, mean = 5095 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4719, 4981, 5272, 5713, 7144, 7799, 7799, 7799 us/op
+Iteration   8: n = 192, mean = 5119 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4719, 5095, 5317, 5694, 6332, 6431, 6431, 6431 us/op
+Iteration   9: n = 193, mean = 5120 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4628, 4989, 5333, 5933, 8103, 8126, 8126, 8126 us/op
+Iteration  10: n = 195, mean = 5063 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 4678, 4989, 5267, 5408, 6484, 6791, 6791, 6791 us/op
+
+
+Result: 5103,561 ±(99.9%) 28,319 us/op [Average]
+  Statistics: (min, avg, max) = (4628,480, 5103,561, 10240,000), stdev = 377,601
+  Confidence interval (99.9%): [5075,242, 5131,880]
+  Samples, N = 1931
+        mean =   5103,561 ±(99.9%) 28,319 us/op
+         min =   4628,480 us/op
+  p( 0,0000) =   4628,480 us/op
+  p(50,0000) =   5013,504 us/op
+  p(90,0000) =   5316,608 us/op
+  p(95,0000) =   5622,989 us/op
+  p(99,0000) =   6799,360 us/op
+  p(99,9000) =   8270,184 us/op
+  p(99,9900) =  10240,000 us/op
+  p(99,9990) =  10240,000 us/op
+  p(99,9999) =  10240,000 us/op
+         max =  10240,000 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 1000000)
+
+# Run progress: 94,12% complete, ETA 00:00:42
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 10, mean = 99313 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 69206, 72221, 313577, 339739, 339739, 339739, 339739, 339739 us/op
+# Warmup Iteration   2: n = 13, mean = 78845 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67764, 72876, 123522, 146538, 146538, 146538, 146538, 146538 us/op
+# Warmup Iteration   3: n = 14, mean = 71565 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68289, 71434, 74777, 75235, 75235, 75235, 75235, 75235 us/op
+# Warmup Iteration   4: n = 14, mean = 71228 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68289, 71238, 74842, 74842, 74842, 74842, 74842, 74842 us/op
+# Warmup Iteration   5: n = 14, mean = 71172 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67502, 70844, 74908, 75891, 75891, 75891, 75891, 75891 us/op
+# Warmup Iteration   6: n = 14, mean = 70470 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68026, 70124, 73597, 74449, 74449, 74449, 74449, 74449 us/op
+# Warmup Iteration   7: n = 14, mean = 70975 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68682, 70582, 73335, 73662, 73662, 73662, 73662, 73662 us/op
+# Warmup Iteration   8: n = 14, mean = 72839 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68944, 71893, 80347, 85328, 85328, 85328, 85328, 85328 us/op
+# Warmup Iteration   9: n = 14, mean = 73934 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 69206, 72745, 78053, 78250, 78250, 78250, 78250, 78250 us/op
+# Warmup Iteration  10: n = 14, mean = 70975 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68157, 70582, 73662, 73794, 73794, 73794, 73794, 73794 us/op
+Iteration   1: n = 14, mean = 71500 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67895, 71041, 75039, 75760, 75760, 75760, 75760, 75760 us/op
+Iteration   2: n = 14, mean = 71238 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67240, 70582, 77529, 81134, 81134, 81134, 81134, 81134 us/op
+Iteration   3: n = 14, mean = 71416 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67502, 71434, 74187, 74449, 74449, 74449, 74449, 74449 us/op
+Iteration   4: n = 14, mean = 70432 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68026, 70124, 73859, 74187, 74187, 74187, 74187, 74187 us/op
+Iteration   5: n = 14, mean = 71884 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68682, 71827, 74187, 74187, 74187, 74187, 74187, 74187 us/op
+Iteration   6: n = 14, mean = 73335 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 69206, 73859, 77267, 78643, 78643, 78643, 78643, 78643 us/op
+Iteration   7: n = 14, mean = 70376 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68026, 70189, 73531, 74449, 74449, 74449, 74449, 74449 us/op
+Iteration   8: n = 15, mean = 70429 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 67895, 70124, 73164, 73794, 73794, 73794, 73794, 73794 us/op
+Iteration   9: n = 15, mean = 70193 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68026, 69730, 72771, 73794, 73794, 73794, 73794, 73794 us/op
+Iteration  10: n = 14, mean = 71294 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 68551, 70975, 75235, 76808, 76808, 76808, 76808, 76808 us/op
+
+
+Result: 71197,018 ±(99.9%) 649,637 us/op [Average]
+  Statistics: (min, avg, max) = (67239,936, 71197,018, 81133,568), stdev = 2303,371
+  Confidence interval (99.9%): [70547,381, 71846,655]
+  Samples, N = 142
+        mean =  71197,018 ±(99.9%) 649,637 us/op
+         min =  67239,936 us/op
+  p( 0,0000) =  67239,936 us/op
+  p(50,0000) =  71172,096 us/op
+  p(90,0000) =  74186,752 us/op
+  p(95,0000) =  74691,379 us/op
+  p(99,0000) =  80062,710 us/op
+  p(99,9000) =  81133,568 us/op
+  p(99,9900) =  81133,568 us/op
+  p(99,9990) =  81133,568 us/op
+  p(99,9999) =  81133,568 us/op
+         max =  81133,568 us/op
+
+
+# JMH 1.5.2 (released 178 days ago, please consider updating!)
+# VM invoker: /home/my/dev/java/jdk1.8.0_51/jre/bin/java
+# VM options: -javaagent:/usr/share/java/jayatanaag.jar
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: fr.soat.LambdaBenchmark.benchmark_array_with_lambda
+# Parameters: (arraySize = 10000000)
+
+# Run progress: 97,06% complete, ETA 00:00:21
+# Fork: 1 of 1
+Picked up JAVA_TOOL_OPTIONS: -javaagent:/usr/share/java/jayatanaag.jar 
+# Warmup Iteration   1: n = 1, mean = 1212154 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 1212154, 1212154, 1212154, 1212154, 1212154, 1212154, 1212154, 1212154 us/op
+# Warmup Iteration   2: n = 2, mean = 864551 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 824181, 864551, 904921, 904921, 904921, 904921, 904921, 904921 us/op
+# Warmup Iteration   3: n = 2, mean = 866648 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 842007, 866648, 891290, 891290, 891290, 891290, 891290, 891290 us/op
+# Warmup Iteration   4: n = 2, mean = 878707 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 815792, 878707, 941621, 941621, 941621, 941621, 941621, 941621 us/op
+# Warmup Iteration   5: n = 2, mean = 832045 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 792723, 832045, 871367, 871367, 871367, 871367, 871367, 871367 us/op
+# Warmup Iteration   6: n = 2, mean = 1663566 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 814744, 1663566, 2512388, 2512388, 2512388, 2512388, 2512388, 2512388 us/op
+# Warmup Iteration   7: n = 2, mean = 851968 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 839909, 851968, 864027, 864027, 864027, 864027, 864027, 864027 us/op
+# Warmup Iteration   8: n = 2, mean = 826802 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 813695, 826802, 839909, 839909, 839909, 839909, 839909, 839909 us/op
+# Warmup Iteration   9: n = 2, mean = 808452 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 800063, 808452, 816841, 816841, 816841, 816841, 816841, 816841 us/op
+# Warmup Iteration  10: n = 2, mean = 808452 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 799015, 808452, 817889, 817889, 817889, 817889, 817889, 817889 us/op
+Iteration   1: n = 2, mean = 832045 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 818938, 832045, 845152, 845152, 845152, 845152, 845152, 845152 us/op
+Iteration   2: n = 2, mean = 827851 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 818938, 827851, 836764, 836764, 836764, 836764, 836764, 836764 us/op
+Iteration   3: n = 2, mean = 834666 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 834666, 834666, 834666, 834666, 834666, 834666, 834666, 834666 us/op
+Iteration   4: n = 2, mean = 806879 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 796918, 806879, 816841, 816841, 816841, 816841, 816841, 816841 us/op
+Iteration   5: n = 2, mean = 818414 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 793772, 818414, 843055, 843055, 843055, 843055, 843055, 843055 us/op
+Iteration   6: n = 2, mean = 829424 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 815792, 829424, 843055, 843055, 843055, 843055, 843055, 843055 us/op
+Iteration   7: n = 2, mean = 827851 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 815792, 827851, 839909, 839909, 839909, 839909, 839909, 839909 us/op
+Iteration   8: n = 2, mean = 838337 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 836764, 838337, 839909, 839909, 839909, 839909, 839909, 839909 us/op
+Iteration   9: n = 2, mean = 827851 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 815792, 827851, 839909, 839909, 839909, 839909, 839909, 839909 us/op
+Iteration  10: n = 2, mean = 821035 us/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 817889, 821035, 824181, 824181, 824181, 824181, 824181, 824181 us/op
+
+
+Result: 826435,174 ±(99.9%) 13149,471 us/op [Average]
+  Statistics: (min, avg, max) = (793772,032, 826435,174, 845152,256), stdev = 15142,950
+  Confidence interval (99.9%): [813285,704, 839584,645]
+  Samples, N = 20
+        mean = 826435,174 ±(99.9%) 13149,471 us/op
+         min = 793772,032 us/op
+  p( 0,0000) = 793772,032 us/op
+  p(50,0000) = 829423,616 us/op
+  p(90,0000) = 843055,104 us/op
+  p(95,0000) = 845047,398 us/op
+  p(99,0000) = 845152,256 us/op
+  p(99,9000) = 845152,256 us/op
+  p(99,9900) = 845152,256 us/op
+  p(99,9990) = 845152,256 us/op
+  p(99,9999) = 845152,256 us/op
+         max = 845152,256 us/op
+
+
+# Run complete. Total time: 00:12:12
+
+Benchmark                                             (arraySize)    Mode     Cnt       Score        Error  Units
+LambdaBenchmark.benchmark_array_with_anonymous_class           10  sample  156573       1,884 ±      0,097  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class           15  sample  141866       2,115 ±      0,076  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class           20  sample  103027       2,996 ±      0,250  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class           25  sample   98462       3,057 ±      0,140  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class           30  sample  183466       3,254 ±      0,120  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class           40  sample  158404       3,872 ±      0,121  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class           60  sample  133898       4,483 ±      0,137  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class           80  sample  111867       5,436 ±      0,232  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class          100  sample  182693       6,639 ±      0,168  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class          200  sample  106113      11,452 ±      0,174  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class          400  sample  101632      24,172 ±      0,143  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class          800  sample  130607      76,011 ±      0,232  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class         1000  sample  102005      97,420 ±      0,279  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class        10000  sample   15526     635,455 ±      5,218  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class       100000  sample    1944    5076,971 ±     33,582  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class      1000000  sample     141   71663,848 ±    604,252  us/op
+LambdaBenchmark.benchmark_array_with_anonymous_class     10000000  sample      20  843893,965 ± 281224,775  us/op
+LambdaBenchmark.benchmark_array_with_lambda                    10  sample  142767       2,088 ±      0,091  us/op
+LambdaBenchmark.benchmark_array_with_lambda                    15  sample  123289       2,384 ±      0,087  us/op
+LambdaBenchmark.benchmark_array_with_lambda                    20  sample  101063       3,038 ±      0,205  us/op
+LambdaBenchmark.benchmark_array_with_lambda                    25  sample   99565       3,095 ±      0,158  us/op
+LambdaBenchmark.benchmark_array_with_lambda                    30  sample  184166       3,278 ±      0,108  us/op
+LambdaBenchmark.benchmark_array_with_lambda                    40  sample  154178       3,849 ±      0,082  us/op
+LambdaBenchmark.benchmark_array_with_lambda                    60  sample  130017       4,697 ±      0,156  us/op
+LambdaBenchmark.benchmark_array_with_lambda                    80  sample  106196       5,686 ±      0,130  us/op
+LambdaBenchmark.benchmark_array_with_lambda                   100  sample  187516       6,457 ±      0,109  us/op
+LambdaBenchmark.benchmark_array_with_lambda                   200  sample  110347      11,095 ±      0,143  us/op
+LambdaBenchmark.benchmark_array_with_lambda                   400  sample  101604      24,199 ±      0,196  us/op
+LambdaBenchmark.benchmark_array_with_lambda                   800  sample  139491      71,141 ±      0,258  us/op
+LambdaBenchmark.benchmark_array_with_lambda                  1000  sample  100503      98,862 ±      0,332  us/op
+LambdaBenchmark.benchmark_array_with_lambda                 10000  sample   15166     650,504 ±      5,680  us/op
+LambdaBenchmark.benchmark_array_with_lambda                100000  sample    1931    5103,561 ±     28,319  us/op
+LambdaBenchmark.benchmark_array_with_lambda               1000000  sample     142   71197,018 ±    649,637  us/op
+LambdaBenchmark.benchmark_array_with_lambda              10000000  sample      20  826435,174 ±  13149,471  us/op
